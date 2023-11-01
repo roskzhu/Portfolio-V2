@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "NTR";
+  font-weight: 200;
+  font-display: fallback;
+  src: url("/public/fonts/NTR-Regular.ttf") format("truetype");
+}
+
 .App {
   text-align: center;
 }
@@ -11,6 +18,13 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.section-title {
+  font-family: "Karla", sans-serif;
+  color: var(--lightest-slate);
+  font-size: 60px;
+  font-weight: 600;  /* bold */
 }
 
 .App-header {
