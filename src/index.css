@@ -194,18 +194,6 @@ h6{
 }
 
 /* used for testing */
-.my-container{
-  border: 3px solid green;
-}
-
-.my-row{
-  border: 3px solid red;
-}
-
-.my-col{
-  border: 3px dotted blue;
-}
-
 .bpad64{
   padding-bottom: 64px;
 }
