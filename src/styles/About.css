@@ -71,7 +71,7 @@ p mark {
 }
 
 .about-description li::before {
-  content: "▹    ";
+  content: "▸    ";
   position: absolute;
   left: 0;
 }

@@ -36,7 +36,7 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
     <footer className='foot' id='footer'>
       <div className='line'>
         <div className='left'>
-          <p>LET'S BUILD SOMETHING SPECIAL.</p>
+          <p>LET'S BUILD SOMETHING CREATIVE.</p>
           <p style={{lineHeight:'1.3'}}>Have a question? Want to chat? <br/> Feel free to send me a message.</p>
 
           <form className="connect-form" onSubmit={handleSubmit(handleSave)}>
