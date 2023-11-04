@@ -11,6 +11,8 @@ const FadeInSection: React.FC<FadeInSectionProps> = (props) => {
   const domRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    let currentRef = domRef.current;
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -19,13 +21,13 @@ const FadeInSection: React.FC<FadeInSectionProps> = (props) => {
       });
     });
 
-    if (domRef.current) {
-      observer.observe(domRef.current);
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (domRef.current) {
-        observer.unobserve(domRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -33,7 +35,7 @@ const FadeInSection: React.FC<FadeInSectionProps> = (props) => {
   return (
     <div
       className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
-      style={{ transitionDelay: `${props.delay}`, width: props.width || "100%"}}
+      style={{ transitionDelay: `${props.delay}`, width: props.width || "100%" }}
       ref={domRef}
     >
       {props.children}
