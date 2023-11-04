@@ -1,0 +1,248 @@
+.hr-style {
+  height: 5px; /* Adjust the height as needed */
+  background-color: #0F0F0F; /* Change to the desired color */
+  width: 100%; /* Adjust the width as needed */
+}
+
+.last-part {
+  background-color: #0F0F0F; /* Change to the desired color */
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  margin-bottom:-100px;
+}
+
+.foot {
+  background-color: #0F0F0F; /* Change to the desired color */
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  width: 100%;
+  margin-left: 0%;
+  margin-bottom: -10%;
+  padding-bottom: 40px;
+  height: 530px;
+}
+
+.left {
+  font-family: "Karla", monospace;
+  color: white;
+  font-size: 18px;
+  margin-left: 10%;
+  line-height: 1;
+}
+.left p:first-of-type {
+  font-family: "Karla";
+  font-size: 17px;
+  line-height: 1;
+  letter-spacing: 4px; /* Adjust the value as needed */
+  margin-top: 20%;
+}
+.left p {
+  font-family: "Karla";
+  color: white;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 1;
+  margin-bottom: 15px;
+  letter-spacing: 1px; /* Adjust the value as needed */
+  margin-top: 5%;
+}
+
+.links-container {
+  color: gray !important;
+}
+a {
+  font-family: "Karla", monospace !important;
+  font-size: 14px;
+  color: white;
+  line-height: 1.5; /* Adjust the value to increase the spacing between lines */
+}
+a:hover {
+  color: white;
+}
+
+.line {
+  display: flex;
+  width: 89%;
+  margin-top: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* contact card styling */
+.connect-section {
+  background-color: rgba(255, 255, 255, 0);
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 600px;
+  width: 100%;
+  margin-bottom:-50%;
+  /* padding-bottom:-50%; */
+}
+
+.connect-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30%;
+  margin-right: 20%;
+  margin-bottom: 20%;
+}
+
+.connect-subtitle,
+.connect-title {
+  font-family: "Karla";
+  color: white;
+  transition: all 500ms;
+  line-height: 1;
+  letter-spacing: 4px; /* Adjust the value as needed */
+  margin-top: 20%;
+}
+
+.connect-subtitle {
+  font-size: 15px;
+  margin-top: -10px;
+}
+
+.connect-title {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.connect-form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 35%;
+  align-items: right;
+  margin-top: -12%;
+  margin-left: 110%;
+}
+
+.name-input,
+.email-input {
+  width: 400px;
+  height: 40px;
+  margin-bottom: 20px;
+  font-family: "Karla", monospace;
+  border-radius: 5px;
+  padding-left: 30px;
+  color: white;
+  background-color: transparent;
+  border: 0.5px solid #ffffff;
+}
+.message-input {
+  width: 372px;
+  resize: none;
+  color: white;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-family: "Karla", monospace;
+  background-color: transparent;
+  border: 0.5px solid #ffffff;
+}
+.message-div,
+.name-div,
+.email-div {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  flex-direction: column;
+}
+
+.connect-button {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #d9d9d93c;
+  font-family: "Karla", monospace;
+  color: white;
+  transition: all 500ms;
+  cursor: pointer;
+  border: 0px solid #ffffff;
+}
+
+.connect-button:hover {
+  transform: translateY(-3px);
+}
+
+.error {
+  margin-top: -15px;
+  margin-bottom: 5px;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  font-family: "Karla", monospace;
+}
+
+.success {
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  font-family: "Karla", monospace;
+  margin-top: 10px;
+  transition: all 500ms;
+}
+
+@media (max-width: 69em) {
+  .last-part {
+    height: 1100px;
+  }
+  .connect-section {
+    grid-template-columns: 1fr;
+    height: 950px;
+  }
+
+  .connect-text {
+    margin: 0;
+  }
+
+  .connect-subtitle {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .connect-form {
+    margin: 0;
+    margin-top: -20%;
+  }
+}
+
+@media (max-width: 45em) {
+  .message-input {
+    width: 70vw;
+  }
+  .email-input {
+    width: 80vw;
+  }
+  .name-input {
+    width: 80vw;
+  }
+  .left p:first-child {
+    font-size: 18px;
+  }
+  .left p:nth-child(2) {
+    font-size: 12px;
+  }
+
+  .linkedin {
+    width: 6vw;
+    margin-right: 3px;
+  }
+  .github {
+    width: 6vw;
+  }
+
+  .connect-title {
+    font-size: 25px;
+  }
+  .connect-subtitle {
+    font-size: 16px;
+  }
+  .connect-text {
+    margin-bottom: -60px;
+  }
+}

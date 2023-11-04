@@ -1,13 +1,425 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+body{
+  color:#212121;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* All Things Text */
+p {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+h2 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+}
+
+h3 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+h4 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+h5 {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+h6{
+  font-family: Karla;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.otherlink{
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.nav-font{
+  font-size: 24px;
+}
+
+/* b{
+  color: #651FFF;
+} */
+
+.link {
+  /* text-decoration: none; */
+  font-weight: bold;
+  /* background-image: linear-gradient(#651FFF, #651FFF); */
+  color: #651FFF;
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-size: 100% 2px;
+  transition: background-size .6s, background-position .25s ease-in .25s;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: white;
+  background-size: 100% 100%;
+  background-position: 0% 0%;
+  transition: color 0.6s, background-position .25s, background-size .25s ease-in .25s;
+}
+
+
+/* Remove default paddings */
+.row {
+  padding: 0;
+  margin: 0;
+}
+
+.col{
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid{
+  padding: 0;
+  margin: 0;
+}
+
+.nopad{
+  padding: 0;
+  margin: 0;
+}
+
+/* Spacers */
+.spacerL{
+  height: 160px;
+}
+
+.spacerM{
+  height: 100px;
+}
+
+.spacerS{
+  height: 40px;
+}
+
+/* styling stuff */
+
+.titlewidth{
+  width:80%
+}
+
+.card{
+  border-radius: 12px;
+}
+
+.left{
+  padding-right:32px;
+}
+
+.right{
+  padding-left:32px;
+}
+
+
+.workcardtop{
+  width:100%;
+  height:18px;
+  border-radius: 12px 12px 0px 0px;
+}
+
+#piccontainer {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
+#pic {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.hovercard{
+  border-radius: 12px;
+  transition: 0.5s;
+}
+
+.hovercard:hover{
+  transition: 0.5s;
+  background: #EDE7F6;
+}
+
+.aa{
+  color: inherit;
+}
+
+.aa:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.aa:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.aa:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.aa:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* used for testing */
+.my-container{
+  border: 3px solid green;
+}
+
+.my-row{
+  border: 3px solid red;
+}
+
+.my-col{
+  border: 3px dotted blue;
+}
+
+.bpad64{
+  padding-bottom: 64px;
+}
+
+.bound{
+  max-width:1116px; 
+}
+
+.smallBound{
+  max-width:530px;
+}
+
+.card{
+  border: none;
+  background: #F6F6F6;
+}
+
+.blackbackground{
+  border-radius: 12px;
+  background: #F6F6F6;
+}
+
+.first{
+  margin-left: 0px;
+}
+
+.last{
+  margin-right: 0px;
+}
+
+.navbar {
+  margin-bottom: 0 
+}
+
+.catch-eye{
+  text-align:center;
+  padding-bottom:24px;
+}
+
+.max531{
+  max-height: 531px;
+}
+
+.h384{
+  height: 384px;
+}
+
+.mobile{
+  width:0px;
+  height:0px;
+}
+
+.notmobile{
+  width:auto;
+  height:auto;
+}
+
+.monly{
+  display:none;
+}
+
+.monlync{
+  display:none;
+}
+
+@media (min-width: 560px) and (max-width: 780px) {
+  .test{
+    display:none;
+  }
+}
+
+
+@media (min-width: 0px) and (max-width: 1090px) {
+    /* Spacers */
+  .spacerL{
+    height: 100px;
+  }
+
+  .spacerM{
+    height: 50px;
+  }
+
+  .spacerS{
+    height: 50px;
+  }
+
+  h6{
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+  }
+
+  .nav-font{
+    font-size: 18px;
+  }
+
+  .catch-eye{
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom:12px;
+  }
+
+  p {
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+  }
+  
+  h3 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+  }
+  
+  h4 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+  }
+
+  .otherlink{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+  }
+
+  h5 {
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+  }
+
+  .mnone{
+    display:none;
+  }
+
+  .monly{
+    display:block;
+    text-align: center;
+  }
+
+  .monlync{
+    display:block;
+  }
+
+  .mobwidth{
+    width:90%;
+  }
+
+  .mobile{
+    width:auto;
+    height:auto;
+  }
+  
+  .notmobile{
+    width:0px;
+    height:0px;
+  }
+
+  .left{
+    padding-right:0px;
+  }
+  
+  .right{
+    padding-left:0px;
+  }
+  
+
+  .max531{
+    max-height: auto;
+  }
+
+  .h384{
+    height: auto;
+  }
+
+  .titlewidth{
+    width:100%
+  }
+
+  .mobile-nav-first{
+    margin-left:1.5rem;
+  }
+
+  .m-nav-spacer{
+    margin-left: 28px;
+    margin-top: 48px;
+  }
+
+  .nav-top{
+  }
+
+  
+  .bpad64{
+  }
+
 }
