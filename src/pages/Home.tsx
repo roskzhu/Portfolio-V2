@@ -11,7 +11,7 @@ const Home: React.FC = () => {
         <h2>currently</h2>
         <h3>studying</h3>
         <p>a SWE intern @ <mark>BMO Financial Group</mark></p>
-        <h1>CS @ <mark>uWaterloo</mark></h1>
+        <h1>CS & AI @ <mark>uWaterloo</mark></h1>
         </GridContainer>
       </TextContainer>
       <GradientCircle/>
