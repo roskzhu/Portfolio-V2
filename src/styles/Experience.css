@@ -1,6 +1,7 @@
 #experience {
   padding-left: 15%;
   min-height: 60vh;
+  margin-bottom: -4%;
 }
 
 .joblist-job-title {
@@ -63,7 +64,7 @@ ul {
 }
 
 .job-description li::before {
-  content: "▹    ";
+  content: "▸    ";
   position: absolute;
   left: 0;
 }
