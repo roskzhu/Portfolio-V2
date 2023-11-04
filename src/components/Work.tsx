@@ -71,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     backgroundColor: theme.palette.background.paper,
     display: "flex",
-    height: 250,
+    height: 200,
   },
   tabs: {
     borderRight: `1px solid ${theme.palette.divider}`,
@@ -87,7 +87,7 @@ const Work: React.FC = () => {
       jobTitle: "Software Engineer Intern @",
       duration: "SEPT 2023 - PRESENT",
       desc: [
-        "Currently working on the Digital Core AI team @ BMO, helping with document verification to automate mortgage loans."      ],
+        "Currently working on the Digital Core AI team, helping with document verification to automate mortgage loans."      ],
       techStack: "Python, AWS, SQL, Flask, React.js, TypeScript, Redux",
     },
   };
