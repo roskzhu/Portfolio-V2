@@ -1,7 +1,7 @@
 #experience {
   padding-left: 15%;
-  min-height: 60vh;
-  margin-bottom: -4%;
+  min-height: 400px;
+  /* margin-bottom: -100px; */
 }
 
 .joblist-job-title {
@@ -25,7 +25,7 @@
 }
 
 #vertical-tabpanel {
-  /* margin-top: -20px; */
+  margin-top: -20px;
   padding-left: 25px;
 }
 
