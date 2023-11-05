@@ -10,7 +10,7 @@ const Landing: React.FC = () => {
     <LandingContainer>
       <GradientCircle style={{ marginTop: '3%', background: '#BBC6FF'}}/>
       <GradientCircle style={{ marginTop: '7%',  marginLeft: '20%', background: '#FFBBF0'}}/>
-      <GradientCircle style={{ marginTop: '-3%',  marginLeft: '45%'}}/>      
+      <GradientCircle style={{ marginTop: '-6%',  marginLeft: '45%'}}/>      
       <Home/>    
       <GradientCircle style={{ width: '10%', height: '10%', marginTop: '40%', marginLeft: '790px', background: '#FFB69E'}}/>        
       <About/>

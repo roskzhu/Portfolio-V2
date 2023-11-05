@@ -7,7 +7,7 @@ const Home: React.FC = () => {
     <HeaderContainer id="home">
       <TextContainer>
         <h1>Hi! I'm Rosanne.</h1>
-        <h2>I’m a full stack software engineer developing digital solutions to complex problems.</h2>
+        <h2>I’m a full stack software engineer developing digital solutions for complex problems.</h2>
         <GridContainer>
           <h2>currently</h2>
           <h3>studying</h3>

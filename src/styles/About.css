@@ -2,7 +2,7 @@
   padding-left: 15%;
   padding-right: 18%;
   min-height: 60vh;
-  padding-bottom: 5%;
+  padding-bottom: 3%;
 }
 
 /* hide scrollbar */
@@ -16,17 +16,17 @@ body::-webkit-scrollbar {
 }
 
 h1 {
-  font-family: "Rubik", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
+  font-family: "Karla", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
   color: black;
   text-align: left;
   margin-bottom: 30px;
 }
 
 h2 {
-  font-family: "Rubik", sans-serif;
-  font-size: 20px;
+  font-family: "Karla", sans-serif;
+  font-size: 22px;
   font-weight: 400;
   color: black;
   text-align: left;
