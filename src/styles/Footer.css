@@ -19,8 +19,8 @@
   place-items: center;
   width: 100%;
   margin-left: 0%;
-  margin-bottom: -10%;
-  padding-bottom: 40px;
+  margin-bottom: -10px;
+  padding-bottom: 60px;
   height: 530px;
 }
 
@@ -78,7 +78,7 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   height: 600px;
   width: 100%;
-  margin-bottom:-50%;
+  /* margin-bottom: -100px; */
   /* padding-bottom:-50%; */
 }
 
@@ -89,7 +89,7 @@ a:hover {
   align-items: center;
   margin-left: 30%;
   margin-right: 20%;
-  margin-bottom: 20%;
+  /* margin-bottom: 20%; */
 }
 
 .connect-subtitle,
@@ -127,7 +127,7 @@ a:hover {
   height: 40px;
   margin-bottom: 20px;
   font-family: "Karla", monospace;
-  border-radius: 5px;
+  border-radius: 6px;
   padding-left: 30px;
   color: white;
   background-color: transparent;
@@ -139,7 +139,7 @@ a:hover {
   color: white;
   padding: 30px;
   margin-bottom: 20px;
-  border-radius: 5px;
+  border-radius: 6px;
   font-family: "Karla", monospace;
   background-color: transparent;
   border: 0.5px solid #ffffff;
@@ -156,7 +156,7 @@ a:hover {
 .connect-button {
   width: 100px;
   height: 30px;
-  border-radius: 5px;
+  border-radius: 6px;
   background-color: #d9d9d93c;
   font-family: "Karla", monospace;
   color: white;

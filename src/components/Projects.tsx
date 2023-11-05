@@ -60,7 +60,7 @@ class Projects extends Component<{}, ProjectsState> {
 
     return (
       <div style={{ paddingBottom: '80px'}} id="projects" >
-      <div className="section-header" style={{ paddingTop: '5%'}} >
+      <div className="section-header">
         <span className="section-title">./ software-creations</span>
       </div>
       <div>

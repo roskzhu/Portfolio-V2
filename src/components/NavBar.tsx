@@ -34,34 +34,44 @@ const NavBar: React.FC = () => {
     <NavContainer>
       <ContainerLeft>
         <div className={`left-nav ${isTop ? 'transparent' : 'white'}`}>
-          <ScrollLink
-            activeClass="active" to="home"
-            spy={true} smooth={true}>
-            <p>
-            HOME  
-          </p>
-          </ScrollLink>
-          <ScrollLink
-            activeClass="active" to="about"
-            spy={true} smooth={true} offset={-130}>
-            <p>
-            ABOUT
-          </p>
-          </ScrollLink>
-          <ScrollLink
-            activeClass="active" to="experience"
-            spy={true} smooth={true} offset={-130}>
-            <p>
-            WORK
-          </p>
-          </ScrollLink>
-          <ScrollLink
-            activeClass="active" to="footer"
-            spy={true} smooth={true}>
-            <p>
-            CONTACT
-          </p>
-          </ScrollLink>
+        <ul id="primary-navigation" className={`primary-navigation ${visible ? 'visible' : ''}`}>
+        <li>
+            <ScrollLink
+              activeClass="active" to="home"
+              spy={true} smooth={true}>
+              <p>
+              HOME  
+            </p>
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              activeClass="active" to="about"
+              spy={true} smooth={true} offset={-130}>
+              <p>
+              ABOUT
+            </p>
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              activeClass="active" to="experience"
+              spy={true} smooth={true} offset={-130}>
+              <p>
+              WORK
+            </p>
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              activeClass="active" to="footer"
+              spy={true} smooth={true}>
+              <p>
+              CONTACT
+            </p>
+            </ScrollLink>
+          </li>
+          </ul>
         </div>
         <Filter className="flt_svg hide" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -119,7 +129,7 @@ const ContainerRight = styled.div`
 `;
 
 const ContainerLeft = styled.div`
-  width: 60vw;
+  width: 63vw;
   height: 40px;
 `;
 

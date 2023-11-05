@@ -7,7 +7,8 @@ const Home: React.FC = () => {
   return (
     <HeaderContainer id="home">
       <TextContainer>
-        <h1>          <Typewriter 
+        <h1>          
+          <Typewriter 
             onInit={(typewriter) => {
               typewriter.typeString('Hi! I\'m Rosanne.')
                 .callFunction(() => {
@@ -19,8 +20,9 @@ const Home: React.FC = () => {
                 })
                 .start();
             }}
-          /></h1>
-        <h2>I’m a full stack software engineer developing digital solutions for complex problems.</h2>
+          />
+        </h1>
+        <h2>I’m a full stack software engineer <br/> developing digital solutions for complex <br/> problems.</h2>
         <GridContainer>
           <h2>currently</h2>
           <h3>studying</h3>
@@ -35,9 +37,46 @@ const Home: React.FC = () => {
 
 const HeaderContainer = styled.main`
   position: relative;
-  height: 75vh;
+  height: 520px;
   overflow: hidden;
   display: flex;
+  width: 1000px
+`;
+
+const TextContainer = styled.div`
+  display: flex;
+  position: absolute;
+  top: 130px;
+  flex-direction: column;
+  z-index: 10;
+  width: 100%;
+  margin-left: -15%;
+  > h1 {
+    font-family: 'Karla', sans-serif; /* Adding the Google Font 'Karla' */
+    font-size: 80px;
+    font-weight: 400;
+    text-align: left;
+    color: black;
+    width: 70vw;
+    margin-top: -25px;
+    margin-bottom: 0; /* Remove the spacing underneath the text */
+    margin-left: 15%;
+    margin-right: 10%;
+    letter-spacing: 1px;
+  }
+  > h2 {
+    font-family: 'Karla', sans-serif; 
+    font-size: 43px;
+    font-weight: 400;
+    text-align: left;
+    color: #202020;
+    width: 70vw;
+    margin-top: 0px;
+    margin-bottom: 0; 
+    margin-left: 15%;
+    margin-right: 10%;
+    letter-spacing: 1px;
+  }
 `;
 
 const GridContainer = styled.div`
@@ -59,14 +98,14 @@ const GridContainer = styled.div`
     font-weight: 400;
     color: black;
     width: 70%;
-    margin-left: 32%;
+    margin-left: 25%;
     margin-top: 0px;
     margin-right: 100%;
   }
   > p mark {
     background-color: #DAE2F5;
     color: blue;
-    border-radius: 5px;
+    border-radius: 6px;
     padding: 0px 5px;
     line-height: 1.3;
   }
@@ -78,14 +117,14 @@ const GridContainer = styled.div`
     font-weight: 400;
     color: black;
     width: 70%;
-    margin-left: -30%;
+    margin-left: -20%;
     margin-top: 0px;
     margin-right: 100%;
   }
   > h1 mark {
     background-color: #DAE2F5;
     color: blue;
-    border-radius: 5px;
+    border-radius: 6px;
     padding: 0px 5px;
     line-height: 1.3;
   }
@@ -98,7 +137,7 @@ const GridContainer = styled.div`
     font-style: italic;
     color: black;
     width: 70%;
-    margin-left: 32%;
+    margin-left: 25%;
     margin-bottom: 0; /* Remove the spacing underneath the text */
     margin-right: 100%;
   }
@@ -111,49 +150,10 @@ const GridContainer = styled.div`
     font-style: italic;
     color: black;
     width: 70%;
-    margin-left: -30%;
+    margin-left: -20%;
     margin-bottom: 0; /* Remove the spacing underneath the text */
     margin-right: 100%;
   }
 `;
-
-const TextContainer = styled.div`
-  display: flex;
-  position: absolute;
-  top: 130px;
-  flex-direction: column;
-  z-index: 10;
-  width: 100%;
-  margin-left: -5%;
-  > h1 {
-    font-family: 'Karla', sans-serif; /* Adding the Google Font 'Karla' */
-    font-size: 80px;
-    font-weight: 400;
-    text-align: left;
-    color: black;
-    width: 70vw;
-    margin-top: -2%;
-    margin-bottom: 0; /* Remove the spacing underneath the text */
-    margin-left: 20%;
-    margin-right: 10%;
-    letter-spacing: 1px;
-  }
-  > h2 {
-    font-family: 'Karla', sans-serif; 
-    font-size: 43px;
-    font-weight: 400;
-    text-align: left;
-    color: #202020;
-    width: 70vw;
-    margin-top: 0px;
-    margin-bottom: 0; 
-    margin-left: 20%;
-    margin-right: 10%;
-    letter-spacing: 1px;
-  }
-`;
-
-
-
 
 export default Home;
