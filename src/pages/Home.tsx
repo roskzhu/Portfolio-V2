@@ -6,22 +6,23 @@ const Home: React.FC = () => {
   return (
     <HeaderContainer id="home">
       <TextContainer>
-        <h1>Hi, I'm Rosanne.</h1>
+        <h1>Hi! I'm Rosanne.</h1>
+        <h2>I’m a full stack software engineer developing digital solutions to complex problems.</h2>
         <GridContainer>
-        <h2>currently</h2>
-        <h3>studying</h3>
-        <p>a SWE intern @ <mark>BMO Financial Group</mark></p>
-        <h1>CS & AI @ <mark>uWaterloo</mark></h1>
+          <h2>currently</h2>
+          <h3>studying</h3>
+          <p>a SWE intern @ <mark>BMO Financial Group</mark></p>
+          <h1>CS & AI @ <mark>uWaterloo</mark></h1>
         </GridContainer>
       </TextContainer>
-      <GradientCircle/>
+
     </HeaderContainer>
   );
 };
 
 const HeaderContainer = styled.main`
   position: relative;
-  height: 100vh;
+  height: 75vh;
   overflow: hidden;
   display: flex;
 `;
@@ -39,14 +40,14 @@ const GridContainer = styled.div`
   z-index: 10;
   > p {
     z-index: 1;
-    font-size: 20px;
+    font-size: 15px;
     text-align: left;
     font-family: 'Rubik', sans-serif; /* Adding the Google Font 'Karla' */
     font-weight: 400;
     color: black;
     width: 70%;
-    margin-left: 33%;
-    margin-top: 5px;
+    margin-left: 32%;
+    margin-top: 0px;
     margin-right: 100%;
   }
   > p mark {
@@ -58,14 +59,14 @@ const GridContainer = styled.div`
   }
   > h1 {
     z-index: 1;
-    font-size: 20px;
+    font-size: 15px;
     text-align: left;
     font-family: 'Rubik', sans-serif; /* Adding the Google Font 'Karla' */
     font-weight: 400;
     color: black;
     width: 70%;
-    margin-left: 30%;
-    margin-top: 5px;
+    margin-left: -30%;
+    margin-top: 0px;
     margin-right: 100%;
   }
   > h1 mark {
@@ -77,27 +78,27 @@ const GridContainer = styled.div`
   }
   > h2 {
     z-index: 1;
-    font-size: 25px;
+    font-size: 20px;
     text-align: left;
     font-family: 'Rubik', sans-serif; /* Adding the Google Font 'Karla' */
     font-weight: 600;
     font-style: italic;
     color: black;
     width: 70%;
-    margin-left: 33%;
+    margin-left: 32%;
     margin-bottom: 0; /* Remove the spacing underneath the text */
     margin-right: 100%;
   }
   > h3 {
     z-index: 1;
-    font-size: 25px;
+    font-size: 20px;
     text-align: left;
     font-family: 'Rubik', sans-serif; /* Adding the Google Font 'Karla' */
     font-weight: 600;
     font-style: italic;
     color: black;
     width: 70%;
-    margin-left: 30%;
+    margin-left: -30%;
     margin-bottom: 0; /* Remove the spacing underneath the text */
     margin-right: 100%;
   }
@@ -106,9 +107,11 @@ const GridContainer = styled.div`
 const TextContainer = styled.div`
   display: flex;
   position: absolute;
-  top: 250px;
+  top: 130px;
   flex-direction: column;
   z-index: 10;
+  width: 100%;
+  margin-left: -5%;
   > h1 {
     font-family: 'Karla', sans-serif; /* Adding the Google Font 'Karla' */
     font-size: 80px;
@@ -116,44 +119,27 @@ const TextContainer = styled.div`
     text-align: left;
     color: black;
     width: 70vw;
-    margin-top: 0px;
+    margin-top: -2%;
     margin-bottom: 0; /* Remove the spacing underneath the text */
+    margin-left: 20%;
+    margin-right: 10%;
+    letter-spacing: 1px;
+  }
+  > h2 {
+    font-family: 'Karla', sans-serif; 
+    font-size: 43px;
+    font-weight: 400;
+    text-align: left;
+    color: #202020;
+    width: 70vw;
+    margin-top: 0px;
+    margin-bottom: 0; 
     margin-left: 20%;
     margin-right: 10%;
     letter-spacing: 1px;
   }
 `;
 
-const GradientCircle = styled.div`
-  width: 290px;
-  height: 150px;
-  transform: rotate(-0.167deg);
-  flex-shrink: 0;
-  border-radius: 316.616px;
-  border: 1px solid #000;
-  background: #FFE977;
-  filter: blur(225px);
-  margin-top: 25%;
-  margin-left: 75%;
-  margin-right: 10%;
-  animation: pulsate 5s infinite; /* Add an animation with a name of 'pulsate', 2-second duration, and it will repeat infinitely */
-  
-  @keyframes pulsate {
-    0% {
-      transform: scale(0.95); /* Set the initial scale of the circle */
-      filter: blur(200px); /* Apply the blur effect */
-    }
-    50% {
-      transform: scale(1); /* Set the scale to 1 in the middle of the animation */
-      filter: blur(150px); /* Decrease the blur effect */
-      opacity: 0%;
-    }
-    100% {
-      transform: scale(0.95); /* Return to the initial scale at the end of the animation */
-      filter: blur(200px); /* Apply the blur effect again */
-    }
-  }
-`;
 
 
 

@@ -23,8 +23,7 @@ class About extends React.Component<{}, AboutState> {
   }
   render() {
     const one = (
-      <h1>I'm a software engineer developing
-      innovative solutions for complex problems.</h1>
+      <h1>Driven by tech for social good, I'm drawn to impactful and collaborative work.</h1>
     );
     const two = (
       <h2 style={{ fontFamily: 'Rubik, sans-serif' }}>
@@ -55,7 +54,7 @@ class About extends React.Component<{}, AboutState> {
               {[three]}
             </div>
             <div className="about-image">
-              <img src={"/assets/me6.png"} alt="me" style={{ maxWidth: "370px" }}/>
+              <img src={"/assets/me6.png"} alt="me" style={{ maxWidth: "340px" }}/>
             </div>
           </div>
         </FadeIn>
