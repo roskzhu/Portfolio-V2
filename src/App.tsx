@@ -14,12 +14,11 @@ function App() {
   return (
     <BrowserRouter>
       <NavBar/>
-      {/* <Landing></Landing> */}
       <Routes>
         <Route path="/" element={<Landing />}/>
       </Routes>
     <Footer onSave={handleSave} />
-    <Socials/>
+    {/* <Socials/> */}
     </BrowserRouter>
   );
 }

@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import styled from '@emotion/styled';
 import { Link as ScrollLink } from 'react-scroll';
+import EmailRoundedIcon from "@material-ui/icons/EmailRounded";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import GitHubIcon from "@material-ui/icons/GitHub";
 import '../styles/Navbar.css';
 
-const Nav: React.FC = () => {
+const NavBar: React.FC = () => {
   const [visible, setVisible] = useState(false);
   const [isClicked] = useState(false);
 
@@ -28,131 +31,100 @@ const Nav: React.FC = () => {
   }, [isTop]);
 
   return (
-    <div>
-    <header className={`primary ${isTop ? 'transparent' : 'white'}`}>
-      <button onClick={toggleNav} className="mobile-nav-toggle" aria-controls="primary-naviation" aria-expanded={visible}>
-        <span className="sr-only">Menu</span>
-      </button>
-
-      <nav>
-        <NavContainer isClicked={isClicked}>
-        <ul id="primary-navigation" className={`primary-navigation ${visible ? 'visible' : ''}`}>
-          <li>
-            <ScrollLink
-              activeClass="active" to="home"
-              spy={true} smooth={true}>
-              <p>
-              HOME  
-            </p>
-            </ScrollLink>
-          </li>
-          <li>
-            <ScrollLink
-              activeClass="active" to="about"
-              spy={true} smooth={true} offset={-130}>
-              <p>
-              ABOUT
-            </p>
-            </ScrollLink>
-          </li>
-          <li>
-            <ScrollLink
-              activeClass="active" to="experience"
-              spy={true} smooth={true} offset={-130}>
-              <p>
-              WORK
-            </p>
-            </ScrollLink>
-          </li>
-          <li>
-            <ScrollLink
-              activeClass="active" to="footer"
-              spy={true} smooth={true}>
-              <p>
-              CONTACT
-            </p>
-            </ScrollLink>
-          </li>
-        </ul>
-        </NavContainer>
-        
-      </nav>
-    </header>
-    {/* <header className={`primary ${isTop ? 'transparent' : 'white'}`} style={{marginLeft:'850px'}}>
-      <button onClick={toggleNav} className="mobile-nav-toggle" aria-controls="primary-naviation" aria-expanded={visible}>
-        <span className="sr-only">Menu</span>
-      </button>
-
-      <nav>
-        <NavContainer isClicked={isClicked}>
-        <ul id="primary-navigation" className={`primary-navigation ${visible ? 'visible' : ''}`}>
-          <li>
-            <ScrollLink
-              activeClass="active" to="home"
-              spy={true} smooth={true}>
-              <p>
-              HOME  
-            </p>
-            </ScrollLink>
-          </li>
-          <li>
-            <ScrollLink
-              activeClass="active" to="footer"
-              spy={true} smooth={true}>
-              <p>
-              CONTACT
-            </p>
-            </ScrollLink>
-          </li>
-        </ul>
-        </NavContainer>
-        
-      </nav>
-    </header> */}
-    </div>
+    <NavContainer>
+      <ContainerLeft>
+        <div className={`left-nav ${isTop ? 'transparent' : 'white'}`}>
+          <ScrollLink
+            activeClass="active" to="home"
+            spy={true} smooth={true}>
+            <p>
+            HOME  
+          </p>
+          </ScrollLink>
+          <ScrollLink
+            activeClass="active" to="about"
+            spy={true} smooth={true} offset={-130}>
+            <p>
+            ABOUT
+          </p>
+          </ScrollLink>
+          <ScrollLink
+            activeClass="active" to="experience"
+            spy={true} smooth={true} offset={-130}>
+            <p>
+            WORK
+          </p>
+          </ScrollLink>
+          <ScrollLink
+            activeClass="active" to="footer"
+            spy={true} smooth={true}>
+            <p>
+            CONTACT
+          </p>
+          </ScrollLink>
+        </div>
+        <Filter className="flt_svg hide" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="flt_tag">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />  
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="flt_tag" />
+              <feComposite in="SourceGraphic" in2="flt_tag" operator="atop"/>
+            </filter>
+          </defs>
+        </Filter>
+      </ContainerLeft>
+      <ContainerRight>
+      <div className={`right-nav ${isTop ? 'transparent' : 'white'}`}>
+          <a href="mailto:rosannezhu@gmail.com" style={{color:'#0F0F0F'}}>
+            <EmailRoundedIcon style={{ fontSize: 25, marginRight: '45px', marginTop: '5px'  }}></EmailRoundedIcon>
+          </a>
+          <a href="https://github.com/roskzhu" style={{color:'#0F0F0F'}}>
+            <GitHubIcon style={{ fontSize: 22, marginRight: '45px', marginTop: '5px'  }}></GitHubIcon>
+          </a>
+          <a href="https://www.linkedin.com/in/rosanne-zhu" style={{color:'#0F0F0F'}}>
+            <LinkedInIcon style={{ fontSize: 27, marginTop: '5px' }}></LinkedInIcon>
+          </a>
+        </div>
+        <Filter className="flt_svg hide" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="flt_tag">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />  
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="flt_tag" />
+              <feComposite in="SourceGraphic" in2="flt_tag" operator="atop"/>
+            </filter>
+          </defs>
+        </Filter>
+      </ContainerRight>
+    </NavContainer>
   );
 };
 
-
-interface NavContainerProps {
-  isClicked: boolean;
-}
-
-const NavContainer = styled.div<NavContainerProps>`
-  color: ${({ isClicked }) => (isClicked ? '#651FFF' : 'initial')};
-  font-weight: ${({ isClicked }) => (isClicked ? 'bold' : 'initial')};
-  width: 60vw;
-  height: 70px;
-  transition: background 0.5s;
-  background-color: transparent;
-  margin-left: 0%;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
+const NavContainer = styled.div`
+  position: fixed;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  .link {
-    text-decoration: bold;
-  }
-  p {
-    font-family: 'Rubik', 
-    font-weight: 500;
-    font-size: 16px;
-    color: black;
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    cursor: pointer;
-    :hover {
-      font-weight: bold;
-      color: blue; 
-    }
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px; /* Adjust the border-radius to make the edges rounded */
+  top: 0;
+  margin-top: 30px;
+  width: 100vw;
+  z-index: 9999;
+  .hide {
+    display: none;
   }
 `;
 
+const ContainerRight = styled.div`
+  width: 22vw;
+  height: 40px;
+`;
 
-export default Nav;
+const ContainerLeft = styled.div`
+  width: 60vw;
+  height: 40px;
+`;
+
+const Filter = styled.svg`
+  visibility: hidden;
+`
+
+export default NavBar
