@@ -26,18 +26,21 @@ class About extends React.Component<{}, AboutState> {
       <h1>Driven by tech for social good, I'm drawn to impactful and collaborative work.</h1>
     );
     const two = (
-      <h2 style={{ fontFamily: 'Rubik, sans-serif' }}>
-        Currently, I have great interest in full-stack development, machine learning, and research.
+      <h2>
+        Currently, I have great interest in <span style={{ fontWeight: 'bold', color: 'blue' }}>full-stack</span> development, <span style={{ fontWeight: 'bold', color: 'blue' }}>machine learning</span>, and research.
       </h2>
     );
     const three = (
-      <p> Recently, I've been working with ... <br/>
+      <p> <span style={{ fontFamily: 'Karla, sans-serif', fontSize: '18px' }}>Recently, I've been working with ... </span><br/>
       <mark>Python</mark> {" "}
-      <mark>HTML & CSS</mark> {" "}
+      <mark>Tensorflow</mark> {" "}
+      <mark>OpenCV</mark> {" "}
+      <mark>Keras</mark> {" "}
       <mark>Node.js</mark> {" "}
       <mark>React.js</mark> {" "}
       <mark>Java</mark> {" "}
-      <mark>AWS</mark>
+      <mark>AWS</mark> {" "}
+      <mark>GCS</mark>
       </p>
     );
 
