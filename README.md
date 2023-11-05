@@ -35,8 +35,8 @@
 
 ## 🎨 next steps
 - add component animations and colouring
-- add more pages for contact
-- adjust home page sizing
+- review form functionality
+- multiple screen sizing
 
 
 View my Figma prototype <a href="https://www.figma.com/file/NZjTgi0xLD86zIzymeD7Ff/updated-port-(Copy)?type=design&node-id=0%3A1&mode=design&t=DLWlQEaS8LiLcfQC-1" target="_blank">here</a>.
