@@ -1,16 +1,22 @@
+
+#nav{
+  padding-bottom: -30px;
+}
+
 .primary {
   position: fixed;
   display: flex;
-  margin-left: -40px;
+  margin-left: 70px;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  /* width: 100vw; */
   z-index: 9999;
-  padding-top: 30px; /* Add the desired spacing on top */
-  /* background-color: white; */
-  /* background-color: hsla(0, 0%, 100%, 0.793); */
-  /* backdrop-filter: blur(0.1rem); */
+  margin-top: 20px; 
+  /* padding-top: 15px;  */
   transition: background-color 0.3s;
+  border-radius: 8px;
+  border: 0.7px solid black;
+  height: 38px;
 }
 .primary.transparent {
   background-color: transparent;
@@ -45,16 +51,7 @@ ul {
 .primary-navigation li {
   width: 180px;
   cursor: pointer;
-}
-
-.primary-navigation li img {
-  min-width: 200px;
-  width: 30%;
-  cursor: pointer;
-}
-
-.primary-navigation li img:hover {
-  filter: brightness(1.1);
+  height: 53px;
 }
 
 .mobile-nav-toggle {
@@ -79,7 +76,7 @@ ul {
     backdrop-filter: blur(0.1rem);
     transition: transform 0.3s ease-out;
     --gap: 20%;
-
+    
     transform: translateX(100%);
   }
 

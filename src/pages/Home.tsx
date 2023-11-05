@@ -1,12 +1,25 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import Typewriter from 'typewriter-effect';
 import '../styles/Home.css';
 
 const Home: React.FC = () => {
   return (
     <HeaderContainer id="home">
       <TextContainer>
-        <h1>Hi! I'm Rosanne.</h1>
+        <h1>          <Typewriter 
+            onInit={(typewriter) => {
+              typewriter.typeString('Hi! I\'m Rosanne.')
+                .callFunction(() => {
+                  console.log('String typed out!');
+                })
+                .pauseFor(10000)
+                .callFunction(() => {
+                  console.log('All strings were deleted');
+                })
+                .start();
+            }}
+          /></h1>
         <h2>I’m a full stack software engineer developing digital solutions for complex problems.</h2>
         <GridContainer>
           <h2>currently</h2>

@@ -28,6 +28,7 @@ const Nav: React.FC = () => {
   }, [isTop]);
 
   return (
+    <div>
     <header className={`primary ${isTop ? 'transparent' : 'white'}`}>
       <button onClick={toggleNav} className="mobile-nav-toggle" aria-controls="primary-naviation" aria-expanded={visible}>
         <span className="sr-only">Menu</span>
@@ -74,8 +75,41 @@ const Nav: React.FC = () => {
           </li>
         </ul>
         </NavContainer>
+        
       </nav>
     </header>
+    {/* <header className={`primary ${isTop ? 'transparent' : 'white'}`} style={{marginLeft:'850px'}}>
+      <button onClick={toggleNav} className="mobile-nav-toggle" aria-controls="primary-naviation" aria-expanded={visible}>
+        <span className="sr-only">Menu</span>
+      </button>
+
+      <nav>
+        <NavContainer isClicked={isClicked}>
+        <ul id="primary-navigation" className={`primary-navigation ${visible ? 'visible' : ''}`}>
+          <li>
+            <ScrollLink
+              activeClass="active" to="home"
+              spy={true} smooth={true}>
+              <p>
+              HOME  
+            </p>
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              activeClass="active" to="footer"
+              spy={true} smooth={true}>
+              <p>
+              CONTACT
+            </p>
+            </ScrollLink>
+          </li>
+        </ul>
+        </NavContainer>
+        
+      </nav>
+    </header> */}
+    </div>
   );
 };
 
@@ -87,7 +121,7 @@ interface NavContainerProps {
 const NavContainer = styled.div<NavContainerProps>`
   color: ${({ isClicked }) => (isClicked ? '#651FFF' : 'initial')};
   font-weight: ${({ isClicked }) => (isClicked ? 'bold' : 'initial')};
-  width: 75vw;
+  width: 60vw;
   height: 70px;
   transition: background 0.5s;
   background-color: transparent;
