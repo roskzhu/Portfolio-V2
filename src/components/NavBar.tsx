@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from '@emotion/styled';
 import { Link as ScrollLink } from 'react-scroll';
 import '../styles/Navbar.css';
@@ -11,8 +11,24 @@ const Nav: React.FC = () => {
     setVisible(!visible);
   };
 
+  const [isTop, setIsTop] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const top = window.scrollY < 100;
+      if (top !== isTop) {
+        setIsTop(top);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [isTop]);
+
   return (
-    <header className="primary">
+    <header className={`primary ${isTop ? 'transparent' : 'white'}`}>
       <button onClick={toggleNav} className="mobile-nav-toggle" aria-controls="primary-naviation" aria-expanded={visible}>
         <span className="sr-only">Menu</span>
       </button>
@@ -87,7 +103,7 @@ const NavContainer = styled.div<NavContainerProps>`
   p {
     font-family: 'Rubik', 
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     color: black;
     display: flex;
     align-items: left;

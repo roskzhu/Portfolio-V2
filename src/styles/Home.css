@@ -1,3 +1,7 @@
+#home{
+  z-index: 10;
+}
+
 .home-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(300px, 1fr));

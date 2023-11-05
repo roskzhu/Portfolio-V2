@@ -7,9 +7,18 @@
   width: 100vw;
   z-index: 9999;
   padding-top: 30px; /* Add the desired spacing on top */
-  background-color: white;
+  /* background-color: white; */
   /* background-color: hsla(0, 0%, 100%, 0.793); */
   /* backdrop-filter: blur(0.1rem); */
+  transition: background-color 0.3s;
+}
+.primary.transparent {
+  background-color: transparent;
+}
+.primary.white {
+  /* background-color: white; */
+  background-color: hsla(0, 0%, 100%, 0.593);
+  backdrop-filter: blur(0.1rem);
 }
 
 ul {
