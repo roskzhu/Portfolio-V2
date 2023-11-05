@@ -17,7 +17,7 @@ body::-webkit-scrollbar {
 
 h1 {
   font-family: "Rubik", sans-serif;
-  font-size: 27px;
+  font-size: 24px;
   font-weight: 400;
   color: black;
   text-align: left;
@@ -25,8 +25,8 @@ h1 {
 }
 
 h2 {
-  font-family: "Rubik", sans-serif !important;
-  font-size: 22px;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
   font-weight: 400;
   color: black;
   text-align: left;
@@ -42,7 +42,7 @@ h2 mark {
 
 p {
   font-family: "Rubik", sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
   color: black;
   text-align: left;
