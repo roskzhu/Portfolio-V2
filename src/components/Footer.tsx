@@ -2,7 +2,7 @@ import React, { useState, useRef, FormEvent } from 'react';
 import { string, z }  from "zod";
 import FadeIn from "../components/FadeIn";
 import '../styles/Footer.css';
-import { useForm, SubmitHandler  } from 'react-hook-form';
+import { useForm  } from 'react-hook-form';
 import { zodResolver } from "@hookform/resolvers/zod";
 import EmailRoundedIcon from "@material-ui/icons/EmailRounded";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
@@ -36,11 +36,11 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
     }
   };
   
-  const { formState, reset  } = useForm<FormValues>({ resolver: zodResolver(schema) });
+  const { formState  } = useForm<FormValues>({ resolver: zodResolver(schema) });
 
   const { errors } = formState;
 
-  const [successMessage, setSuccessMessage] = useState('');
+  const [successMessage] = useState('');
 
   return (
     <footer className='foot' id='footer'>
