@@ -104,7 +104,7 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
                 name="message"
                 placeholder='Message'
                 cols={40}
-                rows={8}
+                rows={10}
               />
               <div className='error'>{errors.message?.message}</div>
             </div>
