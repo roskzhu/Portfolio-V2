@@ -35,7 +35,6 @@
 
 ## 🎨 next steps
 - add component animations and colouring
-- review form functionality
 - multiple screen sizing
 
 
