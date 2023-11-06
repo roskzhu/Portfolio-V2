@@ -30,6 +30,10 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
         .then((result) => {
           console.log(result.text);
           console.log("Message sent!");
+          setSuccessMessage('Message sent successfully!');
+          if (form.current) {
+            form.current.reset(); // Reset the form after the message is sent
+          }
         }, (error) => {
           console.log(error.text);
         });
@@ -40,7 +44,7 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
 
   const { errors } = formState;
 
-  const [successMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState<string>('');
 
   return (
     <footer className='foot' id='footer'>
