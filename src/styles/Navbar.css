@@ -50,7 +50,7 @@
   border-radius: 8px;
   border: 1px solid black;
   height: 38px;
-  margin-left: 15px;
+  /* margin-left: 15px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,7 +95,7 @@
 }
 .nav.white {
   background-color: hsla(0, 0%, 100%, 0.593);
-  backdrop-filter: blur(0.1rem);
+  backdrop-filter: blur(0.6rem);
 }
 
 ul {
