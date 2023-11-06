@@ -2,6 +2,7 @@ import { Component } from "react";
 import "../styles/Projects.css";
 import FadeIn from "./FadeIn";
 import ExternalLinks from "./ExternalLinks";
+import { Fade } from "@material-ui/core";
 
 interface ProjectsState {
   expanded: boolean;
@@ -61,10 +62,13 @@ class Projects extends Component<{}, ProjectsState> {
     return (
       <div style={{ paddingBottom: '80px'}} id="projects" >
       <div className="section-header">
+        <FadeIn>
         <span className="section-title">./ software-creations</span>
+        </FadeIn>
       </div>
       <div>
         <div className="project-container" style={{ width: "850px" }}>
+        <FadeIn>
           <ul className="projects-grid">
             {Object.keys(projects).map((key, i) => (
               <FadeIn delay={`${i + 1}00ms`} key={i}>
@@ -92,6 +96,7 @@ class Projects extends Component<{}, ProjectsState> {
               </FadeIn>
             ))}
           </ul>
+          </FadeIn>
         </div>
       </div>
       </div>

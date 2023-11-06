@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { string, z }  from "zod";
+import FadeIn from "../components/FadeIn";
 import '../styles/Footer.css';
 import { useForm, SubmitHandler  } from 'react-hook-form';
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -37,12 +38,15 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
       <div className='footer-container'>
         <div className='footer-text'>
           <div className='footer-title'>
+          <FadeIn>
             <p>LET'S BUILD SOMETHING CREATIVE.</p>
             <p style={{lineHeight:'1.3'}}>Have a question? Want to chat? <br/> Feel free to send me a message.</p> 
             <p style={{paddingTop:'230px'}}>Resume is available upon request.</p>
-          </div>
+          </FadeIn>   
+        </div>
           <div>
             <div className="links-container" style={{color:'white'}}>
+              <FadeIn delay={`200ms`}>
               <a href="mailto:rosannezhu@gmail.com">
                 <EmailRoundedIcon style={{ fontSize: 20, marginRight: '5px'  }}></EmailRoundedIcon>
               </a>
@@ -52,10 +56,12 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
               <a href="https://www.linkedin.com/in/rosanne-zhu">
                 <LinkedInIcon style={{ fontSize: 21 }}></LinkedInIcon>
               </a>
+              </FadeIn>   
             </div>  
           </div>
         </div>
         <form className="connect-form" onSubmit={handleSubmit(handleSave)}>
+          <FadeIn delay={`500ms`}>
             <div className='name-div'>
               <input
                 className='name-input'
@@ -87,7 +93,8 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
             
             <button className='connect-button' type="submit">Connect</button>
             <p className='success'>{successMessage && <p>{successMessage}</p>}</p>
-          </form>         
+            </FadeIn>   
+          </form>      
       </div>
     </footer>
   )
