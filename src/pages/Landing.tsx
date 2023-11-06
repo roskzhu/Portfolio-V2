@@ -45,7 +45,7 @@ const GradientCircle = styled.div`
   animation: rotate 6s linear infinite;
 
   background-size: 200% 200%;
-  transform-origin: 70% 80% 0;
+  transform-origin: 60% 80% 0;
 
   @keyframes rotate {
     0% {
