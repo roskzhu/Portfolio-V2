@@ -37,8 +37,8 @@ const Home: React.FC = () => {
           <GridContainer>
             <h2>currently</h2>
             <h3>studying</h3>
-            <p>a SWE intern @ <mark>BMO Financial Group</mark></p>
-            <h1>CS & AI @ <mark>uWaterloo</mark></h1>
+            <p>a Software Engineer Intern <br/>  @ <mark>BMO Financial Group</mark></p>
+            <h1>Computer Science & Artifical Intelligence <br/> @ <mark>uWaterloo</mark></h1>
           </GridContainer>
         </DescContainer>
         </div>
@@ -116,15 +116,15 @@ const GridContainer = styled.div`
     color: black;
     width: 70%;
     margin-left: 20px;
-    margin-top: 0px;
+    margin-top: -11px;
     margin-right: 100%;
+    line-height: 1.4;
   }
   > p mark {
     background-color: #DAE2F5;
     color: blue;
     border-radius: 6px;
     padding: 0px 5px;
-    line-height: 1.3;
   }
   > h1 {
     z-index: 1;
@@ -134,16 +134,16 @@ const GridContainer = styled.div`
     font-weight: 400;
     color: black;
     width: 70%;
-    margin-left: -5%;
-    margin-top: 0px;
+    margin-left: -18%;
+    margin-top: -11px;
     margin-right: 100%;
+    line-height: 1.4;
   }
   > h1 mark {
     background-color: #DAE2F5;
     color: blue;
     border-radius: 6px;
     padding: 0px 5px;
-    line-height: 1.3;
   }
   > h2 {
     z-index: 1;
@@ -167,7 +167,7 @@ const GridContainer = styled.div`
     font-style: italic;
     color: black;
     width: 70%;
-    margin-left: -5%;
+    margin-left: -18%;
     margin-bottom: 0; /* Remove the spacing underneath the text */
     margin-right: 100%;
   }

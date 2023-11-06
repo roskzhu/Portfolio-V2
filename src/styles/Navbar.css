@@ -167,7 +167,7 @@ ul {
   max-width: 12px; /* Set the maximum width of the image */
 }
 
-.arrow-image:hover {
+#icon-navigation:hover .arrow-image {
   max-width: 14px; /* Set the maximum width of the image */
   content: url("../../public/assets/arrowBold.svg"); /* Set the path to the new image */
 }

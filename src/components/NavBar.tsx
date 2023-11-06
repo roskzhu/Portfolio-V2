@@ -6,7 +6,6 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import FadeIn from "./FadeIn";
 import '../styles/Navbar.css';
-// import '../../public/assets/arrow.svg'
 
 const NavBar: React.FC = () => {
   const [visible] = useState(false);
@@ -32,16 +31,16 @@ const NavBar: React.FC = () => {
       <ContainerIcon>
       <div className={`home-nav ${isTop ? 'transparent' : 'white'}`}>
         <ul id="icon-navigation" className={`icon-navigation ${visible ? 'visible' : ''}`}>          
-          <ScrollLink
+            <li>
+            <ScrollLink
             activeClass="active" to="home"
             spy={true} smooth={true} offset={-100}>
-            <li>
               <img src={"/assets/arrow.svg"}  style={{  marginTop: '6px' }}
                 className="arrow-image"
                 id="arrow-image"
                 />
-            </li>
             </ScrollLink>
+            </li>
           </ul>
         </div>
       </ContainerIcon>
