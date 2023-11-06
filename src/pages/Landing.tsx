@@ -4,13 +4,8 @@ import Home from './Home';
 import About from './About';
 import Experience from '../components/Experience';
 import Projects from '../components/Projects';
-import Footer from "../components/Footer";
 
 const Landing: React.FC = () => {
-  const handleSave = (values: any) => {
-    console.log({ values });
-  };
-  
   return (
     <LandingContainer>
       <GradientCircle style={{ marginTop: '95px', background: '#BBC6FF', animationDelay: '1s' }} />
@@ -22,7 +17,6 @@ const Landing: React.FC = () => {
       <Experience />
       <Projects />
       <GradientCircle style={{ width: '40%', height: '5%', marginTop: '2300px', marginLeft: '25%', background: '#9EB4FF',  filter: 'blur(300px)', animationDelay: '1.25s' }}/>        
-      {/* <Footer onSave={handleSave} /> */}
     </LandingContainer>
   );
 };
