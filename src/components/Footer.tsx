@@ -92,7 +92,10 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
             </div>
             
             <button className='connect-button' type="submit">Connect</button>
-            <p className='success'>{successMessage && <p>{successMessage}</p>}</p>
+            <p className='success' style={{ color: 'white' }}>
+              {successMessage && 
+              <p style={{ color: 'white', fontSize: '15px', fontFamily:'Karla', letterSpacing:'1px' }}>{successMessage}</p>}
+            </p>
             </FadeIn>   
           </form>      
       </div>
