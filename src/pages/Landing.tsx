@@ -42,7 +42,7 @@ const GradientCircle = styled.div`
   margin-right: 0%;
   position: absolute;
   z-index: -1;
-  animation: rotate 6s linear infinite;
+  animation: rotate 8s linear infinite;
 
   background-size: 200% 200%;
   transform-origin: 60% 80% 0;
