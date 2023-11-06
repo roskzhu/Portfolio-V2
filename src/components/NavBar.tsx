@@ -29,6 +29,7 @@ const NavBar: React.FC = () => {
   return (
     <NavContainer>
       <ContainerLeft>
+      <div style={{backdropFilter:'blur(0.1rem)'}}>
       <FadeIn>
         <div className={`left-nav ${isTop ? 'transparent' : 'white'}`}>
         <ul id="primary-navigation" className={`primary-navigation ${visible ? 'visible' : ''}`}>
@@ -80,8 +81,10 @@ const NavBar: React.FC = () => {
           </defs>
         </Filter>
       </FadeIn>
+      </div>
     </ContainerLeft>
     <ContainerRight>
+    <div style={{backdropFilter:'blur(0.1rem)', marginLeft:'15px'}}>
       <FadeIn delay={`300ms`}>
       <div className={`right-nav ${isTop ? 'transparent' : 'white'}`}>
           <a href="mailto:rosannezhu@gmail.com" style={{color:'#0F0F0F'}}>
@@ -104,6 +107,7 @@ const NavBar: React.FC = () => {
           </defs>
         </Filter>
         </FadeIn>
+        </div>
       </ContainerRight>
     </NavContainer>
   );
