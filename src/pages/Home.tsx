@@ -26,13 +26,13 @@ const Home: React.FC = () => {
           />
           </FadeIn>
         </h1>
-        <FadeIn delay={`600ms`}>
-          <h2 style={{fontSize:'43px', color:'#202020', marginTop:'0px', letterSpacing: '1px'}}>
+          <h2>
+          <FadeIn delay={`600ms`}>
           I’m a full stack software engineer <br/> developing digital solutions for complex <br/> problems.
+          </FadeIn>
           </h2>
-        </FadeIn>
         <FadeIn delay={`900ms`}>
-          <div style={{marginTop:'-30px'}}>
+          <div style={{marginTop:'0px'}}>
         <DescContainer>
           <GridContainer>
             <h2>currently</h2>
@@ -68,7 +68,7 @@ const TextContainer = styled.div`
   
   > h1 {
     font-family: 'Karla', sans-serif; /* Adding the Google Font 'Karla' */
-    font-size: 80px;
+    font-size: 88px;
     font-weight: 400;
     text-align: left;
     color: black;
@@ -81,7 +81,7 @@ const TextContainer = styled.div`
   }
   > h2 {
     font-family: 'Karla', sans-serif; 
-    font-size: 43px !important;
+    font-size: 45px !important;
     font-weight: 400;
     text-align: left;
     color: #202020;

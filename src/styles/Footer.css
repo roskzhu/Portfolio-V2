@@ -49,10 +49,10 @@
 .footer-text p:first-of-type {
   /* margin-left: 20px; */
   font-family: "Karla";
-  font-size: 17px;
+  font-size: 28px;
   line-height: 1;
   letter-spacing: 4px; /* Adjust the value as needed */
-  margin-top: 20%;
+  margin-top: 17%;
 }
 .footer-text p {
   font-family: "Karla";

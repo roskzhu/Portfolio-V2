@@ -8,9 +8,9 @@ import Projects from '../components/Projects';
 const Landing: React.FC = () => {
   return (
     <LandingContainer>
-      <GradientCircle style={{ marginTop: '95px', background: '#BBC6FF', width: '20%', animationDelay: '1s' }} />
-      <GradientCircle style={{ marginTop: '110px', marginLeft: '250px', background: '#FFBBF0', animationDelay: '3s' }} />
-      <GradientCircle style={{ marginTop: '-30px', marginLeft: '700px', animationDelay: '0.5s' }} />
+      <GradientCircle style={{ marginTop: '-100px', marginLeft: '-10%', background: '#BBC6FF', height: '15%', animationDelay: '1s' }} />
+      <GradientCircle style={{ marginTop: '-100px', marginLeft: '25%', background: '#FFBBF0', animationDelay: '3s' }} />
+      <GradientCircle style={{ marginTop: '-300px', marginLeft: '50%', animationDelay: '0.5s' }} />
       <Home/>    
       {/* <GradientCircle style={{ width: '10%', height: '10%', marginTop: '600px', marginLeft: '790px', background: '#FFB69E', animationDelay: '0.25s' }}/>         */}
       <About/>
@@ -29,14 +29,14 @@ const LandingContainer = styled.div`
 `;
 
 const GradientCircle = styled.div`
-  width: 15%;
-  height: 15%;
+  width: 30%;
+  height: 20%;
   transform: rotate(-0.167deg);
   flex-shrink: 0;
   border-radius: 316.616px;
   border: 1px solid #000;
   background: #FFE977;
-  filter: blur(200px);
+  filter: blur(400px);
   margin-top: 25%;
   margin-left: 0%;
   margin-right: 0%;
