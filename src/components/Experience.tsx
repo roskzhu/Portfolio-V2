@@ -24,13 +24,15 @@ class Experience extends React.Component<{}, ExperienceState> {
   }
   render() {
     return (
-      <div id="experience">
+      <div id="experience" >
+        <div className="experience-container">
         <FadeInSection>
           <div className="section-header" style={{ paddingBottom: '35px'}}>
             <span className="section-title">./ experience</span>
           </div>
           <Work></Work>
         </FadeInSection>
+        </div>
       </div>
     );
   }

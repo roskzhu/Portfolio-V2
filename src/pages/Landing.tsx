@@ -4,19 +4,25 @@ import Home from './Home';
 import About from './About';
 import Experience from '../components/Experience';
 import Projects from '../components/Projects';
+import Footer from "../components/Footer";
 
 const Landing: React.FC = () => {
+  const handleSave = (values: any) => {
+    console.log({ values });
+  };
+  
   return (
     <LandingContainer>
-      <GradientCircle style={{ marginTop: '3%', background: '#BBC6FF', animationDelay: '1s' }} />
-      <GradientCircle style={{ marginTop: '7%', marginLeft: '20%', background: '#FFBBF0', animationDelay: '0.75s' }} />
-      <GradientCircle style={{ marginTop: '-6%', marginLeft: '45%', animationDelay: '0.5s' }} />
+      <GradientCircle style={{ marginTop: '95px', background: '#BBC6FF', animationDelay: '1s' }} />
+      <GradientCircle style={{ marginTop: '110px', marginLeft: '250px', background: '#FFBBF0', animationDelay: '0.75s' }} />
+      <GradientCircle style={{ marginTop: '-30px', marginLeft: '550px', animationDelay: '0.5s' }} />
       <Home/>    
-      <GradientCircle style={{ width: '10%', height: '10%', marginTop: '40%', marginLeft: '790px', background: '#FFB69E', animationDelay: '0.25s' }}/>        
+      <GradientCircle style={{ width: '10%', height: '10%', marginTop: '600px', marginLeft: '790px', background: '#FFB69E', animationDelay: '0.25s' }}/>        
       <About/>
       <Experience />
       <Projects />
-      <GradientCircle style={{ width: '40%', height: '5%', marginTop: '190%', marginLeft: '25%', background: '#9EB4FF',  filter: 'blur(300px)', animationDelay: '1.25s' }}/>        
+      <GradientCircle style={{ width: '40%', height: '5%', marginTop: '2300px', marginLeft: '25%', background: '#9EB4FF',  filter: 'blur(300px)', animationDelay: '1.25s' }}/>        
+      {/* <Footer onSave={handleSave} /> */}
     </LandingContainer>
   );
 };

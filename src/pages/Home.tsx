@@ -23,12 +23,14 @@ const Home: React.FC = () => {
           />
         </h1>
         <h2>I’m a full stack software engineer <br/> developing digital solutions for complex <br/> problems.</h2>
-        <GridContainer>
-          <h2>currently</h2>
-          <h3>studying</h3>
-          <p>a SWE intern @ <mark>BMO Financial Group</mark></p>
-          <h1>CS & AI @ <mark>uWaterloo</mark></h1>
-        </GridContainer>
+        <DescContainer>
+          <GridContainer>
+            <h2>currently</h2>
+            <h3>studying</h3>
+            <p>a SWE intern @ <mark>BMO Financial Group</mark></p>
+            <h1>CS & AI @ <mark>uWaterloo</mark></h1>
+          </GridContainer>
+        </DescContainer>
       </TextContainer>
 
     </HeaderContainer>
@@ -41,6 +43,7 @@ const HeaderContainer = styled.main`
   overflow: hidden;
   display: flex;
   width: 1000px
+  
 `;
 
 const TextContainer = styled.div`
@@ -50,7 +53,7 @@ const TextContainer = styled.div`
   flex-direction: column;
   z-index: 10;
   width: 100%;
-  margin-left: -15%;
+  
   > h1 {
     font-family: 'Karla', sans-serif; /* Adding the Google Font 'Karla' */
     font-size: 80px;
@@ -60,7 +63,7 @@ const TextContainer = styled.div`
     width: 70vw;
     margin-top: -25px;
     margin-bottom: 0; /* Remove the spacing underneath the text */
-    margin-left: 15%;
+    
     margin-right: 10%;
     letter-spacing: 1px;
   }
@@ -73,21 +76,23 @@ const TextContainer = styled.div`
     width: 70vw;
     margin-top: 0px;
     margin-bottom: 0; 
-    margin-left: 15%;
+    
     margin-right: 10%;
     letter-spacing: 1px;
   }
 `;
 
+const DescContainer = styled.div`
+  width: 1000px;
+`
+
 const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr; /* Set grid template rows to create a 2x2 grid */
   gap: 20px; /* Adjust the gap as needed */
   grid-row-gap: 0; /* Remove the space between rows */
-  margin-left: 0%;
   
-  top: 300px;
   flex-direction: column;
   z-index: 10;
   > p {
@@ -98,7 +103,7 @@ const GridContainer = styled.div`
     font-weight: 400;
     color: black;
     width: 70%;
-    margin-left: 25%;
+    margin-left: 20px;
     margin-top: 0px;
     margin-right: 100%;
   }
@@ -117,7 +122,7 @@ const GridContainer = styled.div`
     font-weight: 400;
     color: black;
     width: 70%;
-    margin-left: -20%;
+    margin-left: -5%;
     margin-top: 0px;
     margin-right: 100%;
   }
@@ -137,7 +142,7 @@ const GridContainer = styled.div`
     font-style: italic;
     color: black;
     width: 70%;
-    margin-left: 25%;
+    margin-left: 20px;
     margin-bottom: 0; /* Remove the spacing underneath the text */
     margin-right: 100%;
   }
@@ -150,7 +155,7 @@ const GridContainer = styled.div`
     font-style: italic;
     color: black;
     width: 70%;
-    margin-left: -20%;
+    margin-left: -5%;
     margin-bottom: 0; /* Remove the spacing underneath the text */
     margin-right: 100%;
   }
