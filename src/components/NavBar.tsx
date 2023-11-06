@@ -7,7 +7,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import '../styles/Navbar.css';
 
 const NavBar: React.FC = () => {
-  const [visible, setVisible] = useState(false);
+  const [visible] = useState(false);
 
   const [isTop, setIsTop] = useState(true);
 
