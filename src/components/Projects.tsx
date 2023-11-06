@@ -2,7 +2,6 @@ import { Component } from "react";
 import "../styles/Projects.css";
 import FadeIn from "./FadeIn";
 import ExternalLinks from "./ExternalLinks";
-import { Fade } from "@material-ui/core";
 
 interface ProjectsState {
   expanded: boolean;
