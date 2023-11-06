@@ -36,17 +36,11 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
     }
   };
   
-  const { register, handleSubmit, formState, reset  } = useForm<FormValues>({ resolver: zodResolver(schema) });
+  const { formState, reset  } = useForm<FormValues>({ resolver: zodResolver(schema) });
 
   const { errors } = formState;
 
   const [successMessage, setSuccessMessage] = useState('');
-
-  const handleSave: SubmitHandler<FormValues> = (formValues) => {
-    onSave(formValues);
-    reset();
-    setSuccessMessage('Message submitted!');
-  }
 
   return (
     <footer className='foot' id='footer'>
