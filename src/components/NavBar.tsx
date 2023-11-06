@@ -6,6 +6,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import FadeIn from "./FadeIn";
 import '../styles/Navbar.css';
+// import '../../public/assets/arrow.svg'
 
 const NavBar: React.FC = () => {
   const [visible] = useState(false);
@@ -28,35 +29,52 @@ const NavBar: React.FC = () => {
 
   return (
     <NavContainer>
+      <ContainerIcon>
+      <div className={`home-nav ${isTop ? 'transparent' : 'white'}`}>
+        <ul id="icon-navigation" className={`icon-navigation ${visible ? 'visible' : ''}`}>          
+          <ScrollLink
+            activeClass="active" to="home"
+            spy={true} smooth={true} offset={-100}>
+            <li>
+              <img src={"/assets/arrow.svg"}  style={{  marginTop: '6px' }}
+                className="arrow-image"
+                id="arrow-image"
+                />
+            </li>
+            </ScrollLink>
+          </ul>
+        </div>
+      </ContainerIcon>
       <ContainerLeft>
       <div style={{backdropFilter:'blur(0.1rem)'}}>
       <FadeIn>
+      
         <div className={`left-nav ${isTop ? 'transparent' : 'white'}`}>
         <ul id="primary-navigation" className={`primary-navigation ${visible ? 'visible' : ''}`}>
-        <li>
-            <ScrollLink
-              activeClass="active" to="home"
-              spy={true} smooth={true}>
-              <p>
-              HOME  
-            </p>
-            </ScrollLink>
-          </li>
           <li>
             <ScrollLink
               activeClass="active" to="about"
-              spy={true} smooth={true} offset={-130}>
+              spy={true} smooth={true} offset={-100}>
               <p>
-              ABOUT
+              ./ about
             </p>
             </ScrollLink>
           </li>
           <li>
             <ScrollLink
               activeClass="active" to="experience"
-              spy={true} smooth={true} offset={-130}>
+              spy={true} smooth={true} offset={-100}>
+              <p style={{marginLeft:'-45px'}}>
+              ./ experience
+            </p>
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              activeClass="active" to="projects"
+              spy={true} smooth={true} offset={-100}>
               <p>
-              WORK
+              ./ software-creations
             </p>
             </ScrollLink>
           </li>
@@ -65,7 +83,7 @@ const NavBar: React.FC = () => {
               activeClass="active" to="footer"
               spy={true} smooth={true}>
               <p>
-              CONTACT
+              ./ contact
             </p>
             </ScrollLink>
           </li>
@@ -127,13 +145,18 @@ const NavContainer = styled.div`
   }
 `;
 
-const ContainerRight = styled.div`
-  width: 22vw;
+const ContainerIcon = styled.div`
+  width: 3vw;
   height: 40px;
 `;
 
 const ContainerLeft = styled.div`
-  width: 63vw;
+  width: 55vw;
+  height: 40px;
+`;
+
+const ContainerRight = styled.div`
+  width: 22vw;
   height: 40px;
 `;
 

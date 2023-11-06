@@ -3,8 +3,7 @@ body {
   padding: 0;
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
-  /* background-color: linear-gradient(268deg, #FFF 1%, #FDF7EA 132.87%); */
-  background: linear-gradient(268deg, #FFF 0.94%, #F2F1EE 134.38%);
+  background: linear-gradient(267deg, #FFF 1.53%, #F2F1EE 108.66%);
 }
 
 body::-webkit-scrollbar {

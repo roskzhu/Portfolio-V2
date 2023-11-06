@@ -2,8 +2,51 @@
   padding-bottom: -30px;
 }
 
+.home-nav{
+  width: 3vw;
+  height: 38px;
+  margin-left: -15px;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 18px;
+  border: 1px solid black;
+  transition: background-color 0.3s;
+  height: 38px;
+}
+.home-nav.transparent {
+  background-color: transparent;
+}
+.home-nav.white {
+  background-color: hsla(0, 0%, 98%, 0.8);
+  backdrop-filter: blur(0.6rem) !important;
+}
+.home-nav.link {
+  text-decoration: none;
+} 
+.home-nav p {
+  margin-top: 32px;
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.home-nav p:hover {
+  font-weight: bold;
+  color: blue; 
+}
+.home-nav li {
+  cursor: pointer;
+}
+
 .left-nav{
-  width: 63vw;
+  /* margin-left: 15px; */
+  width: 55vw;
   height: 38px;
   background-color: white;
   display: flex;
@@ -76,6 +119,14 @@
   justify-content: center;
   cursor: pointer;
 }
+.right-nav.transparent a:hover {
+  color: rgb(80, 80, 80) !important;
+  transform: translateY(-1px);
+}
+.right-nav.white a:hover {
+  color: rgb(80, 80, 80) !important;
+  transform: translateY(-1px);
+}
 
 .nav {
   width: 60vw;
@@ -101,6 +152,26 @@ ul {
   list-style: none;
 }
 
+.icon-navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.icon-navigation li {
+  cursor: pointer;
+}
+
+.arrow-image {
+  transition: all 0.3s; /* Separate the transitions with a comma */
+  max-width: 12px; /* Set the maximum width of the image */
+}
+
+.arrow-image:hover {
+  max-width: 14px; /* Set the maximum width of the image */
+  content: url("../../public/assets/arrowBold.svg"); /* Set the path to the new image */
+}
+
 .primary-navigation {
   display: flex;
   margin: 0;
@@ -108,7 +179,7 @@ ul {
 }
 
 .primary-navigation li {
-  width: 190px;
+  width: 173px;
   cursor: pointer;
 }
 
