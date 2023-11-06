@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, FormEvent } from 'react';
 import { string, z }  from "zod";
 import FadeIn from "../components/FadeIn";
 import '../styles/Footer.css';
@@ -7,6 +7,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import EmailRoundedIcon from "@material-ui/icons/EmailRounded";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import emailjs from '@emailjs/browser';
 
 const schema = z.object({
   name: string().min(1, { message: 'Name is required.' }),
@@ -21,6 +22,20 @@ interface FormValues {
 }
 
 const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }> = ({ onSave, user = {} }) => {
+  const form = useRef<HTMLFormElement>(null);
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if(form.current) {
+      emailjs.sendForm('service_4ur4xxx', 'template_vsc4zeh', form.current, 'OorNK-M-bTrfxrzhv')
+        .then((result) => {
+          console.log(result.text);
+          console.log("Message sent!");
+        }, (error) => {
+          console.log(error.text);
+        });
+    }
+  };
+  
   const { register, handleSubmit, formState, reset  } = useForm<FormValues>({ resolver: zodResolver(schema) });
 
   const { errors } = formState;
@@ -60,13 +75,15 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
             </div>  
           </div>
         </div>
-        <form className="connect-form" onSubmit={handleSubmit(handleSave)}>
+        <form className="connect-form" ref={form} onSubmit={sendEmail}>
           <FadeIn delay={`500ms`}>
             <div className='name-div'>
               <input
                 className='name-input'
+                type="text"
+                id="name"
+                name="name" 
                 placeholder='Name'
-                {...register('name')}
               />
               <div className='error'>{errors.name?.message}</div>
             </div>
@@ -74,8 +91,10 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
             <div className='email-div'>
               <input
                 className='email-input'
+                type="email"
+                id="email"
+                name="email"
                 placeholder='Email'
-                {...register('email')}
               />
               <div className='error'>{errors.email?.message}</div>
             </div>
@@ -83,10 +102,11 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
             <div className='message-div'>
               <textarea
                 className='message-input'
+                id="message"
+                name="message"
                 placeholder='Message'
                 cols={40}
                 rows={8}
-                {...register('message')}
               />
               <div className='error'>{errors.message?.message}</div>
             </div>
