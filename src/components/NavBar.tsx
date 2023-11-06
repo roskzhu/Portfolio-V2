@@ -8,11 +8,6 @@ import '../styles/Navbar.css';
 
 const NavBar: React.FC = () => {
   const [visible, setVisible] = useState(false);
-  const [isClicked] = useState(false);
-
-  const toggleNav = () => {
-    setVisible(!visible);
-  };
 
   const [isTop, setIsTop] = useState(true);
 
