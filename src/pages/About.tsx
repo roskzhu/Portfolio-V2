@@ -23,7 +23,7 @@ class About extends React.Component<{}, AboutState> {
   }
   render() {
     const one = (
-      <h1>Driven by tech for social good, I'm drawn to impactful and collaborative work.</h1>
+      <h1 style={{paddingTop:'15px'}}>Driven by tech for social good, I'm drawn to impactful and collaborative work.</h1>
     );
     const two = (
       <h2>

@@ -66,7 +66,7 @@ class Projects extends Component<{}, ProjectsState> {
         </FadeIn>
       </div>
       <div>
-        <div className="project-container" style={{ width: "850px" }}>
+        <div className="project-container" style={{ width: "850px", paddingTop:'10px' }}>
         <FadeIn>
           <ul className="projects-grid">
             {Object.keys(projects).map((key, i) => (

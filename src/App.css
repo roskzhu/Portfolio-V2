@@ -3,6 +3,8 @@ body {
   padding: 0;
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
+  /* background-color: linear-gradient(268deg, #FFF 1%, #FDF7EA 132.87%); */
+  background: linear-gradient(268deg, #FFF 0.94%, #F2F1EE 134.38%);
 }
 
 body::-webkit-scrollbar {
@@ -42,9 +44,12 @@ body::-webkit-scrollbar {
 .section-title {
   font-family: "Karla", sans-serif;
   color: black;
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 600;  /* bold */
-  letter-spacing: 2px; /* Adjust this value to increase the letter spacing */
+  letter-spacing: 1px; /* Adjust this value to increase the letter spacing */
+  /* text-decoration: underline; */
+  border-bottom: 5px solid black;
+  /* padding-bottom: 5px; */
 }
 
 .App-header {
