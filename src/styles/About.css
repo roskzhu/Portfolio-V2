@@ -89,6 +89,7 @@ p mark {
   font-size: 22px;
   text-align: justify;
   margin: 0;
+  width: 500px;
 }
 
 .about-description a,
