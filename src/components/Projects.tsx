@@ -59,7 +59,7 @@ class Projects extends Component<{}, ProjectsState> {
         };
 
     return (
-      <div style={{ paddingBottom: '80px'}} id="projects" >
+      <div id="projects" >
       <div className="section-header">
         <FadeIn>
         <span className="section-title">./ software-creations</span>

@@ -37,6 +37,7 @@ const NavBar: React.FC = () => {
             spy={true} smooth={true} offset={-100}>
               <img src={"/assets/arrow.svg"}  style={{  marginTop: '6px' }}
                 className="arrow-image"
+                alt="Arrow icon"
                 id="arrow-image"
                 />
             </ScrollLink>
