@@ -46,7 +46,7 @@ class About extends React.Component<{}, AboutState> {
 
     return (
       <div id="about" className="about-container">
-        <FadeIn>
+        <FadeIn delay={`1200ms`}>
           <div className="section-header">
             <span className="section-title">./ about</span>
           </div>

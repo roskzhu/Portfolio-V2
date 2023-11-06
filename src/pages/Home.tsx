@@ -1,4 +1,5 @@
 import React from 'react';
+import FadeIn from "../components/FadeIn";
 import styled from '@emotion/styled';
 import Typewriter from 'typewriter-effect';
 import '../styles/Home.css';
@@ -8,6 +9,7 @@ const Home: React.FC = () => {
     <HeaderContainer id="home">
       <TextContainer>
         <h1>          
+        <FadeIn delay={`200ms`}>
           <Typewriter 
             onInit={(typewriter) => {
               typewriter.typeString('Hi! I\'m Rosanne.')
@@ -20,9 +22,17 @@ const Home: React.FC = () => {
                 })
                 .start();
             }}
+            options={{ delay: 230 }} // Add a delay of 1000 milliseconds
           />
+          </FadeIn>
         </h1>
-        <h2>I’m a full stack software engineer <br/> developing digital solutions for complex <br/> problems.</h2>
+        <FadeIn delay={`600ms`}>
+          <h2 style={{fontSize:'43px', color:'#202020', marginTop:'0px', letterSpacing: '1px'}}>
+          I’m a full stack software engineer <br/> developing digital solutions for complex <br/> problems.
+          </h2>
+        </FadeIn>
+        <FadeIn delay={`900ms`}>
+          <div style={{marginTop:'-30px'}}>
         <DescContainer>
           <GridContainer>
             <h2>currently</h2>
@@ -31,6 +41,8 @@ const Home: React.FC = () => {
             <h1>CS & AI @ <mark>uWaterloo</mark></h1>
           </GridContainer>
         </DescContainer>
+        </div>
+        </FadeIn>
       </TextContainer>
 
     </HeaderContainer>
@@ -69,7 +81,7 @@ const TextContainer = styled.div`
   }
   > h2 {
     font-family: 'Karla', sans-serif; 
-    font-size: 43px;
+    font-size: 43px !important;
     font-weight: 400;
     text-align: left;
     color: #202020;

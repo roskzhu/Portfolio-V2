@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Experience.css";
-import FadeInSection from "./FadeIn";
+import FadeIn from "./FadeIn";
 import Work from "./Work";
 
 interface ExperienceState {
@@ -26,12 +26,12 @@ class Experience extends React.Component<{}, ExperienceState> {
     return (
       <div id="experience" >
         <div className="experience-container">
-        <FadeInSection>
+        <FadeIn>
           <div className="section-header" style={{ paddingBottom: '35px'}}>
             <span className="section-title">./ experience</span>
           </div>
           <Work></Work>
-        </FadeInSection>
+        </FadeIn>
         </div>
       </div>
     );

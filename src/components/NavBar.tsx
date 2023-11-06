@@ -4,6 +4,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import EmailRoundedIcon from "@material-ui/icons/EmailRounded";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import FadeIn from "./FadeIn";
 import '../styles/Navbar.css';
 
 const NavBar: React.FC = () => {
@@ -28,6 +29,7 @@ const NavBar: React.FC = () => {
   return (
     <NavContainer>
       <ContainerLeft>
+      <FadeIn>
         <div className={`left-nav ${isTop ? 'transparent' : 'white'}`}>
         <ul id="primary-navigation" className={`primary-navigation ${visible ? 'visible' : ''}`}>
         <li>
@@ -77,8 +79,10 @@ const NavBar: React.FC = () => {
             </filter>
           </defs>
         </Filter>
-      </ContainerLeft>
-      <ContainerRight>
+      </FadeIn>
+    </ContainerLeft>
+    <ContainerRight>
+      <FadeIn delay={`300ms`}>
       <div className={`right-nav ${isTop ? 'transparent' : 'white'}`}>
           <a href="mailto:rosannezhu@gmail.com" style={{color:'#0F0F0F'}}>
             <EmailRoundedIcon style={{ fontSize: 25, marginRight: '45px', marginTop: '5px'  }}></EmailRoundedIcon>
@@ -99,6 +103,7 @@ const NavBar: React.FC = () => {
             </filter>
           </defs>
         </Filter>
+        </FadeIn>
       </ContainerRight>
     </NavContainer>
   );
