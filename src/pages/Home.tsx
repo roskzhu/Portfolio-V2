@@ -74,20 +74,20 @@ const TextContainer = styled.div`
     color: black;
     width: 70vw;
     margin-top: -25px;
-    margin-bottom: 0; /* Remove the spacing underneath the text */
+    margin-bottom: 10px; /* Remove the spacing underneath the text */
     
     margin-right: 10%;
     letter-spacing: 1px;
   }
   > h2 {
     font-family: 'Karla', sans-serif; 
-    font-size: 45px !important;
+    font-size: 46px !important;
     font-weight: 400;
     text-align: left;
     color: #202020;
     width: 70vw;
     margin-top: 0px;
-    margin-bottom: 0; 
+    margin-bottom: 10px; 
     
     margin-right: 10%;
     letter-spacing: 1px;
