@@ -1,6 +1,3 @@
-<!-- <p align="center">
-  <img src="https://img.icons8.com/color/48/000000/magritte.png"/>
-</p> -->
 <h1 align="center">
   rosannezhu.com 
 </h1>
@@ -8,7 +5,7 @@
   Welcome to my personal portfolio <a href="https://rosannezhu.com" target="_blank">rosannezhu.com</a> built with React.js and Typescript.
 </p>
 
-<!-- <img width="1306" alt="Screen Shot 2021-03-15 at 8 29 18 PM" src="https://user-images.githubusercontent.com/32211479/111238274-24f8b100-85cd-11eb-9d5a-00f07cbc05e9.png"> -->
+<<img width="1306" alt="HomeScreen" src="/public/assets/home.png">
 
 ## 🛠 set-up
 
