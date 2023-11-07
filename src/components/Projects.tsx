@@ -34,7 +34,7 @@ class Projects extends Component<{}, ProjectsState> {
       },
       "CollaboraCart": {
         desc:
-          "A supply ordering platform that consolidates orders by connecting small businesses to local suppliers.",
+          "A supply ordering platform that cuts costs for small businesses by consolidating orders for bulk orders.",
         techStack: "Python (Flask), SQLite, React, Tailwind CSS",
         link: "https://github.com/roskzhu/CollaboraCart", 
         open: "",

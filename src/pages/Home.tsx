@@ -38,7 +38,7 @@ const Home: React.FC = () => {
             <h2>currently</h2>
             <h3>studying</h3>
             <p>a Software Engineer Intern <br/>  @ <mark>BMO Financial Group</mark></p>
-            <h1>Computer Science & Artifical Intelligence <br/> @ <mark>uWaterloo</mark></h1>
+            <h1>Computer Science & Artifical Intelligence <br/> @ <mark>the University of Waterloo</mark></h1>
           </GridContainer>
         </DescContainer>
         </div>
