@@ -5,7 +5,7 @@
   Welcome to my personal portfolio <a href="https://rosannezhu.com" target="_blank">rosannezhu.com</a> built with React.js and Typescript.
 </p>
 
-<img width="1306" alt="HomeScreen" src="/public/assets/home.png">
+<img width="1306" alt="HomeScreen" src="/public/assets/home.svg">
 
 ## 🛠 set-up
 
