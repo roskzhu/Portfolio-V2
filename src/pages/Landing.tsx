@@ -34,41 +34,35 @@ const GradientCircle = styled.div`
   transform: rotate(-0.167deg);
   flex-shrink: 0;
   border-radius: 316.616px;
-  border: 1px solid #000;
   background: #FFE977;
-  filter: blur(400px);
+  filter: blur(250px);
   margin-top: 25%;
   margin-left: 0%;
   margin-right: 0%;
   position: absolute;
   z-index: -1;
-  animation: rotate 8s linear infinite;
+  animation: rotate 10s linear infinite;
 
   background-size: 200% 200%;
   transform-origin: 60% 80% 0;
 
   @keyframes rotate {
     0% {
-      transform: rotate(0deg);
+      transform: rotate(0deg);  
+      opacity: 110%    
+    }
+    25% {
+      opacity: 90%;
+    }
+    50% {
+      opacity: 40%;
+    }
+    75% {
+      opacity: 90%;
     }
     100% {
       transform: rotate(360deg);
-    }
-  }
-
-  @keyframes pulsate {
-    0% {
-      transform: scale(0.95); /* Set the initial scale of the circle */
-      filter: blur(225px); /* Apply the blur effect */
-    }
-    50% {
-      transform: scale(1); /* Set the scale to 1 in the middle of the animation */
-      filter: blur(150px); /* Decrease the blur effect */
-      opacity: 100%;
-    }
-    100% {
-      transform: scale(0.95); /* Return to the initial scale at the end of the animation */
-      filter: blur(225px); /* Apply the blur effect again */
+      opacity: 120%
     }
   }
 `;

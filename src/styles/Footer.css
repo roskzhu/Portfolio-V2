@@ -121,7 +121,7 @@ a:hover {
   padding-left: 30px;
   color: white;
   background-color: transparent;
-  border: 0.5px solid #ffffff;
+  border: 0.7px solid #ffffff;
 }
 .message-input {
   width: 372px;
@@ -132,7 +132,7 @@ a:hover {
   border-radius: 17px;
   font-family: "Karla", monospace;
   background-color: transparent;
-  border: 0.5px solid #ffffff;
+  border: 0.7px solid #ffffff;
 }
 .message-div,
 .name-div,
