@@ -15,7 +15,7 @@
   transition: background-color 0.3s;
   height: 38px;
 }
-/* .home-nav::after {
+.home-nav::after {
   content: "";
   position: absolute;
   bottom: -7px;
@@ -23,9 +23,18 @@
   height: 1px; 
   background-color: black; 
   border-radius: 1px;
-} */
+}
 .home-nav.transparent {
   background-color: transparent;
+}
+.home-nav.transparent::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 3vw;
+  height: 1px; 
+  background-color: black; 
+  border-radius: 1px;
 }
 .home-nav.white {
   background-color: hsla(0, 0%, 98%, 0.8);

@@ -20,7 +20,7 @@
 }
 
 .foot {
-  background-color: #0F0F0F; /* Change to the desired color */
+  background-color: #EAEAEA; /* Change to the desired color */
   display: flex;
   flex-direction: column;
   place-items: center;
@@ -49,14 +49,15 @@
 .footer-text p:first-of-type {
   /* margin-left: 20px; */
   font-family: "Karla";
-  font-size: 28px;
+  font-size: 32px;
   line-height: 1;
-  letter-spacing: 4px; /* Adjust the value as needed */
+  letter-spacing: 3px; /* Adjust the value as needed */
   margin-top: 17%;
+  font-weight: 500; 
 }
 .footer-text p {
   font-family: "Karla";
-  color: white;
+  color: black;
   font-size: 15px;
   font-weight: 100; 
   line-height: 1;
@@ -72,11 +73,11 @@
 a {
   font-family: "Karla", monospace !important;
   font-size: 14px;
-  color: gray;
+  color: black;
   line-height: 1.5; /* Adjust the value to increase the spacing between lines */
 }
 a:hover {
-  color: white;
+  color: gray;
 }
 
 .footer-container {
@@ -119,20 +120,20 @@ a:hover {
   font-family: "Karla", monospace;
   border-radius: 17px;
   padding-left: 30px;
-  color: white;
-  background-color: transparent;
-  border: 0.7px solid #ffffff;
+  color: black;
+  background-color: white;
+  border: 0px solid black;
 }
 .message-input {
   width: 372px;
   resize: none;
-  color: white;
+  color: black;
   padding: 30px;
   margin-bottom: 20px;
   border-radius: 17px;
   font-family: "Karla", monospace;
-  background-color: transparent;
-  border: 0.7px solid #ffffff;
+  background-color: white;
+  border: 0px solid black;
 }
 .message-div,
 .name-div,
@@ -147,9 +148,9 @@ a:hover {
   width: 100px;
   height: 30px;
   border-radius: 14px;
-  background-color: #d9d9d93c;
+  background-color: white;
   font-family: "Karla", monospace;
-  color: white;
+  color: black;
   transition: all 500ms;
   cursor: pointer;
   border: 0px solid #ffffff;
