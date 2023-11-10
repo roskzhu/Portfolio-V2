@@ -44,7 +44,7 @@ const Home: React.FC = () => {
             </FadeIn>
           </p>
           <div>
-          {/* <FadeIn> */}
+          <FadeIn>
             <ScrollLink
             activeClass="active" to="about"
             spy={true} smooth={true} offset={-100}>
@@ -56,7 +56,7 @@ const Home: React.FC = () => {
               onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
               />
             </ScrollLink>
-          {/* </FadeIn> */}
+          </FadeIn>
           </div>
         </ScrollContainer>
       </TextContainer>
