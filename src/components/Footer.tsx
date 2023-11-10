@@ -23,6 +23,7 @@ interface FormValues {
 
 const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }> = ({ onSave, user = {} }) => {
   const form = useRef<HTMLFormElement>(null);
+
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if(form.current) {
@@ -82,6 +83,7 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
                 id="name"
                 name="name" 
                 placeholder='Name'
+                required 
               />
               <div className='error'>{errors.name?.message}</div>
             </div>
@@ -93,6 +95,7 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
                 id="email"
                 name="email"
                 placeholder='Email'
+                required 
               />
               <div className='error'>{errors.email?.message}</div>
             </div>
@@ -105,6 +108,7 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
                 placeholder='Message'
                 cols={40}
                 rows={10}
+                required 
               />
               <div className='error'>{errors.message?.message}</div>
             </div>
