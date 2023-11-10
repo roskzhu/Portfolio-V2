@@ -65,7 +65,7 @@
   width: 53vw;
   height: 1px; /* You can adjust this to your preferred underline thickness */
   background-color: black; /* You can change the color of the underline here */
-  border-radius: 1px; /* You can adjust this to match the border-radius of the .home-nav element */
+  border-radius: 1px;
 }
 .left-nav.transparent {
   background-color: transparent;
