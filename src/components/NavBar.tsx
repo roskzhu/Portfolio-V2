@@ -106,13 +106,13 @@ const NavBar: React.FC = () => {
     <div style={{backdropFilter:'blur(0.1rem)', marginLeft:'15px'}}>
       <FadeIn delay={`300ms`}>
       <div className={`right-nav ${isTop ? 'transparent' : 'white'}`}>
-          <a href="mailto:rosannezhu@gmail.com" style={{color:'#0F0F0F'}}>
+          <a href="mailto:rosannezhu@gmail.com" style={{color:'#5A5A5A'}}>
             <EmailRoundedIcon style={{ fontSize: 25, marginRight: '45px', marginTop: '5px'  }}></EmailRoundedIcon>
           </a>
-          <a href="https://github.com/roskzhu" style={{color:'#0F0F0F'}}>
+          <a href="https://github.com/roskzhu" style={{color:'#5A5A5A'}}>
             <GitHubIcon style={{ fontSize: 22, marginRight: '45px', marginTop: '5px'  }}></GitHubIcon>
           </a>
-          <a href="https://www.linkedin.com/in/rosanne-zhu" style={{color:'#0F0F0F'}}>
+          <a href="https://www.linkedin.com/in/rosanne-zhu" style={{color:'#5A5A5A'}}>
             <LinkedInIcon style={{ fontSize: 27, marginTop: '5px' }}></LinkedInIcon>
           </a>
         </div>
@@ -138,7 +138,7 @@ const NavContainer = styled.div`
   justify-content: center;
   align-items: center;
   top: 0;
-  margin-top: 30px;
+  margin-top: 10px;
   width: 100vw;
   z-index: 9999;
   .hide {
