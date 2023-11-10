@@ -11,10 +11,19 @@
   justify-content: space-evenly;
   align-items: center;
   border-radius: 18px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   transition: background-color 0.3s;
   height: 38px;
 }
+/* .home-nav::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  width: 3vw;
+  height: 1px; 
+  background-color: black; 
+  border-radius: 1px;
+} */
 .home-nav.transparent {
   background-color: transparent;
 }
@@ -57,14 +66,23 @@
   transition: background-color 0.3s;
   height: 38px;
 }
+/* .left-nav::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  width: 60vw;
+  height: 1px; 
+  background-color: black; 
+  border-radius: 1px;
+  margin-left: -62px;
+} */
 .left-nav::after {
   content: "";
   position: absolute;
   bottom: -7px;
-  /* margin-left: 60vw; */
   width: 53vw;
-  height: 1px; /* You can adjust this to your preferred underline thickness */
-  background-color: black; /* You can change the color of the underline here */
+  height: 1px; 
+  background-color: black; 
   border-radius: 1px;
 }
 .left-nav.transparent {
@@ -83,7 +101,7 @@
   font-family: Rubik;
   font-weight: 400;
   font-size: 16px;
-  color: black;
+  color: #5A5A5A;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,7 +134,7 @@
   /* margin-left: 60vw; */
   width: 18vw;
   height: 1px; /* You can adjust this to your preferred underline thickness */
-  background-color: black; /* You can change the color of the underline here */
+  background-color: #5A5A5A; /* You can change the color of the underline here */
   border-radius: 1px; /* You can adjust this to match the border-radius of the .home-nav element */
 }
 .right-nav.transparent {
@@ -134,18 +152,17 @@
   font-family: Rubik;
   font-weight: 400;
   font-size: 16px;
-  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
 .right-nav.transparent a:hover {
-  color: rgb(80, 80, 80) !important;
+  color: black !important;
   transform: translateY(-1px);
 }
 .right-nav.white a:hover {
-  color: rgb(80, 80, 80) !important;
+  color: black !important;
   transform: translateY(-1px);
 }
 

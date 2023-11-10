@@ -12,11 +12,9 @@ const Landing: React.FC = () => {
       <GradientCircle style={{ marginTop: '-100px', marginLeft: '25%', background: '#FFBBF0', animationDelay: '3s' }} />
       <GradientCircle style={{ marginTop: '-300px', marginLeft: '50%', animationDelay: '0.5s' }} />
       <Home/>    
-      {/* <GradientCircle style={{ width: '10%', height: '10%', marginTop: '600px', marginLeft: '790px', background: '#FFB69E', animationDelay: '0.25s' }}/>         */}
       <About/>
       <Experience />
       <Projects />
-      {/* <GradientCircle style={{ width: '40%', height: '5%', marginTop: '2300px', marginLeft: '25%', background: '#FFB69E',  filter: 'blur(300px)', animationDelay: '1.25s' }}/>         */}
     </LandingContainer>
   );
 };
