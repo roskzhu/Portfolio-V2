@@ -29,6 +29,7 @@ const NavBar: React.FC = () => {
   return (
     <NavContainer>
       <ContainerIcon>
+      <FadeIn>
       <div className={`home-nav ${isTop ? 'transparent' : 'white'}`}>
         <ul id="icon-navigation" className={`icon-navigation ${visible ? 'visible' : ''}`}>          
             <li>
@@ -44,11 +45,11 @@ const NavBar: React.FC = () => {
             </li>
           </ul>
         </div>
+        </FadeIn>
       </ContainerIcon>
       <ContainerLeft>
       <div style={{backdropFilter:'blur(0.1rem)'}}>
-      <FadeIn>
-      
+      <FadeIn  delay={`150ms`}>      
         <div className={`left-nav ${isTop ? 'transparent' : 'white'}`}>
         <ul id="primary-navigation" className={`primary-navigation ${visible ? 'visible' : ''}`}>
           <li>
