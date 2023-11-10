@@ -122,6 +122,7 @@ const Work: React.FC = () => {
               );
             })}
           </ul>
+          <FadeInSection delay='200ms'>
           <div className="card-tech" style={{textAlign:'left'}}>
                     {experienceItems[key]["techStack"].split(", ").map((item: string, index: number) => (
                       <span key={index}>
@@ -130,6 +131,7 @@ const Work: React.FC = () => {
                       </span>
                     ))}
                   </div>
+          </FadeInSection>
         </TabPanel>
       ))}
     </div>
