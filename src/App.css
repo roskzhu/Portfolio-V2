@@ -40,14 +40,31 @@ body::-webkit-scrollbar {
   }
 }
 
+
+.section-header {
+  display: flex;
+  /* padding-bottom: 42px; */
+  width: 100vw;
+}
+
+.section-header::after {
+  content: "";
+  display: block;
+  width: 300px;
+  margin-top: 39px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: black;
+}
+
 .section-title {
   font-family: "Karla", sans-serif;
   color: black;
-  font-size: 50px;
-  font-weight: 600;  /* bold */
+  font-size: 43px;
+  font-weight: 500;  /* bold */
   letter-spacing: 1px; /* Adjust this value to increase the letter spacing */
   /* text-decoration: underline; */
-  border-bottom: 5px solid black;
+  /* border-bottom: 5px solid black; */
   /* padding-bottom: 5px; */
 }
 
