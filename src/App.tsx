@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from '@emotion/styled';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Landing from "./pages/Landing";
 import NavBar from "./components/NavBar";
