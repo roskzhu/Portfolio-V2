@@ -143,7 +143,7 @@
   /* margin-left: 60vw; */
   width: 18vw;
   height: 1px; /* You can adjust this to your preferred underline thickness */
-  background-color: #5A5A5A; /* You can change the color of the underline here */
+  background-color: black; /* You can change the color of the underline here */
   border-radius: 1px; /* You can adjust this to match the border-radius of the .home-nav element */
 }
 .right-nav.transparent {
