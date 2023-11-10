@@ -36,7 +36,7 @@ const Home: React.FC = () => {
           </div>
         </FadeIn>
         <ScrollContainer>
-          <p style={{ marginLeft:'28%', paddingTop:'0px', color: '#9F9F9F' }}
+          <p style={{ marginLeft:'28%', paddingTop:'0px', color: '#9F9F9F',paddingRight:'10px' }}
           onMouseOver={(e) => e.currentTarget.style.color = '#DDDDDD'}
           onMouseOut={(e) => e.currentTarget.style.color = '#9F9F9F'}>
             <FadeIn>
@@ -50,8 +50,9 @@ const Home: React.FC = () => {
             spy={true} smooth={true} offset={-100}>
             <img src={"/assets/longarrow.svg"} 
               alt="long arrow"
-              style={{paddingLeft:'200%', marginTop:'0px', cursor: 'pointer', transition: 'transform 0.3s' }} 
-              width='7px'
+              style={{paddingLeft:'10%', marginTop:'-40px', cursor: 'pointer', transition: 'transform 0.3s' }} 
+              width='9px'
+              color='black'
               onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(5px)'}
               onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
               />
@@ -227,10 +228,10 @@ const ScrollContainer = styled.div`
       opacity: 80%;
     }
     50% {
-      opacity: 50%;
+      opacity: 60%;
     }
     100% {
-      opacity: 60%
+      opacity: 65%
     }
   }
 `;
