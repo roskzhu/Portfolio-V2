@@ -32,7 +32,7 @@
   /* padding-top: 0.8rem;
   padding-left: 0.8rem;
   padding-right: 0.8rem;   */
-  padding-bottom: 0.4rem;
+  padding-bottom: 0.6rem;
   border-radius: 18px;
   background-color: rgb(233, 233, 232);
   /* border: 1px solid black; */
@@ -97,6 +97,7 @@
   padding-bottom: 10px;
   margin-left: 10px;
   text-align: center;
+  padding-right: 14px;
 }
 
 .card-tech {
