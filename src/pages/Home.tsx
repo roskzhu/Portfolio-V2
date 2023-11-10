@@ -1,8 +1,8 @@
 import React from 'react';
 import FadeIn from "../components/FadeIn";
 import styled from '@emotion/styled';
-import Typewriter from 'typewriter-effect';
 import '../styles/Home.css';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Home: React.FC = () => {
   return (
@@ -13,27 +13,16 @@ const Home: React.FC = () => {
           Rosanne Zhu is a
           </FadeIn>
         </h1>
-        <h1 style={{marginLeft:'80px'}}>          
+        <h1 style={{marginLeft:'70px'}}>          
           <FadeIn delay={`200ms`}>
            software engineer
           </FadeIn>
         </h1>
         <h2 style={{marginLeft:'80px', paddingBottom:'30px'}}>
-          <Typewriter 
-            onInit={(typewriter) => {
-              typewriter.typeString('developing digital solutions for complex \n problems.')
-                .callFunction(() => {
-                  console.log('String typed out!');
-                })
-                .pauseFor(10000)
-                .callFunction(() => {
-                  console.log('All strings were deleted');
-                })
-                .start();
-            }}
-            options={{ delay: 230 }} // Add a delay of 1000 milliseconds
-          />
-          </h2>
+          <FadeIn delay={`500ms`}>
+          developing innovative solutions that elevate, <br/> simplify and transform digital landscapes.
+          </FadeIn>
+        </h2>
         <FadeIn delay={`900ms`}>
           <div style={{marginTop:'40px', marginLeft:'20px'}}>
           <DescContainer>
@@ -44,12 +33,30 @@ const Home: React.FC = () => {
               <h1>Computer Science & Artifical Intelligence <br/> @ <mark>the University of Waterloo</mark></h1>
             </GridContainer>
           </DescContainer>
-        </div>
+          </div>
         </FadeIn>
         <ScrollContainer>
-          <p>Scroll to see more ...</p>
-          <img src={"/assets/longarrow.svg"} style={{marginRight:'0%', marginLeft:'100px'}}
-                />
+          <p style={{ marginLeft:'28%', paddingTop:'0px', color: '#9F9F9F' }}
+          onMouseOver={(e) => e.currentTarget.style.color = '#DDDDDD'}
+          onMouseOut={(e) => e.currentTarget.style.color = '#9F9F9F'}>
+            <FadeIn>
+            Scroll down to learn more ...
+            </FadeIn>
+          </p>
+          <div>
+          <FadeIn>
+            <ScrollLink
+            activeClass="active" to="about"
+            spy={true} smooth={true} offset={-100}>
+            <img src={"/assets/longarrow.svg"} 
+              style={{paddingLeft:'200%', marginTop:'0px', cursor: 'pointer', transition: 'transform 0.3s' }} 
+              width='7px'
+              onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(5px)'}
+              onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
+              />
+            </ScrollLink>
+          </FadeIn>
+          </div>
         </ScrollContainer>
       </TextContainer>
     </HeaderContainer>
@@ -81,6 +88,7 @@ const TextContainer = styled.div`
     text-align: left;
     color: black;
     margin-top: -25px;
+    margin-left: 0px;
     margin-bottom: 10px; /* Remove the spacing underneath the text */
     
     letter-spacing: 1px;
@@ -153,7 +161,7 @@ const GridContainer = styled.div`
   }
   > h2 {
     z-index: 1;
-    font-size: 18px;
+    font-size: 17px;
     text-align: left;
     font-family: 'Rubik', sans-serif; /* Adding the Google Font 'Karla' */
     font-weight: 600;
@@ -166,7 +174,7 @@ const GridContainer = styled.div`
   }
   > h3 {
     z-index: 1;
-    font-size: 18px;
+    font-size: 17px;
     text-align: left;
     font-family: 'Rubik', sans-serif; /* Adding the Google Font 'Karla' */
     font-weight: 600;
@@ -176,19 +184,17 @@ const GridContainer = styled.div`
     margin-left: -48%;
     margin-bottom: 0; /* Remove the spacing underneath the text */
     margin-right: 100%;
+    margin-top: 14px;
   }
 `;
 
-
 const ScrollContainer = styled.div`
+  width: 1000px;
+  padding-left: 50px;
+  margin-top: -136px;
   display: flex;
-
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr; /* Set grid template rows to create a 2x2 grid */
-  gap: 20px; /* Adjust the gap as needed */
-  grid-row-gap: 0; /* Remove the space between rows */
-  
-  flex-direction: column;
+  flex-direction: row;
+  position: relative;
   z-index: 10;
   > p {
     z-index: 1;
@@ -198,10 +204,9 @@ const ScrollContainer = styled.div`
     font-weight: 400;
     color: #9F9F9F;
     width: 70%;
-    margin-left: 25%;
-    margin-top: -11px;
+    margin-top: 115px;
     margin-right: 0%;
-    line-height: 1.4;
+    line-height: 1;
     font-style: italic; 
   }
   > p mark {
@@ -209,6 +214,23 @@ const ScrollContainer = styled.div`
     color: blue;
     border-radius: 6px;
     padding: 0px 5px;
+  }
+
+  animation: pulse 8s linear infinite;
+
+  @keyframes pulse {
+    0% {
+      opacity: 70%    
+    }
+    25% {
+      opacity: 80%;
+    }
+    50% {
+      opacity: 50%;
+    }
+    100% {
+      opacity: 60%
+    }
   }
 `;
 

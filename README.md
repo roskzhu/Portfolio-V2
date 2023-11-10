@@ -31,7 +31,7 @@
 
 
 ## 🎨 next steps
-- add component animations and colouring
+- add text colouring and hyperlinks for marks
 - multiple screen sizing
 - clean up css
 

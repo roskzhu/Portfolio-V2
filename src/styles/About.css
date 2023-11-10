@@ -1,8 +1,8 @@
 #about {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15%;
-  padding-right: 18%;
+  /* padding-left: 15%;
+  padding-right: 18%; */
   min-height: 380px;
   padding-bottom: 40px;
   width: 1000px;
@@ -18,12 +18,13 @@
 
 h1 {
   font-family: "Karla", sans-serif;
-  font-size: 25px;
-  font-weight: 400;
+  font-size: 23px;
+  font-weight: 500;
   color: black;
   text-align: left;
   margin-bottom: 30px;
   /* font-style: italic;  */
+  margin-left: 40px;
 }
 
 h2 {
@@ -33,6 +34,7 @@ h2 {
   color: black;
   text-align: left;
   margin-bottom: 30px;
+  margin-left: 40px;
 }
 h2 mark {
   background-color: #DAE2F5;
@@ -44,11 +46,12 @@ h2 mark {
 
 p {
   font-family: "Rubik", sans-serif;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 400;
   color: black;
   text-align: left;
   margin-bottom: 30px;
+  margin-left: '40px' 
 }
 p mark {
   background-color: #DAE2F5;
@@ -56,6 +59,7 @@ p mark {
   border-radius: 6px;
   padding: 0 5px;
   line-height: 1.4;
+  font-size: 14px;
 }
 
 .about-description ul {

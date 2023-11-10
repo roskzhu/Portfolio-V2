@@ -36,6 +36,7 @@
   border-radius: 18px;
   background-color: rgb(233, 233, 232);
   /* border: 1px solid black; */
+  z-index: 10;
 }
 
 .project-container img {
@@ -103,6 +104,7 @@
   color: black;
   font-size: 14px;
   margin-left: 10px;
+  text-align: center;
 }
 
 .card-tech mark {

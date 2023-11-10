@@ -31,7 +31,7 @@ class About extends React.Component<{}, AboutState> {
       </h2>
     );
     const three = (
-      <p> <span style={{ fontFamily: 'Karla, sans-serif', fontSize: '18px' }}>Recently, I've been working with ... </span><br/>
+      <p style={{marginLeft: '40px', fontSize: '15px'}}> <span style={{ fontFamily: 'Karla, sans-serif', color: '#3D4340' }}>Recently, I've been working with ... </span><br/>
       <mark>Python</mark> {" "}
       <mark>Tensorflow</mark> {" "}
       <mark>OpenCV</mark> {" "}

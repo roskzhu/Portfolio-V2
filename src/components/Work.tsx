@@ -122,7 +122,7 @@ const Work: React.FC = () => {
               );
             })}
           </ul>
-          <div className="card-tech">
+          <div className="card-tech" style={{textAlign:'left'}}>
                     {experienceItems[key]["techStack"].split(", ").map((item: string, index: number) => (
                       <span key={index}>
                         {index > 0 ? " " : ""}
