@@ -25,43 +25,4 @@ function App() {
   );
 }
 
-const GradientCircle = styled.div`
-  width: 30%;
-  height: 20%;
-  transform: rotate(-0.167deg);
-  flex-shrink: 0;
-  border-radius: 316.616px;
-  background: #FFE977;
-  filter: blur(300px);
-  margin-top: 25%;
-  margin-left: 0%;
-  margin-right: 0%;
-  position: absolute;
-  z-index: -1;
-  animation: rotate 12s linear infinite;
-
-  background-size: 200% 200%;
-  transform-origin: 60% 80% 0;
-
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);  
-      opacity: 110%    
-    }
-    25% {
-      opacity: 90%;
-    }
-    50% {
-      opacity: 40%;
-    }
-    75% {
-      opacity: 90%;
-    }
-    100% {
-      transform: rotate(360deg);
-      opacity: 120%
-    }
-  }
-`;
-
 export default App;
