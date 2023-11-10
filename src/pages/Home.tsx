@@ -49,6 +49,7 @@ const Home: React.FC = () => {
             activeClass="active" to="about"
             spy={true} smooth={true} offset={-100}>
             <img src={"/assets/longarrow.svg"} 
+              alt="long arrow"
               style={{paddingLeft:'200%', marginTop:'0px', cursor: 'pointer', transition: 'transform 0.3s' }} 
               width='7px'
               onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(5px)'}
