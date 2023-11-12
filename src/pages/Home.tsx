@@ -29,7 +29,9 @@ const Home: React.FC = () => {
             <GridContainer>
               <h2>currently</h2>
               <h3>studying</h3>
-              <p>a Software Engineer Intern <br/>  @ <mark>BMO Financial Group</mark></p>
+              <p>a Software Engineer Intern <br/>  @ 
+                <mark><a href="https://www.bmo.com/main/about-bmo/">BMO Financial Group</a></mark>
+              </p>
               <h1>Computer Science & Artifical Intelligence <br/> @ <mark>the University of Waterloo</mark></h1>
             </GridContainer>
           </DescContainer>
@@ -141,6 +143,19 @@ const GridContainer = styled.div`
     color: blue;
     border-radius: 6px;
     padding: 0px 5px;
+  }
+  > p mark:hover {
+    color: #3366ff; /* Change the color on hover, for example */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+  }
+  p a {
+    text-decoration: none; /* Remove the default underline for links */
+    color: inherit; /* Inherit the color from the parent element */
+  }
+  p a:hover {
+    /* Add your desired hover animation styles here */
+    color: red; /* Change the color on hover, for example */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
   }
   > h1 {
     z-index: 1;
