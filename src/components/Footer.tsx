@@ -134,41 +134,41 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
 
 
 
-const GradientCircle = styled.div`
-  width: 20%;
-  height: 30%;
-  transform: rotate(-0.167deg);
-  flex-shrink: 0;
-  border-radius: 316.616px;
-  background: #FFD177;
-  filter: blur(200px);
-  margin-top: 10%;
-  margin-left: 0%;
-  margin-right: 0%;
-  position: absolute;
-  z-index: 0;
-  animation: rotate 12s linear infinite;
+// const GradientCircle = styled.div`
+//   width: 20%;
+//   height: 30%;
+//   transform: rotate(-0.167deg);
+//   flex-shrink: 0;
+//   border-radius: 316.616px;
+//   background: #FFD177;
+//   filter: blur(200px);
+//   margin-top: 10%;
+//   margin-left: 0%;
+//   margin-right: 0%;
+//   position: absolute;
+//   z-index: 0;
+//   animation: rotate 12s linear infinite;
 
-  background-size: 200% 200%;
+//   background-size: 200% 200%;
 
-  @keyframes rotate {
-    0% {
-      opacity: 60%    
-    }
-    25% {
-      opacity: 90%;
-    }
-    50% {
-      opacity: 110%;
-    }
-    75% {
-      opacity: 70%;
-    }
-    100% {
-      opacity: 40%
-    }
-  }
-`;
+//   @keyframes rotate {
+//     0% {
+//       opacity: 60%    
+//     }
+//     25% {
+//       opacity: 90%;
+//     }
+//     50% {
+//       opacity: 110%;
+//     }
+//     75% {
+//       opacity: 70%;
+//     }
+//     100% {
+//       opacity: 40%
+//     }
+//   }
+// `;
 
 
 export default Footer;
