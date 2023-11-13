@@ -31,7 +31,7 @@
 
 
 ## 🎨 next steps
-- add text colouring and hyperlinks for marks
+- refine fade in animations, project decorators, tech stack card
 - multiple screen sizing
 - clean up css
 
