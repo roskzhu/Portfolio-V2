@@ -31,19 +31,19 @@ class About extends React.Component<{}, AboutState> {
         Currently, I have great interest in <mark>full-stack</mark> development, <mark>machine learning</mark>, and research.
       </h2>
     );
-    const three = (
-      <p style={{marginLeft: '-10px', fontSize: '15px'}}> <span style={{ fontFamily: 'Karla, sans-serif', color: '#3D4340' }}>Recently, I've been working with ... </span><br/>
-        <mark>Python</mark> {" "}
-        <mark>Tensorflow</mark> {" "}
-        <mark>OpenCV</mark> {" "}
-        <mark>Keras</mark> {" "}
-        <mark>Node.js</mark> {" "}
-        <mark>React.js</mark> {" "}
-        <mark>Java</mark> {" "}
-        <mark>AWS</mark> {" "}
-        <mark>GCD</mark>
-      </p>
-    );
+    // const three = (
+    //   <p style={{marginLeft: '-10px', fontSize: '15px'}}> <span style={{ fontFamily: 'Karla, sans-serif', color: '#3D4340' }}>Recently, I've been working with ... </span><br/>
+    //     <mark>Python</mark> {" "}
+    //     <mark>Tensorflow</mark> {" "}
+    //     <mark>OpenCV</mark> {" "}
+    //     <mark>Keras</mark> {" "}
+    //     <mark>Node.js</mark> {" "}
+    //     <mark>React.js</mark> {" "}
+    //     <mark>Java</mark> {" "}
+    //     <mark>AWS</mark> {" "}
+    //     <mark>GCD</mark>
+    //   </p>
+    // );
 
     return (
       <div id="about" className="about-container">
