@@ -33,9 +33,9 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
           console.log(result.text);
           console.log("Message sent!");
           setSuccessMessage('Message sent successfully!');
-          if (form.current) {
-            form.current.reset(); // Reset the form after the message is sent
-          }
+          // if (form.current) {
+          //   form.current.reset(); // Reset the form after the message is sent
+          // }
         }, (error) => {
           console.log(error.text);
         });
