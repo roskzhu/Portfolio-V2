@@ -44,10 +44,12 @@ body::-webkit-scrollbar {
 .section-header {
   display: flex;
   /* padding-bottom: 42px; */
+  flex-direction: column;
+
   width: 100vw;
 }
 
-.section-header::after {
+/* .section-header::after {
   content: "";
   display: block;
   width: 300px;
@@ -55,17 +57,30 @@ body::-webkit-scrollbar {
   height: 1px;
   margin-left: 20px;
   background-color: black;
+} */
+
+.section-title-before {
+  font-family: "Karla", sans-serif;
+  color: gray; /* Adjust color as needed */
+  font-size: 20px; /* Adjust font size as needed */
+  /* margin-bottom: 5px; */
 }
 
 .section-title {
   font-family: "Karla", sans-serif;
   color: black;
-  font-size: 43px;
-  font-weight: 600;  /* bold */
+  font-size: 75px;
+  font-weight: 500;  /* medium */
   letter-spacing: 1px; /* Adjust this value to increase the letter spacing */
   /* text-decoration: underline; */
   /* border-bottom: 5px solid black; */
   /* padding-bottom: 5px; */
+}
+
+.vertical-line {
+  border-left: 2px solid #000; /* 1px solid black border on the left side */
+  height: 100px;
+  /* margin-bottom: 20px; */
 }
 
 .App-header {

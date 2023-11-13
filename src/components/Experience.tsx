@@ -27,8 +27,9 @@ class Experience extends React.Component<{}, ExperienceState> {
       <div id="experience" >
         <div className="experience-container">
         <FadeIn>
-          <div className="section-header" style={{ paddingBottom: '35px'}}>
-            <span className="section-title">./ experience</span>
+          <div className="section-header" style={{ paddingBottom: '20px'}}>
+            <span className="section-title-before">//  Real impact made for real people.</span>
+            <span className="section-title">Experience</span>
           </div>
           <Work></Work>
         </FadeIn>

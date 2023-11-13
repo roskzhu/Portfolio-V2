@@ -5,8 +5,18 @@
   margin-left: auto;
   margin-right: auto;
   width: 1000px;
+  padding-bottom: 30px;
 }
 
+p {
+  font-family: "Karla", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: black;
+  text-align: left;
+  /* margin-bottom: 30px; */
+  margin-left: '40px' 
+}
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(300px, 1fr));
@@ -26,6 +36,7 @@
   cursor: default;
   display: flex;
   flex-direction: column;
+  /* width:'500px'; */
   /* align-items: flex-start; */
   position: relative;
   height: 100%;
@@ -34,7 +45,7 @@
   padding-right: 0.8rem;   */
   padding-bottom: 0.6rem;
   border-radius: 18px;
-  background-color: rgb(233, 233, 232);
+  /* background-color: rgb(233, 233, 232); */
   /* border: 1px solid black; */
   z-index: 10;
 }
@@ -50,7 +61,8 @@
 
 .projects-card:hover {
   transform: translateY(-7px);
-  background-color: rgb(214, 212, 212);
+  /* background-color: rgb(214, 212, 212); */
+  background-color: rgb(233, 233, 232);
 }
 
 .card-header {
@@ -58,9 +70,9 @@
   display: flex;
   padding: 1.25em 0 !important;
   flex-direction: row;
-  justify-content: center; /* Align content to the center */
-  align-items: center; /* Align items to the center */
-  text-align: center;
+  /* justify-content: center;  */
+  /* align-items: center;  */
+  /* text-align: center; */
   border-bottom: none !important;
   margin-left: 10px;
 }
@@ -87,6 +99,7 @@
   font-size: 27px;
   font-weight: bold;
   justify-content: center !important;
+  margin-left: 10px;
   /* left: 50% !important; */
 }
 
@@ -95,22 +108,22 @@
   color: black;
   font-size: 13px;
   padding-bottom: 10px;
-  margin-left: 10px;
-  text-align: center;
+  margin-left: 20px;
+  /* text-align: center; */
   padding-right: 14px;
 }
 
 .card-tech {
   font-family: "Rubik", sans-serif;
-  color: black;
+  color: rgb(240, 240, 240);
   font-size: 14px;
-  margin-left: 10px;
-  text-align: center;
+  margin-left: 20px;
+  /* text-align: center; */
 }
 
 .card-tech mark {
-  background-color: #DAE2F5;
-  color: blue;
+  background-color: rgb(226, 227, 232);
+  color: rgb(76, 76, 80);
   border-radius: 5px;
   padding: 0 5px;
 }
