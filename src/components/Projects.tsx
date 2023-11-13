@@ -62,7 +62,7 @@ class Projects extends Component<{}, ProjectsState> {
       <div id="projects" >
         <FadeIn>
       <div className="section-header">
-        <span className="section-title-before">// Made by me, made for you.</span>
+        <span className="section-title-before">{"// "}Made by me, made for you.</span>
         <span className="section-title">Projects</span>
       </div>
       <p style={{marginBottom:'0px'}}>Here are some software creations I’ve made in my own time. 
