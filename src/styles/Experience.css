@@ -71,12 +71,8 @@
   margin-left: initial;
   background-color: #1E1E1E;
 }
-/* .PrivateTabIndicator-colorSecondary-13 {
-  margin-left: 100px;
-  background-color: rgb(117, 117, 117) !important;
-} */
 .jss5 {
-  background-color: black !important;
+  background-color: transparent !important;
 }
 .makeStyles-tabs-2 {
   border-right: 1px solid var(--lightest-navy) !important;
