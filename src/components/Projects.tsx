@@ -62,17 +62,22 @@ class Projects extends Component<{}, ProjectsState> {
       <div id="projects" >
         <FadeIn>
       <div className="section-header">
-        <span className="section-title">./ software-creations</span>
+        <span className="section-title-before">// Made by me, made for you.</span>
+        <span className="section-title">Projects</span>
       </div>
+      <p style={{marginBottom:'0px'}}>Here are some software creations I’ve made in my own time. 
+        I’ve covered <br/> everything between machine-learning and full-stack, and I’m currently <br/>
+        exploring innovative solutions at the intersection of technology and impact. 
+      </p>
       </FadeIn>
       <div>
-        <div className="project-container" style={{ width: "850px", paddingTop:'10px' }}>
+        <div className="project-container" style={{ width: "1000px", paddingTop:'10px' }}>
         <FadeIn>
           <ul className="projects-grid">
             {Object.keys(projects).map((key, i) => (
               <FadeIn delay={`${i + 1}00ms`} key={i}>
                 <li className="projects-card">
-                <img src={projects[key]["image"]} alt={key} style={{ maxWidth: "500px", height: "270px" }}/> {/* Add image here */}
+                <img src={projects[key]["image"]} alt={key} style={{ maxWidth: "500px", height: "300px" }}/> {/* Add image here */}
                   <div className="card-header">
                     <div className="folder-icon">
                     <div className="card-title" style={{textAlign:'center'}}>{key}</div>

@@ -62,6 +62,7 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
             <p>Let's build something creative.</p>
             <p style={{lineHeight:'1.3'}}>Have a question? Want to chat? <br/> Feel free to send me a message.</p> 
             <p style={{paddingTop:'230px'}}>Resume is available upon request.</p>
+            <p style={{paddingTop:'-30px'}}>Website is build and designed by me :)</p>
           </FadeIn>   
         </div>
           <div>

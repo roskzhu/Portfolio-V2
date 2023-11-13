@@ -1,10 +1,17 @@
 #experience {
-  /* padding-left: 15%;
-  padding-right: 18%; */
   min-height: 360px;
   margin-left: auto;
   margin-right: auto;
   width: 1000px;
+}
+#experience::after {
+  content: "";
+  display: block;
+  width: 98%;
+  height: 1px;
+  background-color: #9F9F9F; /* Adjust the color as needed */
+  margin-top: 20px; /* Adjust the margin as needed */
+  margin-bottom: 50px;
 }
 
 .experience-container {
@@ -13,15 +20,16 @@
 
 .joblist-job-title {
   font-family: "Karla", sans-serif;
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 50px;
+  font-weight: medium;
+  color:white;
 }
 
 .joblist-job-company {
   font-family: "Karla", sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-  /* color: blue; */
+  font-family: "Karla", sans-serif;
+  font-size: 50px;
+  color:white;
 }
 
 .joblist-duration {
@@ -29,11 +37,19 @@
   font-size: 16px;
   margin-top: 5px;
   font-weight: bold;
+  color:white;
 }
 
 #vertical-tabpanel {
   margin-top: -20px;
-  padding-left: 25px;
+  padding-left: 10px;
+  color:white;
+  /* width:50%; */
+}
+
+.MuiTabs-scrollable {
+  overflow-x: scroll;
+  scrollbar-width: 100px !important;
 }
 
 .MuiTab-wrapper {
@@ -42,6 +58,8 @@
   align-items: flex-start !important;
   font-family: "Karla", sans-serif;
   font-weight: bold;
+  color:white;
+  
 }
 
 .MuiButtonBase-root {
@@ -49,9 +67,14 @@
   color: black !important;
 }
 
-.PrivateTabIndicator-colorSecondary-5 {
-  background-color: black !important;
+.PrivateTabIndicator-colorSecondary {
+  margin-left: initial;
+  background-color: transparent;
 }
+/* .PrivateTabIndicator-colorSecondary-13 {
+  margin-left: 100px;
+  background-color: rgb(117, 117, 117) !important;
+} */
 .jss5 {
   background-color: black !important;
 }
@@ -74,6 +97,7 @@ ul {
   content: "▸    ";
   position: absolute;
   left: 0;
+  
 }
 
 .job-description li {
@@ -81,6 +105,7 @@ ul {
   padding-left: 30px;
   padding-bottom: 10px;
   font-size: 15px;
+  color:white;
 }
 
 .job-description {
@@ -88,12 +113,14 @@ ul {
   max-width: 650px;
   font-family: "Karla", sans-serif;
   font-size: 20px;
+  color:white;
 }
 
 .job-description a,
 .job-description b {
   font-size: 19px;
   font-weight: bold;
+  color:white;
 }
 
 @media only screen and (max-width: 600px) {

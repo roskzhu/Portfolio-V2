@@ -21,7 +21,7 @@
   bottom: -7px;
   width: 3vw;
   height: 1px; 
-  background-color: black; 
+  background-color: #8d8d8d; 
   border-radius: 1px;
 }
 .home-nav.transparent {
@@ -33,7 +33,7 @@
   bottom: -5px;
   width: 3vw;
   height: 1px; 
-  background-color: black; 
+  background-color: #8d8d8d; 
   border-radius: 1px;
 }
 .home-nav.white {
@@ -75,23 +75,13 @@
   transition: background-color 0.3s;
   height: 38px;
 }
-/* .left-nav::after {
-  content: "";
-  position: absolute;
-  bottom: -7px;
-  width: 60vw;
-  height: 1px; 
-  background-color: black; 
-  border-radius: 1px;
-  margin-left: -62px;
-} */
 .left-nav::after {
   content: "";
   position: absolute;
   bottom: -7px;
   width: 53vw;
   height: 1px; 
-  background-color: black; 
+  background-color: #8d8d8d; 
   border-radius: 1px;
 }
 .left-nav.transparent {
@@ -143,7 +133,7 @@
   /* margin-left: 60vw; */
   width: 18vw;
   height: 1px; /* You can adjust this to your preferred underline thickness */
-  background-color: black; /* You can change the color of the underline here */
+  background-color: #8d8d8d; /* You can change the color of the underline here */
   border-radius: 1px; /* You can adjust this to match the border-radius of the .home-nav element */
 }
 .right-nav.transparent {

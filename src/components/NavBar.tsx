@@ -57,7 +57,7 @@ const NavBar: React.FC = () => {
               activeClass="active" to="about"
               spy={true} smooth={true} offset={-100}>
               <p>
-              ./ about
+              About
             </p>
             </ScrollLink>
           </li>
@@ -65,8 +65,8 @@ const NavBar: React.FC = () => {
             <ScrollLink
               activeClass="active" to="experience"
               spy={true} smooth={true} offset={-100}>
-              <p style={{marginLeft:'-45px'}}>
-              ./ experience
+              <p>
+              Experience
             </p>
             </ScrollLink>
           </li>
@@ -75,7 +75,7 @@ const NavBar: React.FC = () => {
               activeClass="active" to="projects"
               spy={true} smooth={true} offset={-100}>
               <p>
-              ./ software-creations
+              Projects
             </p>
             </ScrollLink>
           </li>
@@ -84,7 +84,7 @@ const NavBar: React.FC = () => {
               activeClass="active" to="footer"
               spy={true} smooth={true}>
               <p>
-              ./ contact
+              Contact
             </p>
             </ScrollLink>
           </li>
