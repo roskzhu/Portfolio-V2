@@ -6,7 +6,7 @@ import { Link as ScrollLink } from 'react-scroll';
 
 const Home: React.FC = () => {
   return (
-    <HeaderContainer id="home">
+    <HeaderContainer id="home">      
       <TextContainer>
         <h1>          
           <FadeIn delay={`200ms`}>
@@ -24,26 +24,33 @@ const Home: React.FC = () => {
           </FadeIn>
         </h2>
         <FadeIn delay={`900ms`}>
-          <div style={{marginTop:'40px', marginLeft:'20px'}}>
+          <div style={{marginTop:'27px', marginLeft:'20px'}}>
           <DescContainer>
             <GridContainer>
               <h2>currently</h2>
               <h3>studying</h3>
               <p>a Software Engineer Intern <br/>  @ 
-                <mark><a href="https://www.bmo.com/main/about-bmo/">BMO Financial Group</a></mark>
+              <a href="https://www.bmo.com/main/about-bmo/">
+                <mark>
+                  BMO Financial Group
+                </mark>
+                </a>
               </p>
-              <h1>Computer Science & Artifical Intelligence <br/> @ <mark>the University of Waterloo</mark></h1>
+              <h1>Computer Science & Artifical Intelligence <br/> @ 
+              <a href="https://uwaterloo.ca/">
+              <mark>
+                the University of Waterloo
+                </mark>
+              </a>
+              </h1>
             </GridContainer>
           </DescContainer>
           </div>
         </FadeIn>
         <ScrollContainer>
-          <p style={{ marginLeft:'28%', paddingTop:'0px', color: '#9F9F9F',paddingRight:'10px' }}
+          <p style={{ marginLeft:'180px', paddingTop:'0px', color: '#9F9F9F',paddingRight:'10px' }}
           onMouseOver={(e) => e.currentTarget.style.color = '#DDDDDD'}
           onMouseOut={(e) => e.currentTarget.style.color = '#9F9F9F'}>
-            <FadeIn>
-            Scroll down to learn more ...
-            </FadeIn>
           </p>
           <div>
           <FadeIn>
@@ -52,8 +59,8 @@ const Home: React.FC = () => {
             spy={true} smooth={true} offset={-100}>
             <img src={"/assets/longarrow.svg"} 
               alt="long arrow"
-              style={{paddingLeft:'10%', marginTop:'-40px', cursor: 'pointer', transition: 'transform 0.3s' }} 
-              width='9px'
+              style={{paddingLeft:'10%', cursor: 'pointer', transition: 'transform 0.3s' }} 
+              width='8px'
               color='black'
               onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(5px)'}
               onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
@@ -139,22 +146,21 @@ const GridContainer = styled.div`
     line-height: 1.4;
   }
   > p mark {
-    background-color: #DAE2F5;
-    color: blue;
+    background-color: #CCD8F7;
+    color: #00237C;
     border-radius: 6px;
     padding: 0px 5px;
   }
   > p mark:hover {
-    color: #3366ff; /* Change the color on hover, for example */
+    background-color: #A3BCFC; /* Change the color on hover, for example */
     cursor: pointer; /* Change the cursor to a pointer on hover */
   }
   p a {
+    font-family: 'Rubik', sans-serif !important;
     text-decoration: none; /* Remove the default underline for links */
     color: inherit; /* Inherit the color from the parent element */
   }
   p a:hover {
-    /* Add your desired hover animation styles here */
-    color: red; /* Change the color on hover, for example */
     cursor: pointer; /* Change the cursor to a pointer on hover */
   }
   > h1 {
@@ -171,11 +177,24 @@ const GridContainer = styled.div`
     line-height: 1.4;
   }
   > h1 mark {
-    background-color: #DAE2F5;
-    color: blue;
+    font-family: 'Rubik', sans-serif;
+    background-color: #F9EBC7;
+    color: #834700;
     border-radius: 6px;
     padding: 0px 5px;
   }
+  > h1 mark:hover {
+    background-color: #F5DA95; /* Change the color on hover, for example */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+  }
+  h1 a {
+    text-decoration: none; /* Remove the default underline for links */
+    color: inherit; /* Inherit the color from the parent element */
+  }
+  h1 a:hover {
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+  }
+
   > h2 {
     z-index: 1;
     font-size: 17px;
@@ -206,12 +225,13 @@ const GridContainer = styled.div`
 `;
 
 const ScrollContainer = styled.div`
-  width: 1000px;
+  width: 10px;
   padding-left: 50px;
-  margin-top: -136px;
+  margin-top: 280px;
+  margin-left: 700px;
   display: flex;
   flex-direction: row;
-  position: relative;
+  position: absolute;
   z-index: 10;
   > p {
     z-index: 1;

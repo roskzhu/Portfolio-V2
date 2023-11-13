@@ -53,14 +53,14 @@ class About extends React.Component<{}, AboutState> {
             <span className="section-title">About Me</span>
           </div>
           <div className="about-content">
-            <div className = "vertical-line" style={{marginLeft:'110px',marginTop:'20px'}}></div>
+            <div className = "vertical-line" style={{marginLeft:'110px', marginTop:'20px'}}></div>
             <div className="about-description">
               {[one]}
               {[two]}
               {/* {[three]} */}
             </div>
             <div className="about-image">
-              <img src={"/assets/me6.png"} alt="me" style={{ maxWidth: "300px" }}/>
+              <img src={"/assets/me6.png"} alt="me" style={{ maxWidth: "448px", marginBottom: "20px" }}/>
             </div>
           </div>
         </FadeIn>
