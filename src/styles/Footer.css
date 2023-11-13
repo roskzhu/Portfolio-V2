@@ -3,6 +3,8 @@
   margin-right: auto;
   /* padding-right: 18%;
   padding-left: 15%; */
+  background-image: url('../../public/assets/darkbg.png');
+  padding-top: 10px;
 }
 
 .hr-style {
@@ -49,20 +51,20 @@
 .footer-text p:first-of-type {
   /* margin-left: 20px; */
   font-family: "Karla";
-  font-size: 32px;
+  font-size: 50px;
   line-height: 1;
   letter-spacing: 3px; /* Adjust the value as needed */
-  margin-top: 17%;
+  margin-top: 70px;
   font-weight: 500; 
 }
 .footer-text p {
   font-family: "Karla";
-  color: black;
+  color: white;
   font-size: 15px;
   font-weight: 100; 
   line-height: 1;
   margin-bottom: 15px;
-  letter-spacing: 1px; /* Adjust the value as needed */
+  letter-spacing: 0.3px; /* Adjust the value as needed */
   margin-top: 5%;
   text-align: left;
 }
@@ -73,11 +75,11 @@
 a {
   font-family: "Karla", monospace !important;
   font-size: 14px;
-  color: black;
+  color: rgb(212, 212, 212);
   line-height: 1.5; /* Adjust the value to increase the spacing between lines */
 }
 a:hover {
-  color: gray;
+  color: rgb(255, 255, 255);
 }
 
 .footer-container {
@@ -108,7 +110,7 @@ a:hover {
   flex-direction: column;
   align-items: right;
   padding-top: 120px;
-  /* padding-left:; */
+  padding-left: 20px;
   padding-right: 90px;
 }
 
@@ -118,21 +120,21 @@ a:hover {
   height: 40px;
   margin-bottom: 20px;
   font-family: "Karla", monospace;
-  border-radius: 17px;
+  border-radius: 15px;
   padding-left: 30px;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.16);
   border: 0px solid black;
 }
 .message-input {
   width: 372px;
   resize: none;
-  color: black;
+  color: white;
   padding: 30px;
   margin-bottom: 20px;
-  border-radius: 17px;
+  border-radius: 15px;
   font-family: "Karla", monospace;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.16);
   border: 0px solid black;
 }
 .message-div,
@@ -147,10 +149,12 @@ a:hover {
 .connect-button {
   width: 100px;
   height: 30px;
-  border-radius: 14px;
-  background-color: white;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.4);
   font-family: "Karla", monospace;
-  color: black;
+  font-weight: medium;
+  /* font-style: italic; */
+  color: white;
   transition: all 500ms;
   cursor: pointer;
   border: 0px solid #ffffff;
@@ -158,6 +162,12 @@ a:hover {
 
 .connect-button:hover {
   transform: translateY(-3px);
+}
+
+.name-input::placeholder,
+.email-input::placeholder,
+.message-input::placeholder {
+  color: rgba(255, 255, 255, 0.879); /* Change this color to your desired color */
 }
 
 .error {

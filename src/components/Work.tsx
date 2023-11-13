@@ -94,6 +94,7 @@ const useStyles = makeStyles((theme) => ({
   tabs: {
     borderRight: `1px solid ${theme.palette.divider}`,
     width: '27%',
+    textTransform: 'none',
   },
 }));
 
@@ -112,7 +113,7 @@ const Work: React.FC = () => {
       desc: [
         "Currently working on the Digital Core AI team, helping with document verification to automate mortgage loans."      ],
       techStack: "Python, AWS, SQL, Flask, React.js, TypeScript, Redux",
-      keyDesc: "Also known as the Bank of Montreal"
+      keyDesc: "A.K.A the Bank of Montreal"
     },
   };
 
@@ -171,7 +172,7 @@ const Work: React.FC = () => {
           </ul>
           </div>          
           <FadeInSection delay='200ms'>
-          <div className="card-tech" style={{textAlign:'left',marginLeft:'90px', fontStyle: 'italic'}}>
+          <div className="card-tech" style={{textAlign:'left',marginLeft:'90px', color: '#D4D4D4',fontStyle:'italic'}}>
                     {experienceItems[key]["techStack"].split(", ").map((item: string, index: number) => (
                       <span key={index}>
                         {index > 0 ? " // " : ""}

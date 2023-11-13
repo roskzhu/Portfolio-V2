@@ -65,9 +65,8 @@ class Projects extends Component<{}, ProjectsState> {
         <span className="section-title-before">{"// "}Made by me, made for you.</span>
         <span className="section-title">Projects</span>
       </div>
-      <p style={{marginBottom:'0px'}}>Here are some software creations I’ve made in my own time. 
-        I’ve covered <br/> everything between machine-learning and full-stack, and I’m currently <br/>
-        exploring innovative solutions at the intersection of technology and impact. 
+      <p style={{marginBottom:'0px'}}>Continuously broadening my skillset, I've crafted a range software creations <br/>
+      in my free time, spanning from machine learning to full-stack applications.
       </p>
       </FadeIn>
       <div>
