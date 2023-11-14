@@ -107,11 +107,12 @@ p mark {
 .about-description {
   font-family: "Rubik", sans-serif;
   color: black;
-  max-width: 400px;
+  width: 35%;
+  padding-right: 5%;
+  /* max-width: 500px; */
   font-size: 22px;
   text-align: justify;
   margin: 0;
-  width: 500px;
 }
 .about-description h1 {
   padding-top: 15px;
