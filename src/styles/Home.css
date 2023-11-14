@@ -8,12 +8,232 @@
   padding-bottom: 130px;
 }
 
-.home-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 1fr));
-  grid-gap: 10px;
+.header-container {
+  position: relative;
+  height: 520px;
+  overflow: hidden;
+  display: flex;
+  width: 1050px;
 }
+
+.text-container {
+  display: flex;
+  position: absolute;
+  top: 110px;
+  padding-bottom: 100px;
+  flex-direction: column;
+  z-index: 10;
+  width: 100%;
+}
+
+.text-container h1:first-of-type {
+  font-family: 'Karla', sans-serif; /* Adding the Google Font 'Karla' */
+  font-size: 115px;
+  font-weight: 400;
+  text-align: left;
+  color: black;
+  margin-top: -25px;
+  margin-left: 0px;
+  margin-bottom: 10px; /* Remove the spacing underneath the text */
+  
+  letter-spacing: 1px;
+}
+.text-container h1 {
+  font-family: 'Karla', sans-serif; /* Adding the Google Font 'Karla' */
+  font-size: 115px;
+  font-weight: 400;
+  text-align: left;
+  color: black;
+  margin-top: -25px;
+  margin-left: 70px;
+  margin-bottom: 10px; /* Remove the spacing underneath the text */
+  
+  letter-spacing: 1px;
+}
+
+.text-container h2 {
+  font-family: 'Karla', sans-serif; 
+  font-size: 36px;
+  font-weight: 400;
+  text-align: left;
+  color: #202020;
+  width: 100vw;
+  margin-top: 0px;
+  margin-bottom: 40px; 
+  margin-left: 80px;
+  margin-right: 10%;
+  letter-spacing: 1px;
+}
+
+.desc-container {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 40px;
+  
+  margin-top: 36px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr; /* Set grid template rows to create a 2x2 grid */
+  gap: 20px; /* Adjust the gap as needed */
+  grid-row-gap: 0; /* Remove the space between rows */
+  width: 27%;
+  
+
+  flex-direction: column;
+  z-index: 10;
+}
+.grid-container p {
+  z-index: 1;
+  font-size: 14px;
+  text-align: left;
+  font-family: 'Rubik', sans-serif; /* Adding the Google Font 'Karla' */
+  font-weight: 400;
+  color: black;
+  width: 70%;
+  margin-left: 0px;
+  margin-top: -20px;
+  margin-right: 100%;
+  line-height: 1.4;
+}
+.grid-container p mark {
+  background-color: #CCD8F7;
+  color: #00237C;
+  border-radius: 6px;
+  padding: 0px 5px;
+  font-size: 14px;
+}
+.grid-container p mark:hover {
+  background-color: #A3BCFC; /* Change the color on hover, for example */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+.grid-container p a {
+  font-family: 'Rubik', sans-serif !important;
+  text-decoration: none; /* Remove the default underline for links */
+  color: inherit; /* Inherit the color from the parent element */
+}
+.grid-container p a:hover {
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+.grid-container h4 {
+  z-index: 1;
+  font-size: 14px;
+  text-align: left;
+  font-family: 'Rubik', sans-serif; /* Adding the Google Font 'Karla' */
+  font-weight: 400;
+  color: black;
+  width: 100%;
+  margin-left: 0%;
+  margin-top: -20px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+}
+.grid-container h4 mark {
+  font-family: 'Rubik', sans-serif;
+  background-color: #F9EBC7;
+  color: #834700;
+  border-radius: 6px;
+  padding: 0px 5px;
+}
+.grid-container h4 mark:hover {
+  background-color: #F5DA95; /* Change the color on hover, for example */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+.grid-container h4 a {
+  text-decoration: none; /* Remove the default underline for links */
+  color: inherit; /* Inherit the color from the parent element */
+}
+.grid-container h4 a:hover {
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+.grid-container h2 {
+  z-index: 1;
+  font-size: 17px;
+  text-align: left;
+  font-family: 'Rubik', sans-serif; /* Adding the Google Font 'Karla' */
+  font-weight: 600;
+  letter-spacing: 0px;
+  font-style: italic;
+  color: black;
+  width: 100%;
+  margin-left: 0px;
+  margin-bottom: 0; /* Remove the spacing underneath the text */
+}
+
+
+
+
 
 ul {
   list-style: none;
+}
+
+@media (max-width: 1024px) {
+  /* Adjust font sizes for smaller screens */
+  .TextContainer > h1 {
+    font-size: 80px;
+  }
+  .TextContainer > h2 {
+    font-size: 26px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Further adjustments for even smaller screens */
+  .TextContainer > h1 {
+    font-size: 60px;
+  }
+  .TextContainer > h2 {
+    font-size: 20px !important;
+  }
+  .DescContainer > p {
+    font-size: 12px;
+  }
+  .DescContainer > h1 {
+    font-size: 12px;
+  }
+  .DescContainer > h2 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 390px) {
+  /* Adjustments for the smallest screens */
+  #home{
+    padding-bottom: 30px;
+  }
+  .text-container {
+    margin-left:3%;
+    padding-bottom: 0px;
+  }
+  .text-container h1:first-of-type {
+    font-size: 300%;
+    width: 300px;
+  }
+  .text-container h1 {
+    font-size: 300%;
+    width: 300px;
+    margin-left: 0px;
+  }
+  .text-container h2 {
+    font-size: 180%;
+    margin-left:0%;
+    margin-bottom: 0;
+  }
+  .desc-container {
+    display: grid;
+    margin-left: 0%;
+  }
+  .desc-container p {
+    font-size: 15px;
+  }
+  .desc-container h1 {
+    font-size: 10px;
+  }
+  .desc-container h2 {
+    font-size: 15px;
+  }
 }

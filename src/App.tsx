@@ -33,7 +33,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Landing />} />
           </Routes>
-          <Footer onSave={handleSave} />
+          {/* <Footer onSave={handleSave} /> */}
         {/* </>
       )} */}
     </BrowserRouter>

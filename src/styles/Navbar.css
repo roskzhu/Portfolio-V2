@@ -225,6 +225,16 @@ ul {
 }
 
 @media (max-width: 69em) {
+  .home-nav {
+    /* display: none; */
+  }
+  .left-nav {
+    display: none;
+  }
+  .right-nav {
+    display: none;
+  }
+
   .primary-navigation {
     position: fixed;
     right: 0;
