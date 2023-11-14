@@ -38,6 +38,7 @@
   margin-top: 5px;
   font-weight: bold;
   color:white;
+  margin-left: 90px;
 }
 
 #vertical-tabpanel {
@@ -110,7 +111,7 @@ ul {
   font-family: "Karla", sans-serif;
   font-size: 20px;
   color:white;
-  /* font-weight:300; */
+  margin-left: 60px;
 }
 
 .job-description a,
@@ -120,11 +121,28 @@ ul {
   color:white;
 }
 
+.MuiBox-root-8 {
+  /* margin-left: 10px;
+  height: unset !important; */
+  width: 93%;
+}
 
 .vertical-line-exp {
   border-left: 2px solid #000; /* 1px solid black border on the left side */
   height: 100px;
   margin-top: 0px;
+  margin-left: 60px;
+}
+
+.card-tech-exp {
+  font-family: "Karla", sans-serif;
+  color: rgb(240, 240, 240);
+  font-size: 14.5px;
+  margin-left: 90px;
+  font-weight: 300;
+  text-align: left;
+  color: #D4D4D4;
+  /* font-style: italic; */
 }
 
 @media only screen and (max-width: 600px) {
@@ -139,16 +157,49 @@ ul {
   }
 
   .makeStyles-root-1 {
+    margin-left: 10px;
     height: unset !important;
-    width: unset;
+    width: 90vw;
     flex-direction: column;
   }
 
+  .MuiBox-root-8 {
+    margin-left: 10px;
+    height: unset !important;
+    width: 78vw;
+    flex-direction: column;
+  }
+
+  .vertical-line-exp {
+    border-left: 2px solid #000; /* 1px solid black border on the left side */
+    height: 130px;
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+
+  .joblist-duration {
+    margin-left: 50px;
+  }
+
+  .job-description {
+    margin-left: 10px;
+  }
+  .job-description li {
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  .card-tech-exp {
+    font-size: 12px;
+    margin-left: 15px;
+    width: 80vw;
+  }
+
   .joblist-job-title {
-    font-size: 22px;
+    font-size: 28px;
   }
 
   .joblist-job-company {
-    font-size: 22px;
+    font-size: 28px;
   }
 }

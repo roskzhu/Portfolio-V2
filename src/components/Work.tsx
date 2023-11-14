@@ -42,11 +42,8 @@ function TabPanel(props: TabPanelProps) {
         
       >
         {value === index && (
-          <Box p={3} style={{ ...backgroundImageStyle,width:'80%' }}>
+          <Box p={3} style={{ ...backgroundImageStyle}}>
             <Typography>{children}</Typography>
-            <p style={{ marginTop: '10px', color: 'gray' }}>
-              text
-            </p>
           </Box>
         )}
       </div>
@@ -157,11 +154,11 @@ const Work: React.FC = () => {
           <span className="joblist-job-company">{key}</span>
           <div className="job-description-container">
           <div className="vertical-line-exp" 
-            style={{borderLeft: '2px solid white', marginLeft:'60px', width:'10px', position: 'absolute'}}>
+            style={{borderLeft: '2px solid white', width:'10px', position: 'absolute'}}>
           </div>
-          <div className="joblist-duration" style={{marginLeft:'90px'}}>
+          <div className="joblist-duration">
             {experienceItems[key]["duration"]}</div>
-          <ul className="job-description"  style={{marginLeft:'60px', width:'65%', marginRight:'100%'}}>
+          <ul className="job-description"  style={{width:'65%'}}>
             {experienceItems[key]["desc"].map(function (descItem, i) {
               return (
                 <FadeInSection key={i} delay={`${i + 1}00ms`}>
@@ -172,7 +169,7 @@ const Work: React.FC = () => {
           </ul>
           </div>          
           <FadeInSection delay='200ms'>
-          <div className="card-tech" style={{textAlign:'left',marginLeft:'90px', color: '#D4D4D4',fontStyle:''}}>
+          <div className="card-tech-exp">
                     {experienceItems[key]["techStack"].split(", ").map((item: string, index: number) => (
                       <span key={index}>
                         {index > 0 ? " // " : ""}
