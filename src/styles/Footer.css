@@ -68,8 +68,14 @@
   margin-top: 5%;
   text-align: left;
 }
+.footer-text p:nth-of-type(3) {
+  padding-top: 70px; /* Adjust the padding value as needed */
+}
 
 .links-container {
+  width: 100px;
+  display: flex;
+  justify-content: space-evenly;
   color: gray !important;
 }
 a {
@@ -189,7 +195,8 @@ a:hover {
 }
 
 .horizontal-divider {
-  width:400px !important;
+  margin-top: 40px;
+  width:500px !important;
 }
 
 @media (max-width: 69em) {
@@ -200,23 +207,47 @@ a:hover {
     grid-template-columns: 1fr;
     height: 950px;
   }
-  .connect-form {
+  /* .connect-form {
     margin: 0;
     margin-top: 0%;
-  }
+  } */
 }
 
 @media (max-width: 500px) {
   .foot {
     height: 87vh;
   }
+  .footer-text p:first-of-type {
+    margin-top: 50px;
+    font-size: 35px;
+    margin-left: 50px;
+    line-height: 1.2;
+  }
+  .footer-text p {
+    width: 75vw;
+    font-size: 13px;
+    margin-left: 50px;
+    line-height: 1.2;
+  }
+  .footer-text p:nth-of-type(3) {
+    padding-top: 10px; /* Adjust the padding value as needed */
+  }
+  .footer-text p:nth-of-type(4) {
+    position: absolute;
+    margin-top: 430px;
+    /* bottom: 0; */
+    /* margin-bottom: 50px; */
+  }
 
   .footer-container {
     width: 100%;
     display: block;
-    margin-right: 3%;
+    /* margin-right: 3%; */
   }
   .horizontal-divider {
+    position: absolute;
+    margin-top: 380px;
+    margin-left: 25px;
     width: 340px !important;
   }
   .footer-text {
@@ -224,22 +255,28 @@ a:hover {
   }
   .connect-form {
     padding: 0;
+    margin-left: 23px;
+    margin-top: 20px;
+  }
+  .links-container {
+    display: flex;
+    position: absolute;
+    margin-top: 398px;
+    margin-left: 50px;
+    justify-content: space-evenly;
+    width: 50vw;
+    margin-left: 30vw;
   }
 
   .message-input {
-    width: 70vw;
+    height: 15vh;
+    width: 72vw;
   }
   .email-input {
     width: 80vw;
   }
   .name-input {
     width: 80vw;
-  }
-  .footer-text p:first-child {
-    font-size: 18px;
-  }
-  .footer-text p:nth-child(2) {
-    font-size: 12px;
   }
 
   .linkedin {
