@@ -88,9 +88,9 @@
 }
 
 .item-card {
-  font-family: "Karla", sans-serif;
-  font-size: 15px;
-  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
   color: white;
   background-color: #28292A; /* Adjust the background color as needed */
   padding: 10px 15px; /* vertical horizontal padding */
@@ -111,4 +111,49 @@
   height: 50px; /* Maintain aspect ratio */
   border-radius: 8px 8px 0 0; /* Adjust border-radius as needed */
   padding-bottom: 5px;
+}
+
+.tech-title {
+  font-family: "Karla", sans-serif;
+  font-weight: 500;  /* medium */
+  letter-spacing: 1px;
+  font-size: 45px;
+  padding-left: 50px;
+  color: white;
+  padding-bottom: -35px;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .tech-title {
+    font-size: 210%;
+    padding-left: 25px;
+    /* padding-bottom: 15px; */
+  }
+
+  .subtitle {
+    /* margin-top: 3px; */
+    /* height: 40px; */
+    margin-left: 25px;
+  }
+  .subtitle::after {
+    width: 90px;
+  }
+
+  .item-card-container {
+    display: flex;
+    flex-wrap: wrap; /* Add this line to enable wrapping */
+    padding-left: 20px;
+  }
+
+  .item-card {
+    font-size: 10px;
+    padding: 5px 10px; /* vertical horizontal padding */
+    margin-right: 5px;
+    margin-bottom: 4px;
+  }
+  .item-image {
+    width: auto; /* Adjust the width as needed */
+    height: 25px; 
+  }
 }

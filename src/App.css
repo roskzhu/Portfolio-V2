@@ -116,3 +116,16 @@ body::-webkit-scrollbar {
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 500px) {
+  /* Adjustments for the smallest screens */
+  .section-title-before {
+    margin-left: 8%;
+    font-size: 15px; /* Adjust font size as needed */
+  }
+  .section-title {
+    margin-left: 8%;
+    font-size: 270%; /* Adjust font size as needed */
+  }
+}
+

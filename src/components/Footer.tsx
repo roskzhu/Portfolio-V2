@@ -50,10 +50,6 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
 
   return (
     <footer className='foot' id='footer'>
-      {/* <GradientCircle style={{ marginTop: '80px',marginLeft: '-60%', background: '#AFFAFF', height: '35%', animationDelay: '1s' }} />
-      <GradientCircle style={{ marginTop: '150px', marginLeft: '-30%', background: '#FFBBBB', animationDelay: '3s' }} />
-      <GradientCircle style={{ marginTop: '200px', marginLeft: '-40%', animationDelay: '0.5s' }} /> */}
-
       <div className='footer-container'>
         <div className='footer-text' style={{zIndex:'2'}}>
           <div className='footer-title'>
@@ -61,7 +57,7 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
             <p>Let's build something <span style={{fontStyle:'italic'}}>impactful.</span></p>
             <p style={{lineHeight:'1.3', paddingTop:'15px'}}>Have a question? Want to chat? <br/> Feel free to send me a message.</p> 
             <p style={{paddingTop:'70px'}}>Resume is available upon request.</p>
-            <div className="horizontal-divider" style={{marginTop:'40px', width:"460px"}}></div>
+            <div className="horizontal-divider" style={{marginTop:'40px'}}></div>
             <p style={{marginTop:'15px'}}>This website was built and designed by myself.</p>
           </FadeIn>   
         </div>
@@ -131,44 +127,5 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
     </footer>
   )
 }
-
-
-
-// const GradientCircle = styled.div`
-//   width: 20%;
-//   height: 30%;
-//   transform: rotate(-0.167deg);
-//   flex-shrink: 0;
-//   border-radius: 316.616px;
-//   background: #FFD177;
-//   filter: blur(200px);
-//   margin-top: 10%;
-//   margin-left: 0%;
-//   margin-right: 0%;
-//   position: absolute;
-//   z-index: 0;
-//   animation: rotate 12s linear infinite;
-
-//   background-size: 200% 200%;
-
-//   @keyframes rotate {
-//     0% {
-//       opacity: 60%    
-//     }
-//     25% {
-//       opacity: 90%;
-//     }
-//     50% {
-//       opacity: 110%;
-//     }
-//     75% {
-//       opacity: 70%;
-//     }
-//     100% {
-//       opacity: 40%
-//     }
-//   }
-// `;
-
 
 export default Footer;
