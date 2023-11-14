@@ -3,6 +3,7 @@
   margin-right: auto;
   background-size: cover;
   background-image: url('../../public/assets/darkbg.png');
+  /* height: 530px; */
   padding-top: 10px;
 }
 
@@ -206,6 +207,10 @@ a:hover {
 }
 
 @media (max-width: 500px) {
+  .foot {
+    height: 87vh;
+  }
+
   .footer-container {
     width: 100%;
     display: block;
