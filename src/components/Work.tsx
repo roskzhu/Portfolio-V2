@@ -20,10 +20,10 @@ function TabPanel(props: TabPanelProps) {
   const { children, value, index, ...other } = props;
 
   const backgroundImageStyle = {
-    backgroundImage: `url('/assets/bluebg.png')`, // Replace with the path to your image
-    backgroundSize: 'cover', // Adjust as needed
-    backgroundRepeat: 'no-repeat', // Adjust as needed
-    backgroundPosition: 'center', // Adjust as needed
+    backgroundImage: `url('/assets/bmobg.png')`, 
+    backgroundSize: 'cover', 
+    backgroundRepeat: 'no-repeat', 
+    backgroundPosition: 'center', 
     marginTop: '20px',
     paddingTop: '20px',
     borderRadius: '15px',
