@@ -120,6 +120,13 @@ ul {
   color:white;
 }
 
+
+.vertical-line-exp {
+  border-left: 2px solid #000; /* 1px solid black border on the left side */
+  height: 100px;
+  margin-top: 0px;
+}
+
 @media only screen and (max-width: 600px) {
   #experience {
     padding-left: unset;

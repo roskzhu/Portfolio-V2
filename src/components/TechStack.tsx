@@ -13,7 +13,7 @@ class TechStack extends React.Component<{}, TechStackState> {
       <div>
         <div className="tech-container">          
             <div className="section-header" style={{ paddingBottom: '0px', paddingTop:'25px' }}>
-              <span className="section-title" style={{ paddingLeft:'50px', color:'white', fontSize:'45px', paddingBottom: '-35px',}}>
+              <span className="tech-title">
                 <FadeIn>My tech stack</FadeIn>
               </span>
             </div>

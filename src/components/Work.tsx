@@ -156,7 +156,7 @@ const Work: React.FC = () => {
           </span>
           <span className="joblist-job-company">{key}</span>
           <div className="job-description-container">
-          <div className="vertical-line" 
+          <div className="vertical-line-exp" 
             style={{borderLeft: '2px solid white', marginLeft:'60px', width:'10px', position: 'absolute'}}>
           </div>
           <div className="joblist-duration" style={{marginLeft:'90px'}}>

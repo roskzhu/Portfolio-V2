@@ -187,6 +187,10 @@ a:hover {
   transition: all 500ms;
 }
 
+.horizontal-divider {
+  width:400px !important;
+}
+
 @media (max-width: 69em) {
   .last-part {
     height: 1100px;
@@ -201,7 +205,22 @@ a:hover {
   }
 }
 
-@media (max-width: 45em) {
+@media (max-width: 500px) {
+  .footer-container {
+    width: 100%;
+    display: block;
+    margin-right: 3%;
+  }
+  .horizontal-divider {
+    width: 340px !important;
+  }
+  .footer-text {
+    padding-right: 0;
+  }
+  .connect-form {
+    padding: 0;
+  }
+
   .message-input {
     width: 70vw;
   }
