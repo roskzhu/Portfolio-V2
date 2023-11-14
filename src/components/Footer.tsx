@@ -56,20 +56,24 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
           <FadeIn>
             <p>Let's build something <span style={{fontStyle:'italic'}}>impactful.</span></p>
             <p style={{lineHeight:'1.3', paddingTop:'15px'}}>Have a question? Want to chat? <br/> Feel free to send me a message.</p> 
-            <p style={{paddingTop:'70px'}}>Resume is available upon request.</p>
-            <div className="horizontal-divider" style={{marginTop:'40px'}}></div>
-            <p style={{marginTop:'15px'}}>This website was built and designed by myself.</p>
+            <p>Resume is available upon request.</p>
+            <div className="horizontal-divider"></div>
+            <p>This website was built and designed by myself.</p>
           </FadeIn>   
         </div>
           <div>
             <div className="links-container" style={{color:'white'}}>
-              <FadeIn delay={`200ms`}>
+            <FadeIn delay={`200ms`}>
               <a href="mailto:rosannezhu@gmail.com">
                 <EmailRoundedIcon style={{ fontSize: 20, marginRight: '5px'  }}></EmailRoundedIcon>
               </a>
+              </FadeIn>   
+              <FadeIn delay={`300ms`}>
               <a href="https://github.com/roskzhu">
                 <GitHubIcon style={{ fontSize: 19, marginRight: '5px'  }}></GitHubIcon>
               </a>
+              </FadeIn>   
+              <FadeIn delay={`400ms`}>
               <a href="https://www.linkedin.com/in/rosanne-zhu">
                 <LinkedInIcon style={{ fontSize: 21 }}></LinkedInIcon>
               </a>
