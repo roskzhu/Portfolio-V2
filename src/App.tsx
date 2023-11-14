@@ -3,21 +3,21 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Landing from "./pages/Landing";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import Loading from "./pages/Loading";
+// import Loading from "./pages/Loading";
 import './App.css';
 
 function App() {
-  const [isLoading, setLoading] = useState(true);
+  // const [isLoading, setLoading] = useState(true);
 
-    useEffect(() => {
-        // Simulate a delay (e.g., 3 seconds) before redirecting
-        const delay = setTimeout(() => {
-            setLoading(false);
-        }, 5000);
+  //   useEffect(() => {
+  //       // Simulate a delay (e.g., 3 seconds) before redirecting
+  //       const delay = setTimeout(() => {
+  //           setLoading(false);
+  //       }, 5000);
 
-        // Clear the timeout to avoid issues if the user navigates before the delay is complete
-        return () => clearTimeout(delay);
-    }, []);
+  //       // Clear the timeout to avoid issues if the user navigates before the delay is complete
+  //       return () => clearTimeout(delay);
+  //   }, []);
 
   const handleSave = (values: any) => {
     console.log({ values });
