@@ -58,7 +58,7 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
         <div className='footer-text' style={{zIndex:'2'}}>
           <div className='footer-title'>
           <FadeIn>
-            <p>Let's build something <span style={{fontStyle:'italic'}}>creative.</span></p>
+            <p>Let's build something <span style={{fontStyle:'italic'}}>impactful.</span></p>
             <p style={{lineHeight:'1.3', paddingTop:'15px'}}>Have a question? Want to chat? <br/> Feel free to send me a message.</p> 
             <p style={{paddingTop:'70px'}}>Resume is available upon request.</p>
             <div className="horizontal-divider" style={{marginTop:'40px', width:"460px"}}></div>
