@@ -9,21 +9,21 @@ const Home: React.FC = () => {
     <HeaderContainer id="home">      
       <TextContainer>
         <h1>          
-          <FadeIn delay={`200ms`}>
+          <FadeIn delay={`1000ms`}>
           Rosanne Zhu is a
           </FadeIn>
         </h1>
         <h1 style={{marginLeft:'70px'}}>          
-          <FadeIn delay={`200ms`}>
+          <FadeIn delay={`1100ms`}>
            software engineer
           </FadeIn>
         </h1>
         <h2 style={{marginLeft:'80px', paddingBottom:'30px'}}>
-          <FadeIn delay={`500ms`}>
+          <FadeIn delay={`1500ms`}>
           developing innovative solutions that elevate, <br/> simplify and transform digital landscapes.
           </FadeIn>
         </h2>
-        <FadeIn delay={`900ms`}>
+        <FadeIn delay={`2300ms`}>
           <div style={{marginTop:'27px', marginLeft:'20px'}}>
           <DescContainer>
             <GridContainer>
@@ -53,7 +53,7 @@ const Home: React.FC = () => {
           onMouseOut={(e) => e.currentTarget.style.color = '#9F9F9F'}>
           </p>
           <div>
-          <FadeIn>
+          <FadeIn delay={`2700ms`}>
             <ScrollLink
             activeClass="active" to="about"
             spy={true} smooth={true} offset={-100}>

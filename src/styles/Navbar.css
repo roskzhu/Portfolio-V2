@@ -56,7 +56,7 @@
 }
 .home-nav p:hover {
   font-weight: bold;
-  color: blue; 
+  color: black; 
 }
 .home-nav li {
   cursor: pointer;
@@ -108,7 +108,7 @@
 }
 .left-nav p:hover {
   font-weight: bold;
-  color: blue; 
+  color: black; 
 }
 .left-nav li {
   cursor: pointer;

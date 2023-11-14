@@ -105,9 +105,10 @@ p {
 }
 
 .card-desc {
-  font-family: "Rubik", sans-serif;
+  font-family: "Karla", sans-serif;
   color: black;
-  font-size: 13px;
+  letter-spacing: 0;
+  font-size: 15px;
   padding-bottom: 10px;
   margin-left: 20px;
   /* text-align: center; */
@@ -115,10 +116,11 @@ p {
 }
 
 .card-tech {
-  font-family: "Rubik", sans-serif;
+  font-family: "Karla", sans-serif;
   color: rgb(240, 240, 240);
-  font-size: 14px;
+  font-size: 14.5px;
   margin-left: 20px;
+  font-weight: 300;
   /* text-align: center; */
 }
 

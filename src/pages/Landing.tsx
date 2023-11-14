@@ -8,8 +8,9 @@ import Projects from '../components/Projects';
 const Landing: React.FC = () => {
   return (
     <LandingContainer>      
+      {/* blue, pink, yellow */}
       <GradientCircle style={{ marginTop: '-100px', marginLeft: '-10%', background: '#BBC6FF', height: '15%', animationDelay: '1s' }} />
-      <GradientCircle style={{ marginTop: '-100px', marginLeft: '25%', background: '#FFBBF0', animationDelay: '3s' }} />
+      <GradientCircle style={{ opacity: '70%', marginTop: '-100px', marginLeft: '25%', background: '#FFBBF0', animationDelay: '3s' }} />
       <GradientCircle style={{ marginTop: '-300px', marginLeft: '50%', animationDelay: '0.5s' }} />
       <Home/>    
       <About/>

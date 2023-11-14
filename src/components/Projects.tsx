@@ -89,11 +89,13 @@ class Projects extends Component<{}, ProjectsState> {
                     ></ExternalLinks>
                     </div>
                   <div className="card-desc">{projects[key]["desc"]}</div>
-                  <div className="card-tech">
+                  <div className="card-tech" style={{color: '#717171',fontStyle:'',paddingTop:'10px'}}>
                     {projects[key]["techStack"].split(", ").map((item: string, index: number) => (
                       <span key={index}>
-                        {index > 0 ? " " : ""}
-                        <mark>{item}</mark>
+                        {index > 0 ? " // " : ""}
+                        {/* <mark> */}
+                          {item}
+                        {/* </mark> */}
                       </span>
                     ))}
                   </div>
