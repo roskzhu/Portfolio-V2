@@ -2,7 +2,7 @@
   padding-bottom: -30px;
 }
 
-.home-nav{
+.home-nav {
   width: 3vw;
   height: 38px;
   margin-left: -15px;
@@ -115,7 +115,7 @@
 }
 
 .right-nav{
-  width: 20vw;
+  width: 22vw;
   background-color: white;
   border-radius: 18px;
   /* border: 1px solid black; */
@@ -131,7 +131,7 @@
   position: absolute;
   bottom: -7px;
   /* margin-left: 60vw; */
-  width: 18vw;
+  width: 20vw;
   height: 1px; /* You can adjust this to your preferred underline thickness */
   background-color: #646464; /* You can change the color of the underline here */
   border-radius: 1px; /* You can adjust this to match the border-radius of the .home-nav element */
@@ -170,7 +170,7 @@
   height: 38px;
   transition: background-color 0.5s;
   background-color: transparent;
-  margin-left: 70px;
+  /* margin-left: 70px; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
