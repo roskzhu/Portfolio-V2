@@ -78,7 +78,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr; /* Set grid template rows to create a 2x2 grid */
-  gap: 20px; /* Adjust the gap as needed */
+  /* gap: 20px;  */
   grid-row-gap: 0; /* Remove the space between rows */
   width: 27%;
   
@@ -96,7 +96,7 @@
   width: 70%;
   margin-left: 0px;
   margin-top: -20px;
-  margin-right: 100%;
+  /* margin-right: 100%; */
   line-height: 1.4;
 }
 .grid-container p mark {
