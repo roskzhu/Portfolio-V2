@@ -8,9 +8,9 @@ import Projects from '../components/Projects';
 const Landing: React.FC = () => {
   return (
     <LandingContainer>      
-      {/* blue, pink, yellow */}
+      {/* pink blue yellow */}
+      <GradientCircle style={{ opacity: '70%', marginTop: '-100px', marginLeft: '25%', background: '#FFC7C7', animationDelay: '3s' }} />
       <GradientCircle style={{ marginTop: '-100px', marginLeft: '-10%', background: '#BBC6FF', height: '15%', animationDelay: '1s' }} />
-      <GradientCircle style={{ opacity: '70%', marginTop: '-100px', marginLeft: '25%', background: '#FFBBF0', animationDelay: '3s' }} />
       <GradientCircle style={{ marginTop: '-300px', marginLeft: '50%', animationDelay: '0.5s' }} />
       <Home/>    
       <About/>
@@ -34,7 +34,7 @@ const GradientCircle = styled.div`
   flex-shrink: 0;
   border-radius: 316.616px;
   background: #FFE977;
-  filter: blur(300px);
+  filter: blur(150px);
   margin-top: 25%;
   margin-left: 0%;
   margin-right: 0%;
@@ -48,20 +48,20 @@ const GradientCircle = styled.div`
   @keyframes rotate {
     0% {
       transform: rotate(0deg);  
-      opacity: 110%    
+      opacity: 40%    
     }
     25% {
-      opacity: 90%;
+      opacity: 30%;
     }
     50% {
-      opacity: 40%;
+      opacity: 20%;
     }
     75% {
-      opacity: 90%;
+      opacity: 30%;
     }
     100% {
       transform: rotate(360deg);
-      opacity: 120%
+      opacity: 40%
     }
   }
 `;

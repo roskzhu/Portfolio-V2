@@ -108,7 +108,7 @@
 }
 .left-nav p:hover {
   font-weight: bold;
-  color: black; 
+  color: #2E568E; 
 }
 .left-nav li {
   cursor: pointer;
