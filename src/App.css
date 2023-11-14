@@ -117,6 +117,18 @@ body::-webkit-scrollbar {
   }
 }
 
+@media (max-width: 850px) {
+  /* Adjustments for the smallest screens */
+  .section-title-before {
+    margin-left: 5%;
+    font-size: 15px; /* Adjust font size as needed */
+  }
+  .section-title {
+    margin-left: 5%;
+    font-size: 270%; /* Adjust font size as needed */
+  }
+}
+
 @media (max-width: 500px) {
   /* Adjustments for the smallest screens */
   .section-title-before {

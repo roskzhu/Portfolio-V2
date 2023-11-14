@@ -227,6 +227,23 @@ ul {
 @media (max-width: 69em) {
   .home-nav {
     /* display: none; */
+    width: 35px;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    position: fixed;
+  }
+  .home-nav.white {
+    background-color: hsla(0, 0%, 98%, 0.25);
+    /* background-color: transparent; */
+    backdrop-filter: blur(1 rem) !important;
+  }
+  .home-nav::after {
+    display: none;
+  }
+  .home-nav.transparent::after {
+    display: none;
   }
   .left-nav {
     display: none;

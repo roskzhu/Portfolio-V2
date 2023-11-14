@@ -31,9 +31,7 @@
 
 
 ## 🎨 next steps
-- refine fade in animations, project decorators, tech stack card, loading screen
-- multiple screen sizing
-- clean up css
+- refine fade in animations, tech stack card, loading screen
 
 
 View my Figma prototype <a href="https://www.figma.com/file/NZjTgi0xLD86zIzymeD7Ff/updated-port-(Copy)?type=design&node-id=0%3A1&mode=design&t=DLWlQEaS8LiLcfQC-1" target="_blank">here</a>.

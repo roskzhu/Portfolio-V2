@@ -150,15 +150,71 @@ p mark {
   margin-left: 110px;
   margin-top: 20px;
 }
-
-@media only screen and (max-width: 788px) {
-  .about-image img {
-    max-width: 200px;
-  }
-}
-
 .about-image:hover {
   transform: translateY(-7px);
+}
+
+@media only screen and (max-width: 850px) {
+  /* #about {
+    height: unset;
+    padding-left: unset;
+    padding-right: unset;
+    padding-top: 20%;
+  } */
+  .about-description {
+    margin-top: 0;
+    /* margin-left: 5%; */
+    width: 100%;
+    font-size: 18px;
+    text-align: justify;
+  }
+  
+  .about-description h1 {
+    /* padding-top: 3px; */
+    font-size: 115%;
+    /* width: 30vw; */
+  }
+
+  .about-image {
+    display: none;
+  }
+  .about-image img {
+    width: 92%;
+    height: auto;
+  }
+
+  /* #about::after {
+    width: 35%;
+    margin-left: 2%;
+  }
+
+  .vertical-line {
+    height: 10vh;
+    margin-left: 15%;
+    margin-top: 0px;
+    position: absolute;
+  }
+  .about-description h2 {
+    margin-top: 0;
+    font-size: 15px;
+  }
+
+  .tech-container{ 
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 95vw;
+    margin-top: 100px;
+  }
+
+  .about-description a,
+  .about-description b {
+    font-size: 17px;
+  }
+
+
+  .about-content {
+    display: unset;
+  } */
 }
 
 @media only screen and (max-width: 500px) {
