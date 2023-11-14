@@ -62,7 +62,7 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
             <p style={{lineHeight:'1.3', paddingTop:'15px'}}>Have a question? Want to chat? <br/> Feel free to send me a message.</p> 
             <p style={{paddingTop:'70px'}}>Resume is available upon request.</p>
             <div className="horizontal-divider" style={{marginTop:'40px', width:"460px"}}></div>
-            <p style={{marginTop:'15px'}}>This website is built and designed by myself.</p>
+            <p style={{marginTop:'15px'}}>This website was built and designed by myself.</p>
           </FadeIn>   
         </div>
           <div>

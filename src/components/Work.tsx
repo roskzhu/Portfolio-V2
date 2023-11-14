@@ -112,7 +112,7 @@ const Work: React.FC = () => {
       duration: "SEPT 2023 - PRESENT",
       desc: [
         "Currently working on the Digital Core AI team, helping with document verification to automate mortgage loans."      ],
-      techStack: "Python, AWS, SQL, Flask, React.js, TypeScript, Redux",
+      techStack: "Python, AWS, SQL, Flask, React.js, TypeScript",
       keyDesc: "A.K.A the Bank of Montreal"
     },
   };
@@ -172,7 +172,7 @@ const Work: React.FC = () => {
           </ul>
           </div>          
           <FadeInSection delay='200ms'>
-          <div className="card-tech" style={{textAlign:'left',marginLeft:'90px', color: '#D4D4D4',fontStyle:'italic'}}>
+          <div className="card-tech" style={{textAlign:'left',marginLeft:'90px', color: '#D4D4D4',fontStyle:''}}>
                     {experienceItems[key]["techStack"].split(", ").map((item: string, index: number) => (
                       <span key={index}>
                         {index > 0 ? " // " : ""}

@@ -29,7 +29,7 @@ const NavBar: React.FC = () => {
   return (
     <NavContainer>
       <ContainerIcon>
-      <FadeIn>
+      <FadeIn delay={`200ms`}>
       <div className={`home-nav ${isTop ? 'transparent' : 'white'}`}>
         <ul id="icon-navigation" className={`icon-navigation ${visible ? 'visible' : ''}`}>          
             <li>
@@ -49,7 +49,7 @@ const NavBar: React.FC = () => {
       </ContainerIcon>
       <ContainerLeft>
       <div style={{backdropFilter:'blur(0.1rem)'}}>
-      <FadeIn  delay={`150ms`}>      
+      <FadeIn delay={`300ms`}>      
         <div className={`left-nav ${isTop ? 'transparent' : 'white'}`}>
         <ul id="primary-navigation" className={`primary-navigation ${visible ? 'visible' : ''}`}>
           <li>
@@ -104,7 +104,7 @@ const NavBar: React.FC = () => {
     </ContainerLeft>
     <ContainerRight>
     <div style={{backdropFilter:'blur(0.1rem)', marginLeft:'15px'}}>
-      <FadeIn delay={`300ms`}>
+      <FadeIn delay={`400ms`}>
       <div className={`right-nav ${isTop ? 'transparent' : 'white'}`}>
           <a href="mailto:rosannezhu@gmail.com" style={{color:'#5A5A5A'}}>
             <EmailRoundedIcon style={{ fontSize: 25, marginRight: '45px', marginTop: '5px'  }}></EmailRoundedIcon>

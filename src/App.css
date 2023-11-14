@@ -62,8 +62,9 @@ body::-webkit-scrollbar {
 .section-title-before {
   font-family: "Karla", sans-serif;
   color: gray; /* Adjust color as needed */
-  font-size: 20px; /* Adjust font size as needed */
+  font-size: 18px; /* Adjust font size as needed */
   /* margin-bottom: 5px; */
+  font-weight: 300;
 }
 
 .section-title {

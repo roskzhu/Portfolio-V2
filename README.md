@@ -31,7 +31,7 @@
 
 
 ## 🎨 next steps
-- refine fade in animations, project decorators, tech stack card
+- refine fade in animations, project decorators, tech stack card, loading screen
 - multiple screen sizing
 - clean up css
 
