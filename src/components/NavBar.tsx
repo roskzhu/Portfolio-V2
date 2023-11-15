@@ -109,13 +109,13 @@ const NavBar: React.FC = () => {
       <FadeIn delay={`400ms`}>
       <div className={`right-nav ${isTop ? 'transparent' : 'white'}`}>
           <a href="mailto:rosannezhu@gmail.com" style={{color:'#5A5A5A'}}>
-            <EmailRoundedIcon style={{ fontSize: 25, marginRight: '45px', marginTop: '5px'  }}></EmailRoundedIcon>
+            <EmailRoundedIcon style={{ fontSize: 25, marginRight: '45px', marginTop: '5px' }} className='email'></EmailRoundedIcon>
           </a>
           <a href="https://github.com/roskzhu" style={{color:'#5A5A5A'}}>
-            <GitHubIcon style={{ fontSize: 22, marginRight: '45px', marginTop: '5px'  }}></GitHubIcon>
+            <GitHubIcon style={{ fontSize: 22, marginRight: '45px', marginTop: '5px'  }}  className='github'></GitHubIcon>
           </a>
           <a href="https://www.linkedin.com/in/rosanne-zhu" style={{color:'#5A5A5A'}}>
-            <LinkedInIcon style={{ fontSize: 27, marginTop: '5px' }}></LinkedInIcon>
+            <LinkedInIcon style={{ fontSize: 27, marginTop: '5px' }} className='linkedin'></LinkedInIcon>
           </a>
         </div>
         <Filter className="flt_svg hide" xmlns="http://www.w3.org/2000/svg">

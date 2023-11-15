@@ -2,7 +2,7 @@
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
-  background-image: url('../../public/assets/darkbg.png');
+  background-image: url('../../public/assets/lightbg.png');
   /* height: 530px; */
   padding-top: 10px;
 }
@@ -34,22 +34,18 @@
 
 .footer-title {
   font-family: "Karla", monospace;
-  color: white;
   font-size: 18px;
   line-height: 1;
-  /* padding-top: -1500px; */
 }
 
 .footer-text {
   font-family: "Karla", monospace;
-  color: white;
   font-size: 18px;
   line-height: 1;
   padding-right: 35px;
   margin-left: 0;
 }
 .footer-text p:first-of-type {
-  /* margin-left: 20px; */
   font-family: "Karla";
   font-size: 50px;
   line-height: 1;
@@ -59,9 +55,9 @@
 }
 .footer-text p {
   font-family: "Karla";
-  color: white;
+  color: #1E1E1E;
   font-size: 15px;
-  font-weight: 100; 
+  font-weight: 400; 
   line-height: 1;
   margin-bottom: 15px;
   letter-spacing: 0.3px; /* Adjust the value as needed */
@@ -76,16 +72,15 @@
   width: 100px;
   display: flex;
   justify-content: space-evenly;
-  color: gray !important;
 }
 a {
   font-family: "Karla", monospace !important;
   font-size: 14px;
-  color: rgb(212, 212, 212);
+  color: #4f4f4f;
   line-height: 1.5; /* Adjust the value to increase the spacing between lines */
 }
 a:hover {
-  color: rgb(255, 255, 255);
+  color: #242424;
 }
 
 .footer-container {
@@ -128,19 +123,19 @@ a:hover {
   font-family: "Karla", monospace;
   border-radius: 15px;
   padding-left: 30px;
-  color: white;
-  background-color: rgba(255, 255, 255, 0.16);
+  color: #1E1E1E;
+  background-color: rgba(73, 73, 73, 0.16);
   border: 0px solid black;
 }
 .message-input {
   width: 372px;
   resize: none;
-  color: white;
+  color: #1E1E1E;
   padding: 30px;
   margin-bottom: 20px;
   border-radius: 15px;
   font-family: "Karla", monospace;
-  background-color: rgba(255, 255, 255, 0.16);
+  background-color: rgba(73, 73, 73, 0.16);
   border: 0px solid black;
 }
 .message-div,
@@ -156,11 +151,11 @@ a:hover {
   width: 100px;
   height: 30px;
   border-radius: 12px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(73, 73, 73, 0.268);
   font-family: "Karla", monospace;
   font-weight: medium;
   /* font-style: italic; */
-  color: white;
+  color: #1E1E1E;
   transition: all 500ms;
   cursor: pointer;
   border: 0px solid #ffffff;
@@ -179,14 +174,14 @@ a:hover {
 .error {
   margin-top: -15px;
   margin-bottom: 5px;
-  color: white;
+  color: #1E1E1E;
   font-size: 10px;
   text-align: center;
   font-family: "Karla", monospace;
 }
 
 .success {
-  color: white;
+  color: #1E1E1E;
   font-size: 10px;
   text-align: center;
   font-family: "Karla", monospace;
@@ -281,13 +276,5 @@ a:hover {
   }
   .name-input {
     width: 80vw;
-  }
-
-  .linkedin {
-    width: 6vw;
-    margin-right: 3px;
-  }
-  .github {
-    width: 6vw;
   }
 }

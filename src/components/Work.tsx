@@ -20,7 +20,7 @@ function TabPanel(props: TabPanelProps) {
   const { children, value, index, ...other } = props;
 
   const backgroundImageStyle = {
-    backgroundImage: `url('/assets/bmobg.png')`, 
+    backgroundImage: `url('/assets/bmobg.svg')`, 
     backgroundSize: 'cover', 
     backgroundRepeat: 'no-repeat', 
     backgroundPosition: 'center', 
@@ -120,7 +120,7 @@ const Work: React.FC = () => {
 
   return (
     <div className={classes.root} 
-    style={{ backgroundColor: '#1E1E1E',
+    style={{ backgroundColor: '#EAEAEA',
             padding:'10px', borderRadius:'20px'}}>
       <Tabs
         orientation={!isHorizontal ? "vertical" : undefined}
@@ -132,7 +132,7 @@ const Work: React.FC = () => {
         {Object.keys(experienceItems).map((key, i) => (
           <Tab key={i} label={
             <div>
-            <div>
+            <div style={{ color: '#282828' }}>
               {isHorizontal ? `0${i}.` : key}
             </div>
             <div style={{ fontSize: '12px', color: 'gray' }}>
@@ -141,7 +141,7 @@ const Work: React.FC = () => {
           </div>
           } 
           {...a11yProps(i)} 
-              style={{ backgroundColor: value === i ? '#28292A' : 'transparent',
+              style={{ backgroundColor: value === i ? '#E2E2E2' : 'transparent',
                        borderRadius:'15px' ,width:'100%'}}
           />
         ))}
@@ -154,7 +154,7 @@ const Work: React.FC = () => {
           <span className="joblist-job-company">{key}</span>
           <div className="job-description-container">
           <div className="vertical-line-exp" 
-            style={{borderLeft: '2px solid white', width:'10px', position: 'absolute'}}>
+            style={{borderLeft: '2px solid #282828', width:'10px', position: 'absolute'}}>
           </div>
           <div className="joblist-duration">
             {experienceItems[key]["duration"]}</div>
@@ -162,7 +162,7 @@ const Work: React.FC = () => {
             {experienceItems[key]["desc"].map(function (descItem, i) {
               return (
                 <FadeInSection key={i} delay={`${i + 1}00ms`}>
-                  <li style={{ color: 'white' }}>{descItem}</li>
+                  <li style={{ color: '#282828' }}>{descItem}</li>
                 </FadeInSection>
               );
             })}

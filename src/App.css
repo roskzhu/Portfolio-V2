@@ -62,7 +62,7 @@ body::-webkit-scrollbar {
 .section-title-before {
   font-family: "Karla", sans-serif;
   color: gray; /* Adjust color as needed */
-  font-size: 18px; /* Adjust font size as needed */
+  font-size: 15px; /* Adjust font size as needed */
   /* margin-bottom: 5px; */
   font-weight: 300;
 }
@@ -83,7 +83,7 @@ body::-webkit-scrollbar {
   display: block;
   width: 120%;
   height: 0.8px;
-  background-color: #ffffff; /* Adjust the color as needed */
+  background-color: #1E1E1E;; /* Adjust the color as needed */
   /* margin-left: -15px; */
 }
 
@@ -107,6 +107,7 @@ body::-webkit-scrollbar {
 .App-link {
   color: #61dafb;
 }
+
 
 @keyframes App-logo-spin {
   from {

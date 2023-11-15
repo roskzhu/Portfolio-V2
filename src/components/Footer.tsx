@@ -62,7 +62,7 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
           </FadeIn>   
         </div>
           <div>
-            <div className="links-container" style={{color:'white'}}>
+            <div className="links-container">
             <FadeIn delay={`200ms`}>
               <a href="mailto:rosannezhu@gmail.com">
                 <EmailRoundedIcon style={{ fontSize: 20, marginRight: '5px'  }}></EmailRoundedIcon>
@@ -121,9 +121,9 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
             </div>
             
             <button className='connect-button' type="submit">Connect</button>
-            <p className='success' style={{ color: 'white' }}>
+            <p className='success'>
               {successMessage && 
-              <p style={{ color: 'white', fontSize: '15px', fontFamily:'Karla', letterSpacing:'1px' }}>{successMessage}</p>}
+              <p style={{ fontSize: '15px', fontFamily:'Karla', letterSpacing:'0.5px' }}>{successMessage}</p>}
             </p>
             </FadeIn>   
           </form>      

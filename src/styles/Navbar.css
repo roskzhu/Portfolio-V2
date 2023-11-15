@@ -75,15 +75,6 @@
   transition: background-color 0.3s;
   height: 38px;
 }
-/* .left-nav::after {
-  content: "";
-  position: absolute;
-  bottom: -7px;
-  width: 53vw;
-  height: 1px; 
-  background-color: #646464; 
-  border-radius: 1px;
-} */
 .left-nav.transparent {
   background-color: transparent;
 }
@@ -107,8 +98,10 @@
   cursor: pointer;
 }
 .left-nav p:hover {
-  font-weight: bold;
+  /* font-size: 17px; */
+  font-weight: 500;
   color: #2E568E; 
+  /* transform: translateY(-2px); */
 }
 .left-nav li {
   cursor: pointer;
@@ -126,15 +119,6 @@
   align-items: center;
   transition: background-color 0.3s;
 }
-/* .right-nav::after {
-  content: "";
-  position: absolute;
-  bottom: -7px;
-  width: 20vw;
-  height: 1px; 
-  background-color: #646464; 
-  border-radius: 1px; 
-} */
 .right-nav.transparent {
   background-color: transparent;
 }
@@ -155,21 +139,30 @@
   justify-content: center;
   cursor: pointer;
 }
-.right-nav.transparent a:hover {
-  color: black !important;
-  transform: translateY(-1px);
-}
+.right-nav.transparent a:hover,
 .right-nav.white a:hover {
   color: black !important;
   transform: translateY(-1px);
 }
+.right-nav a:hover .email {
+  color: rgb(172, 73, 73);
+}
+
+.right-nav a:hover .github {
+  color: rgb(131, 61, 131);
+}
+
+.right-nav a:hover .linkedin {
+  color: rgb(77, 77, 148);
+}
+
+
 
 .nav {
   width: 60vw;
   height: 38px;
   transition: background-color 0.5s;
   background-color: transparent;
-  /* margin-left: 70px; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -205,7 +198,7 @@ ul {
 
 #icon-navigation:hover .arrow-image {
   max-width: 14px; /* Set the maximum width of the image */
-  content: url("../../public/assets/arrowBold.svg"); /* Set the path to the new image */
+  /* content: url("../../public/assets/arrowBold.svg");  */
 }
 
 .primary-navigation {
@@ -222,6 +215,8 @@ ul {
 .mobile-nav-toggle {
   display: none;
 }
+
+
 
 @media (max-width: 69em) {
   .home-nav {

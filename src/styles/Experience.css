@@ -18,18 +18,12 @@
   /* margin-left:-10%; */
 }
 
-.joblist-job-title {
-  font-family: "Karla", sans-serif;
-  font-size: 50px;
-  font-weight: medium;
-  color:white;
-}
-
+.joblist-job-title, 
 .joblist-job-company {
   font-family: "Karla", sans-serif;
-  font-family: "Karla", sans-serif;
-  font-size: 50px;
-  color:white;
+  font-size: 48px;
+  font-weight: 400;
+  color:#282828;
 }
 
 .joblist-duration {
@@ -37,7 +31,7 @@
   font-size: 16px;
   margin-top: 5px;
   font-weight: bold;
-  color:white;
+  color:#282828;
   margin-left: 90px;
 }
 
@@ -65,12 +59,12 @@
 
 .MuiButtonBase-root {
   outline: none !important;
-  color: #1E1E1E !important;
+  color: #EAEAEA !important;
 }
 
 .PrivateTabIndicator-colorSecondary {
   margin-left: initial;
-  background-color: #1E1E1E;
+  background-color: #EAEAEA;
 }
 .jss5 {
   background-color: transparent !important;
@@ -136,12 +130,12 @@ ul {
 
 .card-tech-exp {
   font-family: "Karla", sans-serif;
-  color: rgb(240, 240, 240);
+  color: rgb(153, 153, 153);
   font-size: 14.5px;
   margin-left: 90px;
   /* font-weight: 300; */
   text-align: left;
-  color: #D4D4D4;
+  color: #5b5b5b;
   /* font-style: italic; */
 }
 

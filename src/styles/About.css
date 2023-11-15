@@ -132,7 +132,8 @@ p mark {
   /* padding-left: 20px; */
   margin-top: -80px;
   border-radius:15px;
-  background-image: url('../../public/assets/bluebg.png');
+  /* background-image: url('../../public/assets/bluebg.png'); */
+  background-color: #EAEAEA;
   width: 50%;
   margin-bottom: 15px;
   justify-content: center;

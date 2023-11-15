@@ -1,5 +1,5 @@
 .tech-container {
-  background-color: #1E1E1E;
+  background-color: #EAEAEA;
   border-radius: 20px;
   padding-bottom: 20px;
   margin-bottom: 50px;
@@ -30,10 +30,7 @@
 
 .tech-item-header {
   font-family: Karla;
-  color:white;
   font-size: 18px;
-  /* background-color: #f0f0f0; */
-  /* padding: 20px; */
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
@@ -43,8 +40,7 @@
 .tech-item {
   font-family: "Karla", sans-serif;
   font-size: 13px;
-  color:white;
-  background-color: #28292A; /* Adjust the background color as needed */
+  /* background-color: #DEDEDE;  */
   padding: 20px;
   text-align: center;
   border-radius: 8px;
@@ -63,7 +59,7 @@
   font-family: "Karla", sans-serif;
   font-size: 20px;
   font-weight: 400;
-  color: white;
+  color: #1E1E1E;
   text-align: left;
   margin-bottom: 10px;
   margin-left: 40px;
@@ -77,7 +73,7 @@
   margin-top: 39px;
   height: 0.8px;
   margin-left: 10px;
-  background-color: white;
+  background-color: #1E1E1E;
   position: relative;
   display: inline-block;
 }
@@ -90,9 +86,9 @@
 .item-card {
   font-family: "Rubik", sans-serif;
   font-size: 14px;
-  font-weight: 300;
-  color: white;
-  background-color: #28292A; /* Adjust the background color as needed */
+  font-weight: 400;
+  color: #1E1E1E;
+  background-color: #DEDEDE; 
   padding: 10px 15px; /* vertical horizontal padding */
   text-align: center;
   border-radius: 15px;
@@ -119,7 +115,7 @@
   letter-spacing: 1px;
   font-size: 45px;
   padding-left: 50px;
-  color: white;
+  color: #1E1E1E;
   padding-bottom: -35px;
 }
 
