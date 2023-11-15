@@ -103,6 +103,8 @@ const NavBar: React.FC = () => {
       </div>
     </ContainerLeft>
     <ContainerRight>
+      </ContainerRight>
+    <ContainerRight>
     <div style={{backdropFilter:'blur(0.1rem)', marginLeft:'15px'}}>
       <FadeIn delay={`400ms`}>
       <div className={`right-nav ${isTop ? 'transparent' : 'white'}`}>
@@ -138,7 +140,7 @@ const NavContainer = styled.div`
   justify-content: center;
   align-items: center;
   top: 0;
-  margin-top: 10px;
+  margin-top: 18px;
   width: 100vw;
   z-index: 9999;
   .hide {
@@ -152,7 +154,12 @@ const ContainerIcon = styled.div`
 `;
 
 const ContainerLeft = styled.div`
-  width: 55vw;
+  width: 35vw;
+  height: 40px;
+`;
+
+const ContainerEmpty = styled.div`
+  width: 15vw;
   height: 40px;
 `;
 

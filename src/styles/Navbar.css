@@ -64,7 +64,7 @@
 
 .left-nav{
   /* margin-left: 15px; */
-  width: 55vw;
+  width: 40vw;
   height: 38px;
   background-color: white;
   display: flex;
@@ -215,7 +215,7 @@ ul {
 }
 
 .primary-navigation li {
-  width: 173px;
+  width: 120px;
   cursor: pointer;
 }
 
