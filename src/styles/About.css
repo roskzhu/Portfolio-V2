@@ -107,8 +107,8 @@ p mark {
 .about-description {
   font-family: "Rubik", sans-serif;
   color: black;
-  width: 35%;
-  padding-right: 5%;
+  width: 34%;
+  padding-right: 6%;
   /* max-width: 500px; */
   font-size: 22px;
   text-align: justify;
@@ -129,18 +129,19 @@ p mark {
 }
 
 .about-image {
-  padding-left: 20px;
+  /* padding-left: 20px; */
   margin-top: -80px;
   border-radius:15px;
   background-image: url('../../public/assets/bluebg.png');
-  width:50%;
+  width: 50%;
   margin-bottom: 15px;
-  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .about-image img {
   margin-top:20px;
-  max-width: 300px;
+  max-width: 450px;
   height: auto;
   /* margin-left: 10px; */
   text-align: center;
