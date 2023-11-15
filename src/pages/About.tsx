@@ -49,7 +49,7 @@ class About extends React.Component<{}, AboutState> {
             </div>
             {/* </div> */}
             <div className="about-image">
-              <img src={"/assets/me6.svg"} alt="me" style={{ marginBottom: "20px" }}/>
+              <img src={"/assets/me6.png"} alt="me" style={{ marginBottom: "20px" }}/>
             </div>
           </div>
         </FadeIn>
