@@ -158,11 +158,6 @@ const ContainerLeft = styled.div`
   height: 40px;
 `;
 
-const ContainerEmpty = styled.div`
-  width: 15vw;
-  height: 40px;
-`;
-
 const ContainerRight = styled.div`
   width: 22vw;
   height: 40px;
