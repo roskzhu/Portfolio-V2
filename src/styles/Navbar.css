@@ -15,7 +15,7 @@
   transition: background-color 0.3s;
   height: 38px;
 }
-.home-nav::after {
+/* .home-nav::after {
   content: "";
   position: absolute;
   bottom: -7px;
@@ -23,11 +23,11 @@
   height: 1px; 
   background-color: #646464; 
   border-radius: 1px;
-}
+} */
 .home-nav.transparent {
   background-color: transparent;
 }
-.home-nav.transparent::after {
+/* .home-nav.transparent::after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -35,7 +35,7 @@
   height: 1px; 
   background-color: #646464; 
   border-radius: 1px;
-}
+} */
 .home-nav.white {
   background-color: hsla(0, 0%, 98%, 0.8);
   backdrop-filter: blur(0.6rem) !important;
@@ -75,7 +75,7 @@
   transition: background-color 0.3s;
   height: 38px;
 }
-.left-nav::after {
+/* .left-nav::after {
   content: "";
   position: absolute;
   bottom: -7px;
@@ -83,7 +83,7 @@
   height: 1px; 
   background-color: #646464; 
   border-radius: 1px;
-}
+} */
 .left-nav.transparent {
   background-color: transparent;
 }
@@ -126,16 +126,15 @@
   align-items: center;
   transition: background-color 0.3s;
 }
-.right-nav::after {
+/* .right-nav::after {
   content: "";
   position: absolute;
   bottom: -7px;
-  /* margin-left: 60vw; */
   width: 20vw;
-  height: 1px; /* You can adjust this to your preferred underline thickness */
-  background-color: #646464; /* You can change the color of the underline here */
-  border-radius: 1px; /* You can adjust this to match the border-radius of the .home-nav element */
-}
+  height: 1px; 
+  background-color: #646464; 
+  border-radius: 1px; 
+} */
 .right-nav.transparent {
   background-color: transparent;
 }
