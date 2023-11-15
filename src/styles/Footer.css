@@ -91,9 +91,7 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   width: 1000px;
-  /* padding-right:3%; */
-  /* padding-left: 15%;
-  padding-right: 18%; */
+
 }
 
 /* contact card styling */
@@ -104,6 +102,7 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   height: 600px;
   width: 100%;
+  
 }
 
 .connect-form {
@@ -113,6 +112,7 @@ a:hover {
   padding-top: 120px;
   padding-left: 20px;
   padding-right: 90px;
+  
 }
 
 .name-input,
@@ -126,6 +126,7 @@ a:hover {
   color: #1E1E1E;
   background-color: rgba(73, 73, 73, 0.16);
   border: 0px solid black;
+  
 }
 .message-input {
   width: 372px;

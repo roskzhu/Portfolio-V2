@@ -21,7 +21,7 @@
 .joblist-job-title, 
 .joblist-job-company {
   font-family: "Karla", sans-serif;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 400;
   color:#282828;
 }
@@ -64,7 +64,7 @@
 
 .PrivateTabIndicator-colorSecondary {
   margin-left: initial;
-  background-color: #EAEAEA;
+  background-color: #999999;
 }
 .jss5 {
   background-color: transparent !important;
