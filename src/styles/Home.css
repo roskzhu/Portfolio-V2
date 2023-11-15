@@ -79,7 +79,7 @@
   grid-template-rows: 1fr 1fr; /* Set grid template rows to create a 2x2 grid */
   /* gap: 20px;  */
   grid-row-gap: 0; /* Remove the space between rows */
-  width: 27%;
+  width: 35%;
   
 
   flex-direction: column;
