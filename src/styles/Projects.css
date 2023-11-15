@@ -37,18 +37,22 @@ p {
   cursor: default;
   display: flex;
   flex-direction: column;
-  /* width:'500px'; */
-  /* align-items: flex-start; */
   position: relative;
   height: 100%;
-  /* padding-top: 0.8rem;
-  padding-left: 0.8rem;
-  padding-right: 0.8rem;   */
-  padding-bottom: 0.6rem;
   border-radius: 18px;
-  /* background-color: rgb(233, 233, 232); */
-  /* border: 1px solid black; */
   z-index: 10;
+}
+
+.projects-card::after {
+  content: '';
+  display: block;
+  clear: both;
+  /* position: absolute; */
+  /* border-bottom: 1px solid #ccc;  */
+  margin-top: 20px;
+  /* padding-top: 20px; */
+  /* width: 80%; */
+  /* align-items: center; */
 }
 
 .project-container img {
