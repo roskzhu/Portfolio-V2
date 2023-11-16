@@ -41,7 +41,7 @@ const Home: React.FC = () => {
             </h1>
             <h1>          
               <FadeIn delay={`1100ms`}>
-                software engineer
+                full-stack software engineer
               </FadeIn>
             </h1>
           </>
@@ -78,7 +78,7 @@ const Home: React.FC = () => {
           </div>
         </FadeIn>
         <ScrollContainer>
-          <p style={{ marginLeft:'180px', paddingTop:'0px', color: '#9F9F9F',paddingRight:'10px' }}
+          <p style={{ marginLeft:'70px', marginTop:'-20px', color: '#9F9F9F' }}
           onMouseOver={(e) => e.currentTarget.style.color = '#DDDDDD'}
           onMouseOut={(e) => e.currentTarget.style.color = '#9F9F9F'}>
           </p>
@@ -89,8 +89,8 @@ const Home: React.FC = () => {
             spy={true} smooth={true} offset={-100}>
             <img src={"/assets/longarrow.svg"} 
               alt="long arrow"
-              style={{paddingLeft:'10%', cursor: 'pointer', transition: 'transform 0.3s' }} 
-              width='8px'
+              style={{cursor: 'pointer', transition: 'transform 0.3s' }} 
+              height='180px'
               color='black'
               onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(5px)'}
               onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
@@ -107,7 +107,7 @@ const Home: React.FC = () => {
 const ScrollContainer = styled.div`
   width: 10px;
   padding-left: 50px;
-  margin-top: 280px;
+  margin-top: 255px;
   margin-left: 700px;
   display: flex;
   flex-direction: row;

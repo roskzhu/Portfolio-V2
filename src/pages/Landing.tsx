@@ -25,6 +25,8 @@ const LandingContainer = styled.div`
   flex-direction: column;
   overflow: hidden;
   position: relative;
+  padding-left: 12vw;
+  padding-right: 12vw;
 `;
 
 const GradientCircle = styled.div`

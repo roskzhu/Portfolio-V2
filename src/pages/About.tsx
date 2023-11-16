@@ -36,7 +36,7 @@ class About extends React.Component<{}, AboutState> {
       <div id="about">
         <FadeIn delay={`0ms`}>
           <div className="section-header">
-          <span className="section-title-before">{"// "}Who am I?</span>
+          <span className="section-title-before">{"// "}README.md</span>
             <span className="section-title">About Me</span>
           </div>
           <div className="about-content">
