@@ -1,3 +1,6 @@
+<p align="center">
+  🌐
+</p>
 <h1 align="center">
   rosannezhu.com 
 </h1>
