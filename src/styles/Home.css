@@ -80,8 +80,6 @@
   /* gap: 20px;  */
   grid-row-gap: 0; /* Remove the space between rows */
   width: 35%;
-  
-
   flex-direction: column;
   z-index: 10;
 }
