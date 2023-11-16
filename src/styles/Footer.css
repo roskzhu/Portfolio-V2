@@ -42,15 +42,16 @@
   font-family: "Karla", monospace;
   font-size: 18px;
   line-height: 1;
-  padding-right: 35px;
+  padding-right: 5vw;
   margin-left: 0;
+  width: 40vw;
 }
 .footer-text p:first-of-type {
   font-family: "Karla";
-  font-size: 50px;
+  font-size: 40px;
   line-height: 1;
   letter-spacing: 3px; /* Adjust the value as needed */
-  margin-top: 70px;
+  margin-top: 12%;
   font-weight: 500; 
 }
 .footer-text p {
@@ -65,11 +66,11 @@
   text-align: left;
 }
 .footer-text p:nth-of-type(3) {
-  padding-top: 70px; /* Adjust the padding value as needed */
+  padding-top: 28%; /* Adjust the padding value as needed */
 }
 
 .links-container {
-  width: 100px;
+  width: 13vw;
   display: flex;
   justify-content: space-evenly;
 }
@@ -90,7 +91,9 @@ a:hover {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  width: 1000px;
+  padding-left: 12vw;
+  padding-right: 12vw;
+  width: 76vw;
 
 }
 
@@ -108,16 +111,16 @@ a:hover {
 .connect-form {
   display: flex;
   flex-direction: column;
-  align-items: right;
+  justify-content: right;
+  align-items: flex-end;
   padding-top: 120px;
-  padding-left: 20px;
-  padding-right: 90px;
-  
+  /* padding-left: 20px; */
+  /* padding-right: 5vw; */
 }
 
 .name-input,
 .email-input {
-  width: 400px;
+  width: 30vw;
   height: 40px;
   margin-bottom: 20px;
   font-family: "Karla", monospace;
@@ -129,7 +132,7 @@ a:hover {
   
 }
 .message-input {
-  width: 372px;
+  /* width: 40vw; */
   resize: none;
   color: #1E1E1E;
   padding: 30px;
@@ -149,13 +152,13 @@ a:hover {
 }
 
 .connect-button {
-  width: 100px;
+  width: 25%;
   height: 30px;
   border-radius: 12px;
   background-color: rgba(73, 73, 73, 0.268);
   font-family: "Karla", monospace;
   font-weight: medium;
-  /* font-style: italic; */
+  /* justify-content: right; */
   color: #1E1E1E;
   transition: all 500ms;
   cursor: pointer;
@@ -192,7 +195,7 @@ a:hover {
 
 .horizontal-divider {
   margin-top: 40px;
-  width:500px !important;
+  width: 100% !important;
 }
 
 
