@@ -77,13 +77,14 @@
 .links-container {
   width: 13vw;
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 }
-a {
+.links-container a {
   font-family: "Karla", monospace !important;
   font-size: 14px;
   color: #4f4f4f;
-  line-height: 1.5; /* Adjust the value to increase the spacing between lines */
+  line-height: 1.5; 
+  padding-right: 15px;
 }
 a:hover {
   color: #242424;
@@ -160,24 +161,25 @@ a:hover {
   width: 25%;
   height: 30px;
   border-radius: 8px;
-  background-color: rgba(73, 73, 73, 0.268);
+  background-color: rgba(63, 63, 63, 0.268);
   font-family: "Karla", monospace;
   font-weight: medium;
   /* justify-content: right; */
-  color: #1E1E1E;
+  color: #181818;
   transition: all 500ms;
   cursor: pointer;
   border: 0px solid #ffffff;
 }
 
 .connect-button:hover {
+  background-color: rgba(108, 108, 108, 0.268);
   transform: translateY(-3px);
 }
 
 .name-input::placeholder,
 .email-input::placeholder,
 .message-input::placeholder {
-  color: rgba(255, 255, 255, 0.879); /* Change this color to your desired color */
+  color: #6c6c6c; /* Change this color to your desired color */
 }
 
 .error {
@@ -202,7 +204,6 @@ a:hover {
   margin-top: 40px;
   width: 100% !important;
 }
-
 
 @media (max-width: 850px) {
   .footer-container {

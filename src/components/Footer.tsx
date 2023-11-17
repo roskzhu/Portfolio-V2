@@ -68,7 +68,7 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
             </p>
             <p style={{lineHeight:'1.3', paddingTop:'15px'}}>Have a question? Want to chat? <br/> Feel free to send me a message.</p> 
             <p>Resume is available upon request.</p>
-            <div className="horizontal-divider"></div>
+            <div className="horizontal-divider" style={{backgroundColor: '#9F9F9F'}}></div>
             <p>Built and designed by Rosanne Zhu. <br/>
                 All rights reserved. ©</p>
           </FadeIn>   
