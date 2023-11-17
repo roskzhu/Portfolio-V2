@@ -2,40 +2,49 @@
   padding-bottom: -30px;
 }
 
+.nav-container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  width: 100vw;
+  z-index: 9999;
+
+  /* background-color: white; */
+  transition: background-color 0.3s;
+
+  .hide {
+    display: none;
+  }
+}
+.nav-container.transparent {
+  background-color: transparent;
+}
+.nav-container.white {
+  background-color: hsla(0, 0%, 98%, 0.108);
+  backdrop-filter: blur(0.2rem) !important;
+  border-bottom: 1px solid rgb(222, 222, 222);
+}
+
+
 .home-nav {
   width: 3vw;
   height: 38px;
   margin-left: -15px;
-  background-color: white;
+  /* background-color: white; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   border-radius: 18px;
-  /* border: 1px solid black; */
-  transition: background-color 0.3s;
+  /* transition: background-color 0.3s; */
   height: 38px;
 }
-/* .home-nav::after {
-  content: "";
-  position: absolute;
-  bottom: -7px;
-  width: 2vw;
-  height: 1px; 
-  background-color: #646464; 
-  border-radius: 1px;
-} */
 .home-nav.transparent {
   background-color: transparent;
 }
-/* .home-nav.transparent::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  width: 2vw;
-  height: 1px; 
-  background-color: #646464; 
-  border-radius: 1px;
-} */
 .home-nav.white {
   background-color: hsla(0, 0%, 98%, 0.8);
   backdrop-filter: blur(0.6rem) !important;
@@ -66,13 +75,13 @@
   /* margin-left: 15px; */
   width: 40vw;
   height: 38px;
-  background-color: white;
+  /* background-color: white; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   border-radius: 18px;
   /* border: 1px solid black; */
-  transition: background-color 0.3s;
+  /* transition: background-color 0.3s; */
   height: 38px;
 }
 .left-nav.transparent {
@@ -109,7 +118,7 @@
 
 .right-nav{
   width: 22vw;
-  background-color: white;
+  /* background-color: white; */
   border-radius: 18px;
   /* border: 1px solid black; */
   height: 38px;

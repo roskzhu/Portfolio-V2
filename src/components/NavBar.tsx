@@ -27,10 +27,10 @@ const NavBar: React.FC = () => {
   }, [isTop]);
 
   return (
-    <NavContainer>
+    <div className={`nav-container ${isTop ? 'transparent' : 'white'}`}>
       <ContainerIcon>
       <FadeIn delay={`200ms`}>
-      <div className={`home-nav ${isTop ? 'transparent' : 'white'}`}>
+      <div className="home-nav">
         <ul id="icon-navigation" className={`icon-navigation ${visible ? 'visible' : ''}`}>          
             <li>
             <ScrollLink
@@ -48,9 +48,9 @@ const NavBar: React.FC = () => {
         </FadeIn>
       </ContainerIcon>
       <ContainerLeft>
-      <div style={{backdropFilter:'blur(0.1rem)'}}>
+      <div>
       <FadeIn delay={`300ms`}>      
-        <div className={`left-nav ${isTop ? 'transparent' : 'white'}`}>
+        <div className="left-nav">
         <ul id="primary-navigation" className={`primary-navigation ${visible ? 'visible' : ''}`}>
           <li>
             <ScrollLink
@@ -107,7 +107,7 @@ const NavBar: React.FC = () => {
     <ContainerRight>
     <div style={{backdropFilter:'blur(0.1rem)', marginLeft:'15px'}}>
       <FadeIn delay={`400ms`}>
-      <div className={`right-nav ${isTop ? 'transparent' : 'white'}`}>
+      <div className="right-nav">
           <a href="mailto:rosannezhu@gmail.com" style={{color:'#5A5A5A'}}>
             <EmailRoundedIcon style={{ fontSize: 25, marginRight: '45px', marginTop: '5px' }} className='email'></EmailRoundedIcon>
           </a>
@@ -130,23 +130,9 @@ const NavBar: React.FC = () => {
         </FadeIn>
         </div>
       </ContainerRight>
-    </NavContainer>
+    </div>
   );
 };
-
-const NavContainer = styled.div`
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  margin-top: 18px;
-  width: 100vw;
-  z-index: 9999;
-  .hide {
-    display: none;
-  }
-`;
 
 const ContainerIcon = styled.div`
   width: 3vw;
