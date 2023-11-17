@@ -28,7 +28,7 @@ class WorkTimeline extends React.Component<{}, ExperienceState> {
         <div className="experience-container">
         <FadeIn>
           <div className="section-header" style={{ paddingBottom: '20px'}}>
-            <span className="section-title-before">{"// "}Real impact made for real people.</span>
+            <span className="section-title-before">{"// "}What have I done?</span>
             <span className="section-title">Experience</span>
           </div>
           <div className="timeline-container">
