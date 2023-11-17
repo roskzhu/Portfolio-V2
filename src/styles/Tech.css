@@ -1,5 +1,5 @@
 .tech-container {
-  background-color: #EAEAEA;
+  /* background-color: #EAEAEA; */
   border-radius: 20px;
   padding-bottom: 20px;
   margin-bottom: 50px;
@@ -41,32 +41,73 @@
   font-family: "Karla", sans-serif;
   font-size: 13px;
   /* background-color: #DEDEDE;  */
-  padding: 20px;
+  /* padding: 10px; */
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
-  width:60%;
+  width: 60%;
 }
 
 .tech-image {
   width: 100%; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
-  margin-top: 10px; /* Adjust margin as needed */
+  /* margin-top: 5px;  */
   border-radius: 8px; /* Adjust border-radius as needed */
+}
+
+.vertical-line-tech {
+  position: absolute;
+  border-left: 1.3px solid #d5d5d5; /* 1px solid black border on the left side */
+  height: 260px;
+  margin-left: 285px;
+  margin-top: -10px;
+}
+
+.subtitle-container {
+  width:25%;
 }
 
 .subtitle {
   font-family: "Karla", sans-serif;
   font-size: 20px;
+  width: 35%;
   font-weight: 400;
   color: #1E1E1E;
   text-align: left;
   margin-bottom: 10px;
   margin-left: 40px;
   position: relative;
+  white-space: nowrap;
 }
 
-.subtitle::after {
+.subtitle h1{
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: "Karla", sans-serif;
+  font-size: 20px;
+  padding-top: 9%;
+}
+
+.tech-row {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  /* align-items: center; */
+  /* flex-direction: column; */
+  justify-content: space-between;
+}
+
+.horizontal-divider-tech {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #d5d5d5;
+}
+
+
+/* .subtitle::after {
   content: "";
   display: block;
   width: 680px;
@@ -76,26 +117,29 @@
   background-color: #1E1E1E;
   position: relative;
   display: inline-block;
-}
+} */
 
 .item-card-container {
+  width: 100%;
   display: flex;
-  padding-left:20px;
+  padding-left: 20px;
+  /* justify-content: end; */
 }
 
 .item-card {
   font-family: "Rubik", sans-serif;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 400;
   color: #1E1E1E;
   background-color: #DEDEDE; 
-  padding: 10px 15px; /* vertical horizontal padding */
+  padding: 6px 10px; /* vertical horizontal padding */
   text-align: center;
   border-radius: 15px;
   margin-right: 10px; 
   flex-direction: column;
   display:flex;
   align-items: center;
+  white-space: nowrap;
 }
 
 .item-card:hover {
@@ -104,7 +148,7 @@
 
 .item-image {
   width: auto; /* Adjust the width as needed */
-  height: 50px; /* Maintain aspect ratio */
+  height: 35px; /* Maintain aspect ratio */
   border-radius: 8px 8px 0 0; /* Adjust border-radius as needed */
   padding-bottom: 5px;
 }

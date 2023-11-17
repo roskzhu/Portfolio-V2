@@ -1,0 +1,85 @@
+.experience-container {
+  margin-bottom: 60px;
+}
+
+.vertical-line-timeline {
+  border-left: 2px solid #000; 
+  height: 240px;
+  margin-left: 15%;
+  margin-right: 5%;
+}
+
+.timeline-container {
+  width: 100%;
+  display: flex;
+}
+
+.work-card {
+  margin-top: 1%;
+  width: 80%;
+  height: 230px;
+  border: 1px solid #D9D9D9;
+  border-radius: 18px;
+  background-image: url('../../public/assets/bmobg.svg');
+  background-size: cover;
+}
+
+.work-card h1 { /* position */
+  font-family: Karla;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  margin-left: 4%;
+  margin-bottom: 0;
+  margin-top: 3%;
+}
+
+.work-card h3 { /* duration */
+  font-family: Karla;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 6%;
+  margin-top: 2%;
+}
+
+.work-card ul {
+  margin-left: 2%;
+  list-style: none;
+  /* margin-left: -40px; */
+  padding-top: 0px;
+  max-width: 650px;
+  font-family: "Karla", sans-serif;
+  font-size: 13px;
+  width: 60%;
+  line-height: 1.5;
+}
+
+.work-card li {
+  position: relative;
+  padding-left: 30px;
+  /* padding-bottom: 10px; */
+}
+
+.work-card ul li::before {
+  content: "▹    ";
+  position: absolute;
+  left: 0;
+}
+
+.card-tech {
+  font-family: "Karla", sans-serif;
+  color: rgb(240, 240, 240);
+  font-size: 13px;
+  margin-left: 20px;
+  /* font-weight: 300; */
+  /* text-align: center; */
+  background-color: #E8E8E9;
+  color: #6F6F6F;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 3%;
+  
+  border-radius: 5px;
+  margin-top: 2px;
+}

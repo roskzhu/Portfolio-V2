@@ -35,7 +35,7 @@ const FadeInSection: React.FC<FadeInSectionProps> = (props) => {
   return (
     <div
       className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
-      style={{ transitionDelay: `${props.delay}`, width: props.width || "100%" }}
+      style={{ transitionDelay: `${props.delay}`}}
       ref={domRef}
     >
       {props.children}

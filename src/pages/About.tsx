@@ -24,11 +24,17 @@ class About extends React.Component<{}, AboutState> {
   }
   render() {
     const one = (
-      <h1>Driven by tech for social good, I'm drawn to impactful and collaborative work.</h1>
+      <h1>Inspired by {" "}
+        <span style={{fontStyle: 'italic', fontWeight: '600'}}>tech for social good</span>, 
+        driven by <span style={{fontStyle: 'italic', fontWeight: '600'}}>continuous learning</span>, 
+        drawn to <span style={{fontStyle: 'italic', fontWeight: '600'}}>creative work</span>.</h1>
     );
     const two = (
       <h2>
-        Currently, I have great interest in <mark>full-stack</mark> development, <mark>machine learning</mark>, and research.
+        Recently, I've been exploring the field of machine-learning, and learning about systems design architecture. 
+        Always growing and reflecting, I'm currently really interested in the intersection between mathematics and code. 
+        <br/>
+        Creating impactful software for social good is what truly excites me!
       </h2>
     );
 
@@ -40,17 +46,16 @@ class About extends React.Component<{}, AboutState> {
             <span className="section-title">About Me</span>
           </div>
           <div className="about-content">
-            {/* <div className="about-container"> */}
+            {[one]}       
+            <div className="about-container">
+            <div className="about-description">              
             <div className="vertical-line"></div>
-            <div className="about-description">
-              {[one]}
               {[two]}
-              {/* {[three]} */}
             </div>
-            {/* </div> */}
-            <div className="about-image">
+            </div>
+            {/* <div className="about-image">
               <img src={"/assets/me6.png"} alt="me" style={{ marginBottom: "20px" }}/>
-            </div>
+            </div> */}
           </div>
         </FadeIn>
         <TechStack/>

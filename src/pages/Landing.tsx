@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import Home from './Home';
 import About from './About';
-import Experience from '../components/Experience';
+import Experience from '../components/WorkTimeline';
 import Projects from '../components/Projects';
 
 const Landing: React.FC = () => {

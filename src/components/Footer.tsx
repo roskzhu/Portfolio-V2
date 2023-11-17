@@ -8,7 +8,6 @@ import EmailRoundedIcon from "@material-ui/icons/EmailRounded";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import emailjs from '@emailjs/browser';
-// import styled from '@emotion/styled';
 
 const schema = z.object({
   name: string().min(1, { message: 'Name is required.' }),

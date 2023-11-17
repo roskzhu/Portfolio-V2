@@ -36,12 +36,12 @@ const Home: React.FC = () => {
           <>
             <h1>          
               <FadeIn delay={`1000ms`}>
-                Rosanne Zhu is a
+                Rosanne Zhu 
               </FadeIn>
             </h1>
             <h1>          
               <FadeIn delay={`1100ms`}>
-                full-stack software engineer
+               is a full-stack software engineer
               </FadeIn>
             </h1>
           </>

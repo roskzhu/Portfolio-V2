@@ -10,19 +10,22 @@ interface TechStackState {
 class TechStack extends React.Component<{}, TechStackState> {
   render() {
     return (
-      <div>
         <div className="tech-container">          
-            <div className="section-header" style={{ paddingBottom: '0px', paddingTop:'25px' }}>
+            {/* <div className="section-header" style={{ paddingBottom: '0px', paddingTop:'25px' }}>
               <span className="tech-title">
                 <FadeIn>My tech stack</FadeIn>
               </span>
-            </div>
-            <FadeIn delay={`100ms`}>
+            </div> */}
+            <div className="tech-row">
             <div className="subtitle">
+            <FadeIn delay={`100ms`}>            
+              <h1>
               Programming Languages
+              </h1>              
+              </FadeIn>
             </div>
-            </FadeIn>
-            <FadeIn delay={`300ms`}>
+            <div className="vertical-line-tech"></div>
+            {/* <FadeIn delay={`300ms`}> */}
             <div className="item-card-container">
               <div className="item-card">
                 <img src="/assets/python.svg" alt="python" className="item-image" />
@@ -65,13 +68,20 @@ class TechStack extends React.Component<{}, TechStackState> {
                 Bash
               </div>
             </div>
-            </FadeIn>
-            <FadeIn delay={`100ms`}>
+            {/* </FadeIn> */}
+            </div>
+            
+            <div className="horizontal-divider-tech"></div>
+
+            <div className="tech-row">
             <div className="subtitle">
+            <FadeIn delay={`100ms`}>
+              <h1>
               Frameworks & Libraries
+              </h1>
+              </FadeIn>      
             </div>  
-            </FadeIn>      
-            <FadeIn delay={`300ms`}>
+            {/* <FadeIn delay={`300ms`}> */}
             <div className="item-card-container">
               <div className="item-card">
                 <img src="/assets/flask.png" alt="flask" className="item-image" />
@@ -110,13 +120,21 @@ class TechStack extends React.Component<{}, TechStackState> {
                 Spring Boot
               </div>
             </div>
-            </FadeIn>    
-            <FadeIn delay={`100ms`}>
+            {/* </FadeIn>     */}
+            </div>
+
+            <div className="horizontal-divider-tech"></div>
+
+            <div className="tech-row">
             <div className="subtitle">
+            <FadeIn delay={`100ms`}>
+              <h1>
               Tools & Infra
-            </div>        
+              </h1>
             </FadeIn>
-            <FadeIn delay={`300ms`}>
+            </div>
+            
+            {/* <FadeIn delay={`300ms`}> */}
             <div className="item-card-container">
               <div className="item-card">
                 <img src="/assets/aws.png" alt="aws" className="item-image" />
@@ -155,10 +173,10 @@ class TechStack extends React.Component<{}, TechStackState> {
                 Jira
               </div>
             </div>
-            </FadeIn>    
+            {/* </FadeIn>    */}
+            </div> 
           {/* </FadeIn> */}
         </div>
-      </div>
     );
   }
 }

@@ -45,7 +45,6 @@ body::-webkit-scrollbar {
   display: flex;
   /* padding-bottom: 42px; */
   flex-direction: column;
-
   width: 100vw;
 }
 
@@ -63,7 +62,7 @@ body::-webkit-scrollbar {
   font-family: "Karla", sans-serif;
   color: gray; /* Adjust color as needed */
   font-size: 15px; /* Adjust font size as needed */
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-weight: 300;
 }
 

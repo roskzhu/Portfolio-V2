@@ -76,7 +76,9 @@ class Projects extends Component<{}, ProjectsState> {
             {Object.keys(projects).map((key, i) => (
               <FadeIn delay={`${i + 1}00ms`} key={i}>
                 <li className="projects-card">
-                <img src={projects[key]["image"]} alt={key} style={{ maxWidth: "500px" }}/> {/* Add image here */}
+                <div className="img-bg">
+                <img src={projects[key]["image"]} alt={key} style={{ maxWidth: "500px" }}/> 
+                </div>
                   <div className="card-header">
                     <div className="folder-icon">
                     <div className="card-title" style={{textAlign:'center'}}>{key}</div>
@@ -89,7 +91,7 @@ class Projects extends Component<{}, ProjectsState> {
                   </div>
                   </div>
                   <div className="card-desc">{projects[key]["desc"]}</div>
-                  <div className="card-tech" style={{color: '#717171',fontStyle:'',paddingTop:'10px'}}>
+                  <div className="card-tech">
                     {projects[key]["techStack"].split(", ").map((item: string, index: number) => (
                       <span key={index}>
                         {index > 0 ? " // " : ""}
