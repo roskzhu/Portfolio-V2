@@ -57,17 +57,22 @@
 .footer-text p {
   font-family: "Karla";
   color: #1E1E1E;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 400; 
-  line-height: 1;
+  line-height: 1.4;
   margin-bottom: 15px;
   letter-spacing: 0.3px; /* Adjust the value as needed */
   margin-top: 5%;
   text-align: left;
 }
 .footer-text p:nth-of-type(3) {
+  font-size: 13px;
   padding-top: 28%; /* Adjust the padding value as needed */
 }
+.footer-text p:nth-of-type(4) {
+  font-size: 13px;
+}
+
 
 .links-container {
   width: 13vw;
@@ -124,7 +129,7 @@ a:hover {
   height: 40px;
   margin-bottom: 20px;
   font-family: "Karla", monospace;
-  border-radius: 15px;
+  border-radius: 10px;
   padding-left: 30px;
   color: #1E1E1E;
   background-color: rgba(73, 73, 73, 0.16);
@@ -137,7 +142,7 @@ a:hover {
   color: #1E1E1E;
   padding: 30px;
   margin-bottom: 20px;
-  border-radius: 15px;
+  border-radius: 10px;
   font-family: "Karla", monospace;
   background-color: rgba(73, 73, 73, 0.16);
   border: 0px solid black;
@@ -154,7 +159,7 @@ a:hover {
 .connect-button {
   width: 25%;
   height: 30px;
-  border-radius: 12px;
+  border-radius: 8px;
   background-color: rgba(73, 73, 73, 0.268);
   font-family: "Karla", monospace;
   font-weight: medium;

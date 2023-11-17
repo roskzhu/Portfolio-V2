@@ -47,17 +47,30 @@ const Footer: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }>
 
   const [successMessage, setSuccessMessage] = useState<string>('');
 
+  const gradientTextStyle: React.CSSProperties = {
+    background: 'linear-gradient(89deg, #28292A 20.43%, #B9B9B9 76.63%)',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    fontStyle: 'italic',
+    fontWeight: 'bold',
+  };
+
   return (
     <footer className='foot' id='footer'>
       <div className='footer-container'>
         <div className='footer-text' style={{zIndex:'2'}}>
           <div className='footer-title'>
           <FadeIn>
-            <p>Let's build something <span style={{fontStyle:'italic'}}>impactful.</span></p>
+            <p>Let's build something {" "}
+              <span style={gradientTextStyle}>
+              impactful.
+              </span>
+            </p>
             <p style={{lineHeight:'1.3', paddingTop:'15px'}}>Have a question? Want to chat? <br/> Feel free to send me a message.</p> 
             <p>Resume is available upon request.</p>
             <div className="horizontal-divider"></div>
-            <p>This website was built and designed by myself.</p>
+            <p>Built and designed by Rosanne Zhu. <br/>
+                All rights reserved. ©</p>
           </FadeIn>   
         </div>
           <div>

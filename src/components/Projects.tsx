@@ -28,7 +28,7 @@ class Projects extends Component<{}, ProjectsState> {
         desc:
           "A facial recognition web application that recognizes and remembers the faces of different individuals in real-time footage.",
         techStack: "Python, Tensorflow, OpenCV, Javascript",
-        link: "https://github.com/roskzhu/iSpy",
+        link: "https://github.com/roskzhu/iSpy-V2",
         open: "",
         image: "/assets/ispy.png" // Add image path here
       },
