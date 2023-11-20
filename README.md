@@ -1,6 +1,6 @@
 <div align="center">
   <div>
-    <img src="https://images.squarespace-cdn.com/content/v1/62ba153710aa8d1ca9881ae3/1660322532139-UIIXJLVWRHI4N4E02KSX/Globe.png?format=1000w" width="50px"/>
+    <img src="https://images.squarespace-cdn.com/content/v1/62ba153710aa8d1ca9881ae3/1660322532139-UIIXJLVWRHI4N4E02KSX/Globe.png?format=1000w" width="50px" style="pointer-events: none;"/>
   </div>
 </div>
 <h1 align="center">
