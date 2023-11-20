@@ -1,7 +1,5 @@
 <div align="center">
-  <div>
     <img src="https://github.com/roskzhu/Portfolio/assets/110139243/829478d9-8b79-4584-a239-74157958c6f0" width="50px" style="pointer-events: none;"/>
-  </div>
 </div>
 <h1 align="center">
   rosannezhu.com 
