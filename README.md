@@ -7,12 +7,8 @@
   rosannezhu.com 
 </h1>
 <p align="center">
-  Welcome to my personal portfolio <a href="https://rosannezhu.com" target="_blank">rosannezhu.com</a>. 
+  Welcome to my personal portfolio <a href="https://rosannezhu.com" target="_blank">rosannezhu.com</a>, built with Typescript, React.js, and Material UI. 
 </p>
-<div align="center">
-    <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"/>
-    <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
-</div>
 
 <img width="1306" alt="HomeScreen" src="/public/assets/home.png">
 
