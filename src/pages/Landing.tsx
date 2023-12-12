@@ -15,7 +15,7 @@ const Landing: React.FC = () => {
       <GradientCircle style={{ marginTop: '-300px', marginLeft: '50%', animationDelay: '0.5s' }} />
       <Home/>        
       <About/>
-      <Experience />
+      {/* <Experience /> */}
       <Projects />
     </LandingContainer>
     </>
