@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from '@emotion/styled';
 import { Link as ScrollLink } from 'react-scroll';
-import EmailRoundedIcon from "@material-ui/icons/EmailRounded";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import GitHubIcon from "@material-ui/icons/GitHub";
 import FadeIn from "./FadeIn";
 import '../styles/Navbar.css';
 

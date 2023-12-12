@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import FadeIn from "../components/FadeIn";
 import styled from '@emotion/styled';
 import '../styles/Home.css';
-import { Link as ScrollLink } from 'react-scroll';
+// import { Link as ScrollLink } from 'react-scroll';
 
 const Home: React.FC = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);

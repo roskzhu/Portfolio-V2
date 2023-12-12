@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/About.css";
 import FadeIn from "../components/FadeIn";
-import TechStack from "../components/TechStack";
 
 interface AboutState {
   expanded: boolean;
