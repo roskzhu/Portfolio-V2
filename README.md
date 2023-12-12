@@ -9,8 +9,10 @@
 </p>
 
 <img width="1306" alt="HomeScreen" src="/public/assets/home.png">
-    ![image](https://github.com/roskzhu/Portfolio/assets/110139243/7fcc93cf-cd28-47c3-bf82-ccaf63178c69)
+![image](https://github.com/roskzhu/Portfolio/assets/110139243/7fcc93cf-cd28-47c3-bf82-ccaf63178c69)
 
+
+    
 ## 🛠 set-up
 
 1. Install the dependencies
