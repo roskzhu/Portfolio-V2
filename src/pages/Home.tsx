@@ -34,45 +34,35 @@ const Home: React.FC = () => {
           </h1>
         ) : (
           <>
-            <h1>          
               <FadeIn delay={`1000ms`}>
+            <h1 style={{marginLeft:'-10px'}}>          
                 Rosanne Zhu 
-              </FadeIn>
             </h1>
-            <h1>          
-              <FadeIn delay={`1100ms`}>
-               is a full-stack software engineer
-              </FadeIn>
-            </h1>
+            </FadeIn>
           </>
         )}
-        <h2>
           <FadeIn delay={`1500ms`}>
-          developing innovative solutions that elevate, <br/> simplify and transform digital landscapes.
-          </FadeIn>
+        <h2>
+          is a full-stack software engineer developing innovative solutions to simplify and transform digital landscapes.
         </h2>
+        </FadeIn>
         <FadeIn delay={`2300ms`}>
           <div>
           <div className="desc-container">
             <div className="grid-container">
               <h2>currently</h2>
-              <p>a Software Engineer Intern <br/>  @ 
-              <a href="https://www.bmo.com/main/about-bmo/">
-                <mark>
-                  BMO Financial Group
-                </mark>
-                </a>
+              <p>Seeking 2024 Summer and Winter internships <br/> in software development.
               </p>
             </div>
             <div className="grid-container">
               <h2>studying</h2>
-              <h4>Computer Science & Artificial Intelligence <br/>  @ 
+              <p>Computer Science & Artificial Intelligence <br/>  @ 
                 <a href="https://uwaterloo.ca/">
-                <mark>
+                <mark style={{color:"#834700", backgroundColor: "#F9EBC7"}}>
                   the University of Waterloo
                   </mark>
                 </a>
-              </h4>
+              </p>
             </div>
           </div>
           </div>
@@ -82,7 +72,7 @@ const Home: React.FC = () => {
           onMouseOver={(e) => e.currentTarget.style.color = '#DDDDDD'}
           onMouseOut={(e) => e.currentTarget.style.color = '#9F9F9F'}>
           </p>
-          <div>
+          {/* <div>
           <FadeIn delay={`2700ms`}>
             <ScrollLink
             activeClass="active" to="about"
@@ -97,7 +87,7 @@ const Home: React.FC = () => {
               />
             </ScrollLink>
           </FadeIn>
-          </div>
+          </div> */}
         </ScrollContainer>
       </div>
     </div>
@@ -124,7 +114,7 @@ const ScrollContainer = styled.div`
     margin-top: 115px;
     margin-right: 0%;
     line-height: 1;
-    font-style: italic; 
+    
   }
   > p mark {
     background-color: #DAE2F5;

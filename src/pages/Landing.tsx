@@ -7,26 +7,29 @@ import Projects from '../components/Projects';
 
 const Landing: React.FC = () => {
   return (
+    <>
     <LandingContainer>      
       {/* pink blue yellow */}
       <GradientCircle style={{ opacity: '70%', marginTop: '-100px', marginLeft: '25%', background: '#FFC7C7', animationDelay: '3s' }} />
       <GradientCircle style={{ marginTop: '-100px', marginLeft: '-10%', background: '#BBC6FF', height: '15%', animationDelay: '1s' }} />
       <GradientCircle style={{ marginTop: '-300px', marginLeft: '50%', animationDelay: '0.5s' }} />
-      <Home/>    
+      <Home/>        
       <About/>
       <Experience />
       <Projects />
     </LandingContainer>
+    </>
   );
 };
+
 
 const LandingContainer = styled.div`
   display: flex;
   flex-direction: column;
   overflow: hidden;
   position: relative;
-  padding-left: 12vw;
-  padding-right: 12vw;
+  padding-left: 0vw;
+  padding-right: 0vw;
 `;
 
 const GradientCircle = styled.div`

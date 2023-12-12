@@ -4,15 +4,15 @@
   margin-right: auto;
   width: 1000px;
 }
-#experience::after {
+/* #experience::after {
   content: "";
   display: block;
   width: 98%;
   height: 1px;
-  background-color: #9F9F9F; /* Adjust the color as needed */
-  margin-top: 20px; /* Adjust the margin as needed */
+  background-color: #9F9F9F; 
+  margin-top: 20px; 
   margin-bottom: 50px;
-}
+} */
 
 .experience-container {
   /* margin-left:-10%; */

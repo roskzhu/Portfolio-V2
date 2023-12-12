@@ -32,17 +32,11 @@ const NavBar: React.FC = () => {
       <FadeIn delay={`200ms`}>
       <div className="home-nav">
         <ul id="icon-navigation" className={`icon-navigation ${visible ? 'visible' : ''}`}>          
-            <li>
             <ScrollLink
             activeClass="active" to="home"
             spy={true} smooth={true} offset={-100}>
-              <img src={"/assets/arrow.svg"}  style={{  marginTop: '6px' }}
-                className="arrow-image"
-                alt="Arrow icon"
-                id="arrow-image"
-                />
+              rz
             </ScrollLink>
-            </li>
           </ul>
         </div>
         </FadeIn>
@@ -51,44 +45,6 @@ const NavBar: React.FC = () => {
       <div>
       <FadeIn delay={`300ms`}>      
         <div className="left-nav">
-        <ul id="primary-navigation" className={`primary-navigation ${visible ? 'visible' : ''}`}>
-          <li>
-            <ScrollLink
-              activeClass="active" to="about"
-              spy={true} smooth={true} offset={-100}>
-              <p>
-              About
-            </p>
-            </ScrollLink>
-          </li>
-          <li>
-            <ScrollLink
-              activeClass="active" to="experience"
-              spy={true} smooth={true} offset={-100}>
-              <p>
-              Experience
-            </p>
-            </ScrollLink>
-          </li>
-          <li>
-            <ScrollLink
-              activeClass="active" to="projects"
-              spy={true} smooth={true} offset={-100}>
-              <p>
-              Projects
-            </p>
-            </ScrollLink>
-          </li>
-          <li>
-            <ScrollLink
-              activeClass="active" to="footer"
-              spy={true} smooth={true}>
-              <p>
-              Contact
-            </p>
-            </ScrollLink>
-          </li>
-          </ul>
         </div>
         <Filter className="flt_svg hide" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -103,23 +59,41 @@ const NavBar: React.FC = () => {
       </div>
     </ContainerLeft>
     <ContainerRight>
-      </ContainerRight>
-    <ContainerRight>
-    <div style={{backdropFilter:'blur(0.1rem)', marginLeft:'15px'}}>
+    <div style={{backdropFilter:'blur(0.1rem)'}}>
       <FadeIn delay={`400ms`}>
       <div className="right-nav">
-          <a href="mailto:rosannezhu@gmail.com" style={{color:'#5A5A5A'}}>
-            <EmailRoundedIcon style={{ fontSize: 25, marginRight: '45px', marginTop: '5px' }} className='email'></EmailRoundedIcon>
-          </a>
-          <a href="https://github.com/roskzhu" style={{color:'#5A5A5A'}}>
-            <GitHubIcon style={{ fontSize: 22, marginRight: '45px', marginTop: '5px'  }}  className='github'></GitHubIcon>
-          </a>
-          <a href="https://www.linkedin.com/in/rosanne-zhu" style={{color:'#5A5A5A'}}>
-            <LinkedInIcon style={{ fontSize: 27, marginTop: '5px' }} className='linkedin'></LinkedInIcon>
-          </a>
+          <ul id="primary-navigation" className={`primary-navigation ${visible ? 'visible' : ''}`}>
+          <li>
+            <ScrollLink
+              activeClass="active" to="about"
+              spy={true} smooth={true} offset={-100}>
+              <p>
+              About
+            </p>
+            </ScrollLink>
+          </li>
+          <li style={{width: '200px'}}>
+            <ScrollLink
+              activeClass="active" to="projects"
+              spy={true} smooth={true} offset={-100}>
+              <p>
+              Software Creations
+            </p>
+            </ScrollLink>
+          </li>
+          <li style={{width: '200px'}}>
+            <ScrollLink
+              activeClass="active" to="footer"
+              spy={true} smooth={true}>
+              <p style={{backgroundColor:'#1E1E1E', color:'white', borderRadius:'30px', width: '60%', fontWeight:'200'}}>
+              Let's Talk
+            </p>
+            </ScrollLink>
+          </li>
+          </ul>
         </div>
         <Filter className="flt_svg hide" xmlns="http://www.w3.org/2000/svg">
-          <defs>
+          <defs>6
             <filter id="flt_tag">
               <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />  
               <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="flt_tag" />
@@ -140,13 +114,14 @@ const ContainerIcon = styled.div`
 `;
 
 const ContainerLeft = styled.div`
-  width: 35vw;
+  width: 30vw;
   height: 40px;
 `;
 
 const ContainerRight = styled.div`
-  width: 22vw;
+  width: 57vw;
   height: 40px;
+  margin-right: -50px;
 `;
 
 const Filter = styled.svg`

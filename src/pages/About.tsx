@@ -32,7 +32,8 @@ class About extends React.Component<{}, AboutState> {
     const two = (
       <h2>
         Recently, I've been exploring the field of machine-learning, and learning about systems design architecture. 
-        Always growing and reflecting, I'm currently really interested in the intersection between mathematics and code. 
+        Always growing and reflecting, I'm currently really interested in the intersection between mathematics and code,
+        as well as the potential artificial intelligence has to enrich our everyday lives. 
         <br/>
         Creating impactful software for social good is what truly excites me!
       </h2>
@@ -42,7 +43,7 @@ class About extends React.Component<{}, AboutState> {
       <div id="about">
         <FadeIn delay={`0ms`}>
           <div className="section-header">
-          <span className="section-title-before">{"// "}README.md</span>
+          <span className="section-title-before">What do I do?</span>
             <span className="section-title">About Me</span>
           </div>
           <div className="about-content">
@@ -58,7 +59,7 @@ class About extends React.Component<{}, AboutState> {
             </div> */}
           </div>
         </FadeIn>
-        <TechStack/>
+        {/* <TechStack/> */}
       </div>
     );
   }

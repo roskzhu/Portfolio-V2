@@ -4,14 +4,14 @@
   z-index: 10;
   margin-left: auto;
   margin-right: auto;
-  height: 570px;
+  min-height: 850px;
   padding-bottom: 130px;
   /* width: 100vw; */
 }
 
 .header-container {
   position: relative;
-  height: 520px;
+  /* height: 520px; */
   overflow: hidden;
   display: flex;
   width: 1050px;
@@ -20,8 +20,7 @@
 .text-container {
   display: flex;
   position: absolute;
-  /* top: 8vw; */
-  top: 100px;
+  top: 90px;
   padding-bottom: 100px;
   flex-direction: column;
   z-index: 10;
@@ -30,14 +29,13 @@
 
 .text-container h1:first-of-type {
   font-family: 'Karla', sans-serif; 
-  font-size: 68px;
-  font-weight: 400;
+  font-size: 162px;
+  font-weight: 500;
   text-align: left;
   color: #1E1E1E;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   margin-left: 0px;
   margin-bottom: 10px;   
-  letter-spacing: 1px;
 }
 .text-container h1 {
   font-family: 'Karla', sans-serif; /* Adding the Google Font 'Karla' */
@@ -49,21 +47,18 @@
   margin-left: 0px;
   margin-bottom: 10px; /* Remove the spacing underneath the text */
   line-height: 1.4;
-  letter-spacing: 1px;
 }
 
 .text-container h2 {
   font-family: 'Karla', sans-serif; 
-  font-size: 31px;
+  font-size: 67px;
   font-weight: 400;
   text-align: left;
   color: #202020;
-  width: 100vw;
-  margin-top: 0px;
-  margin-bottom: 0px; 
+  margin-top: -16px;
+  margin-bottom: 60px; 
   margin-left: 0px;
-  margin-right: 10%;
-  letter-spacing: 1px;
+  margin-right: 0px;
   line-height: 1.3;
 }
 
@@ -79,23 +74,20 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr; /* Set grid template rows to create a 2x2 grid */
-  /* gap: 20px;  */
-  grid-row-gap: 0; /* Remove the space between rows */
-  width: 35%;
+  /* grid-row-gap: 10px; */
+  width: 45%;
   flex-direction: column;
   z-index: 10;
 }
 .grid-container p {
   z-index: 1;
-  font-size: 13px;
+  font-size: 18px;
   text-align: left;
-  font-family: 'Rubik', sans-serif; /* Adding the Google Font 'Karla' */
+  font-family: 'Karla', sans-serif; /* Adding the Google Font 'Karla' */
   font-weight: 400;
-  color: #1E1E1E;
-  /* width: 70%; */
+  color: #676767;
   margin-left: 0px;
-  margin-top: -20px;
-  /* margin-right: 100%; */
+  margin-top: -25px;
   line-height: 1.4;
 }
 .grid-container p mark {
@@ -103,34 +95,33 @@
   color: #00237C;
   border-radius: 6px;
   padding: 0px 5px;
-  font-size: 13px;
+  font-size: inherit;
 }
 .grid-container p mark:hover {
   background-color: #A3BCFC; /* Change the color on hover, for example */
   cursor: pointer; /* Change the cursor to a pointer on hover */
 }
 .grid-container p a {
-  font-family: 'Rubik', sans-serif !important;
+  /* font-family: 'Rubik', sans-serif !important; */
   text-decoration: none; /* Remove the default underline for links */
   color: inherit; /* Inherit the color from the parent element */
 }
 .grid-container p a:hover {
   cursor: pointer; /* Change the cursor to a pointer on hover */
 }
-.grid-container h4 {
+/*.grid-container h4 {
   z-index: 1;
   font-size: 13px;
   text-align: left;
-  font-family: 'Rubik', sans-serif; /* Adding the Google Font 'Karla' */
+  font-family: 'Rubik', sans-serif; 
   font-weight: 400;
   color: #1E1E1E;
-  /* width: 100%; */
   margin-left: 0%;
   margin-top: -20px;
   line-height: 1.4;
   letter-spacing: 0px;
 }
-.grid-container h4 mark {
+ .grid-container h4 mark {
   font-family: 'Rubik', sans-serif;
   background-color: #F9EBC7;
   color: #834700;
@@ -139,25 +130,25 @@
   font-size: 13px;
 }
 .grid-container h4 mark:hover {
-  background-color: #F5DA95; /* Change the color on hover, for example */
-  cursor: pointer; /* Change the cursor to a pointer on hover */
+  background-color: #F5DA95; 
+  cursor: pointer; 
 }
 .grid-container h4 a {
-  text-decoration: none; /* Remove the default underline for links */
-  color: inherit; /* Inherit the color from the parent element */
+  text-decoration: none; 
+  color: inherit; 
 }
 .grid-container h4 a:hover {
-  cursor: pointer; /* Change the cursor to a pointer on hover */
-}
+  cursor: pointer; 
+} */
 .grid-container h2 {
   z-index: 1;
-  font-size: 16px;
+  font-size: 28px;
   text-align: left;
-  font-family: 'Rubik', sans-serif; /* Adding the Google Font 'Karla' */
-  font-weight: 600;
+  font-family: 'Karla', sans-serif; /* Adding the Google Font 'Karla' */
+  font-weight: 700;
   letter-spacing: 0px;
-  font-style: italic;
-  color: #1E1E1E;
+  /* font-style: italic; */
+  color: #4D4D4D;
   width: 100%;
   margin-left: 0px;
   margin-bottom: 0; /* Remove the spacing underneath the text */
