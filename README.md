@@ -1,4 +1,6 @@
 <div align="center">
+    ![image](https://github.com/roskzhu/Portfolio/assets/110139243/7fcc93cf-cd28-47c3-bf82-ccaf63178c69)
+
     <img src="https://github.com/roskzhu/Portfolio/assets/110139243/829478d9-8b79-4584-a239-74157958c6f0" width="50px" style="pointer-events: none;"/>
 </div>
 <h1 align="center">
