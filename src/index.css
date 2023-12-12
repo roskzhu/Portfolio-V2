@@ -3,6 +3,11 @@ body{
   color:#212121;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* All Things Text */
 p {
   font-family: Karla;
