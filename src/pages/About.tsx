@@ -41,16 +41,20 @@ class About extends React.Component<{}, AboutState> {
       <h3>Backend <br/>
       Full-stack <br/>
       Machine Learning <br/>
-      UI/UX Design <br/>
-      Branding
+      {/* Databases */}
+      Optimization <br/>
+      API Development
       </h3>
     );
     const six = (
       <h3>Python <br/>
-      Java <br/>
       C / C + + <br/>
-      Typescript/ <br/>
-      Javascript 
+      Javascript <br/>
+      SQL<br/>
+      {/* Node.js<br/> */}
+      Flask<br/>
+      AWS <br/>
+      Git 
       </h3>
     );
 
@@ -59,22 +63,24 @@ class About extends React.Component<{}, AboutState> {
         <FadeIn delay={`0ms`}>
           <div className="section-header">
           <span className="section-title-before">What do I do?</span>
-            <span className="section-title">About Me</span>
+            <span className="section-title">ABOUT ME</span>
           </div>
           <div className="grid">
               <div className="about-container">
-                  {[one]}
-                  {[two]}
-                  <div className="about-content">
-                    {[three]}
-                    {[four]}
-                  </div>
+                {[one]}
+                {[two]}
               </div>
               <div className="about-container">
-                  {[five]}
-                  <div className="about-content">
-                    {[six]}
-                  </div>
+                {[five]}
+              </div>
+          </div>
+          <div className="grid">
+              <div className="about-container">
+                {[three]}
+                {[four]}
+              </div>
+              <div className="about-container">
+                {[six]}
               </div>
           </div>
 

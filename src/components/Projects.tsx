@@ -63,7 +63,7 @@ class Projects extends Component<{}, ProjectsState> {
         <FadeIn>
       <div className="section-header">
         <span className="section-title-before">A collection of my personal software creations.</span>
-        <span className="section-title">Projects</span>
+        <span className="section-title">PROJECTS</span>
       </div>
       <div className="description-container">
         <h2>

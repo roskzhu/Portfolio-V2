@@ -35,17 +35,34 @@ const Home: React.FC = () => {
         ) : (
           <>
               <FadeIn delay={`1000ms`}>
-            <h1 style={{marginLeft:'-10px'}}>          
-                Rosanne Zhu 
+            <h1 style={{marginLeft:'-10px' }}>          
+                ROSANNE {" "}
+                <span style={{WebkitTextStroke: '7px #1E1E1E', color: 'transparent' }}>
+                ZHU
+                </span>
             </h1>
             </FadeIn>
           </>
         )}
           <FadeIn delay={`1500ms`}>
         <h2>
-          is a full-stack software engineer developing innovative solutions to simplify and transform digital landscapes.
+        is a {" "}
+        <span style={{ fontWeight: '700', 
+                      // background: 'linear-gradient(to right, #1E1E1E, #4F4F4F)', 
+                      // backgroundClip: 'text', color: 'transparent' 
+                      }}>
+          software engineer
+        </span>
+        {" "} developing solutions that {" "}
+        <span style={{ fontWeight: '700', background: 'linear-gradient(to right, #1E1E1E, #767676)', 
+                      backgroundClip: 'text', color: 'transparent' }}>
+          scale.
+        </span>
         </h2>
         </FadeIn>
+
+        <div style={{height:'130px'}}></div>
+        
         <FadeIn delay={`2300ms`}>
           <div>
           <div className="desc-container">

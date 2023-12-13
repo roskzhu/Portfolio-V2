@@ -126,7 +126,7 @@ const Contact: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }
               <div style={{display:'flex'}}>
                 <a href="mailto:rosannezhu@gmail.com">
                   <EmailRoundedIcon style={{ fontSize: 18, marginRight: '20px', paddingTop:'3px' }}></EmailRoundedIcon>
-                  <p style={{textDecoration:'underline'}}>rosannezhu@gmail.com</p>
+                  <p>rosannezhu@gmail.com</p>
                 </a> 
               </div>
               <p >Resume is available upon request.</p>
@@ -143,7 +143,7 @@ const Contact: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }
               <div style={{display:'flex'}}>
               <a href="https://github.com/roskzhu">
                 <GitHubIcon style={{ fontSize: 17, marginRight: '20px', paddingTop:'3px' }}></GitHubIcon>
-                <p style={{textDecoration:'underline'}}>Github</p>
+                <p>Github</p>
               </a>
               </div>
 
@@ -152,7 +152,7 @@ const Contact: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }
               <div style={{display:'flex'}}>
               <a href="https://www.linkedin.com/in/rosanne-zhu">
                 <LinkedInIcon style={{ fontSize: 20, marginRight: '20px', paddingTop:'3px' }}></LinkedInIcon>
-                <p style={{textDecoration:'underline'}}>LinkedIn</p>
+                <p>LinkedIn</p>
                 </a> 
                 
               </div>

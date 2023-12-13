@@ -22,7 +22,7 @@ h4 {
   place-items: center;
   width: 100%;
   margin-bottom: -10px;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
   /* height: 530px; */
 }
 
@@ -45,7 +45,7 @@ h4 {
   font-size: 25px;
   line-height: 1;
   /* padding-right: 5vw; */
-  margin-left: 60px;
+  margin-left: 80px;
   /* width: 40vw; */
 }
 h1 {
@@ -57,7 +57,7 @@ h1 {
   font-family: "Karla";
   color: #1E1E1E;
   font-size: 18px;
-  font-weight: 400; 
+  font-weight: 300; 
   line-height: 1.31;
   margin-top:0;
   margin-bottom: 15px;
@@ -84,9 +84,15 @@ h1 {
   color: #4f4f4f;
   line-height: 1.5; 
   padding-right: 15px;
+  text-decoration: none;
 }
+/* .contact-text p:hover {
+  border-bottom: 2px solid #000;
+} */
 a:hover {
   color: #242424;
+  text-decoration: underline;
+  border-bottom: '2px solid #000'
 }
 
 .contact-container {

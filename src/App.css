@@ -70,11 +70,8 @@ body::-webkit-scrollbar {
   font-family: "Karla", sans-serif;
   color: #1E1E1E;
   font-size: 80px;
-  font-weight: 500;  /* medium */
-  letter-spacing: 1px; /* Adjust this value to increase the letter spacing */
-  /* text-decoration: underline; */
-  /* border-bottom: 5px solid black; */
-  /* padding-bottom: 5px; */
+  font-weight: 700;  /* medium */
+  letter-spacing: 1px; 
 }
 
 .horizontal-divider{
