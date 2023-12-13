@@ -39,6 +39,7 @@ h4 {
   line-height: 1;
   padding-right: 5vw;
   margin-left: 0;
+  width: 700px;
 }
 .contact-text {
   font-family: "Karla", monospace;
@@ -128,7 +129,8 @@ a:hover {
 
 .name-input,
 .email-input {
-  width: 23vw;
+  /* width: 23vw; */
+  width: 330px;
   height: 40px;
   margin-bottom: 20px;
   font-family: "Karla", monospace;
@@ -142,7 +144,7 @@ a:hover {
   border-bottom: 1px solid black;  
 }
 .message-input {
-  width: 50vw;
+  /* width: 50vw; */
   height: 100px;
   font-size: 18px;
   font-weight: 300;

@@ -69,7 +69,7 @@ const Contact: React.FC<{ onSave: (formValues: FormValues) => void, user?: any }
         <form className="mt-10 font-grotesk col-span-4 inline-block" 
               ref={form} onSubmit={sendEmail} style={{zIndex:'2'}}>
           {/* <FadeIn delay={`500ms`}> */}
-            <div style={{display: 'flex', width: '50vw', justifyContent: 'space-between'}}>
+            <div style={{display: 'flex', width: '700px', justifyContent: 'space-between'}}>
               <div className='name-div'>
                 <input
                   className='name-input'
