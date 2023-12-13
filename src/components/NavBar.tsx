@@ -82,9 +82,9 @@ const NavBar: React.FC = () => {
             <ScrollLink
               activeClass="active" to="contact"
               spy={true} smooth={true}>
-              <p style={{backgroundColor:'#1E1E1E', color:'white', borderRadius:'30px', width: '60%', fontWeight:'200'}}>
-              Let's Talk
-            </p>
+                <p style={{backgroundColor:'#1E1E1E', color:'white', borderRadius:'30px', width: '60%', fontWeight:'200'}}>
+                  Let's Talk
+                </p>
             </ScrollLink>
           </li>
           </ul>
