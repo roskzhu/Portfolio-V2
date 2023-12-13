@@ -68,7 +68,14 @@ const Home: React.FC = () => {
           <div className="desc-container">
             <div className="grid-container">
               <h2>currently</h2>
-              <p>Seeking 2024 Summer and Winter internships <br/> in software development.
+              <p>
+                Seeking 2024 Summer and Winter internships. <br/>
+                Previously a SWE intern @ 
+                <a href="https://www.bmo.com/">
+                  <mark style={{color:"#3E5DAE", backgroundColor: "#DAE2F5"}}>
+                  BMO Financial Group
+                  </mark>
+                </a>
               </p>
             </div>
             <div className="grid-container">

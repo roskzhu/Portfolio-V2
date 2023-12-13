@@ -37,6 +37,11 @@
   margin-bottom: 10px;   
 }
 
+.grid-container a:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
 .text-container h2 {
   font-family: 'Karla', sans-serif; 
   font-size: 43px;
