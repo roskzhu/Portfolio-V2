@@ -4,8 +4,13 @@ import Home from './Home';
 import About from './About';
 // import Experience from '../components/WorkTimeline';
 import Projects from '../components/Projects';
+import Contact from "../components/Contact";
 
 const Landing: React.FC = () => {
+  const handleSave = (values: any) => {
+    console.log({ values });
+  };
+
   return (
     <>
     <LandingContainer>      
@@ -17,6 +22,7 @@ const Landing: React.FC = () => {
       <About/>
       {/* <Experience /> */}
       <Projects />
+      <Contact onSave={handleSave} />
     </LandingContainer>
     </>
   );

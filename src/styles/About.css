@@ -1,46 +1,39 @@
 #about {
   margin-left: auto;
   margin-right: auto;
-  /* padding-left: 15%;
-  padding-right: 18%; */
   min-height: 380px;
-  padding-bottom: 40px;
+  margin-bottom: 100px;
   width: 1050px;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
 }
 
 .about-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-  /* text-align: center; */
-  margin-bottom: 70px;
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 110px;
 }
 
 h1 {
   font-family: "Karla", sans-serif;
-  font-size: 25px;
-  font-weight: 400;
-  color: black;
+  font-size: 40px;
+  font-weight: 700;
+  color: #1E1E1E;
   text-align: left;
   margin-bottom: 30px;
+  margin-top: 0;
   /* font-style: italic;  */
   /* margin-left: 40px; */
 }
 
 h2 {
   font-family: "Karla", sans-serif;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 400;
-  color: black;
+  color: #1E1E1E;
   text-align: left;
-  /* margin-top: 40px; */
   margin-bottom: 30px;
-  margin-left: 40px;
+  line-height: 1.4;
+  /* letter-spacing: 1%; */
+  /* margin-left: 40px; */
 }
 h2 mark {
   /* background-color: #DAE2F5; */
@@ -60,7 +53,6 @@ p {
   color: black;
   text-align: left;
   margin-bottom: 30px;
-  /* margin-left: 40px; */
 }
 p mark {
   background-color: #DAE2F5;
@@ -71,21 +63,34 @@ p mark {
   font-size: 14px;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: inherit;
+  gap: 100px; 
+}
+
+h3 {
+  font-family: Karla;
+  font-weight: 800;
+  color: #89857B;
+  font-size: 46px;
+  margin: 0;
+}
+
 .about-content {
   display: block;
-  /* flex-direction: row; */
+  padding-top: 80px;
 }
 .about-content h1 {
   margin-top: 30px;
 }
 
 .about-description {
-  display: flex;
+  display: block;
   font-family: "Rubik", sans-serif;
   color: black;
-  width: 55%;
-  /* padding-right: 6%; */
-  /* max-width: 500px; */
+  /* width: 55%; */
   font-size: 22px;
   text-align: justify;
   margin: 0;
@@ -94,9 +99,9 @@ p mark {
   padding-top: 15px;
 }
 .about-description h2 {
-  margin-left: 20px;
+  /* margin-left: 20px; */
   margin-top: 0px;
-  font-size: 14px;
+  font-size: 22px;
   margin-bottom: 0px;
   letter-spacing: 0.3px;
   line-height: 1.3;

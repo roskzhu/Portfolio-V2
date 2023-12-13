@@ -1,9 +1,9 @@
-import React from "react";
+// import React from "react";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Landing from "./pages/Landing";
 import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
 // import Loading from "./pages/Loading";
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -19,9 +19,6 @@ function App() {
   //       return () => clearTimeout(delay);
   //   }, []);
 
-  const handleSave = (values: any) => {
-    console.log({ values });
-  };
 
   return (
     <BrowserRouter>
@@ -33,7 +30,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Landing />} />
           </Routes>
-          <Footer onSave={handleSave} />
+          <Footer />
         {/* </>
       )} */}
     </BrowserRouter>

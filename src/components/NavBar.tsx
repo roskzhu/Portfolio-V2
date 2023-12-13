@@ -80,7 +80,7 @@ const NavBar: React.FC = () => {
           </li>
           <li style={{width: '200px'}}>
             <ScrollLink
-              activeClass="active" to="footer"
+              activeClass="active" to="contact"
               spy={true} smooth={true}>
               <p style={{backgroundColor:'#1E1E1E', color:'white', borderRadius:'30px', width: '60%', fontWeight:'200'}}>
               Let's Talk

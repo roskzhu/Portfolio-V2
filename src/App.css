@@ -68,7 +68,7 @@ body::-webkit-scrollbar {
 
 .section-title {
   font-family: "Karla", sans-serif;
-  color: black;
+  color: #1E1E1E;
   font-size: 80px;
   font-weight: 500;  /* medium */
   letter-spacing: 1px; /* Adjust this value to increase the letter spacing */

@@ -65,9 +65,12 @@ class Projects extends Component<{}, ProjectsState> {
         <span className="section-title-before">A collection of my personal software creations.</span>
         <span className="section-title">Projects</span>
       </div>
-      <p style={{marginBottom:'0px'}}>Continuously broadening my skillset, I've crafted a range software creations <br/>
-      in my free time, spanning from machine learning to full-stack applications.
-      </p>
+      <div className="description-container">
+        <h2>
+          Continuously broadening my skillset, I've crafted a range software creations 
+        in my free time, spanning from machine learning to full-stack applications.
+        </h2>
+      </div>
       </FadeIn>
       <div>
         <div className="project-container" style={{ width: "1000px", paddingTop:'10px' }}>

@@ -23,19 +23,35 @@ class About extends React.Component<{}, AboutState> {
   }
   render() {
     const one = (
-      <h1>Inspired by {" "}
-        <span style={{fontStyle: 'italic', fontWeight: '600'}}>tech for social good</span>, 
-        driven by <span style={{fontStyle: 'italic', fontWeight: '600'}}>continuous learning</span>, 
-        drawn to <span style={{fontStyle: 'italic', fontWeight: '600'}}>creative work</span>.</h1>
+      <h1>My Expertises.</h1>
     );
     const two = (
       <h2>
-        Recently, I've been exploring the field of machine-learning, and learning about systems design architecture. 
-        Always growing and reflecting, I'm currently really interested in the intersection between mathematics and code,
-        as well as the potential artificial intelligence has to enrich our everyday lives. 
-        <br/>
-        Creating impactful software for social good is what truly excites me!
+        I'm exploring the intersection between mathematics and code, currently focusing the field of machine-learning.
+        I'm very interested in the potential artificial intelligence has to enrich our everyday lives! 
       </h2>
+    );
+    const three = (
+      <h1>My Digital Tool Box.</h1>
+    );
+    const four = (
+      <h2>These are my go to tech stack to make any projects happen. I am always eager of learning more about my current stack, and new technologies that could expand my horizons.</h2>
+    );
+    const five = (
+      <h3>Backend <br/>
+      Full-stack <br/>
+      Machine Learning <br/>
+      UI/UX Design <br/>
+      Branding
+      </h3>
+    );
+    const six = (
+      <h3>Python <br/>
+      Java <br/>
+      C / C + + <br/>
+      Typescript/ <br/>
+      Javascript 
+      </h3>
     );
 
     return (
@@ -45,18 +61,23 @@ class About extends React.Component<{}, AboutState> {
           <span className="section-title-before">What do I do?</span>
             <span className="section-title">About Me</span>
           </div>
-          <div className="about-content">
-            {[one]}       
-            <div className="about-container">
-            <div className="about-description">              
-            <div className="vertical-line"></div>
-              {[two]}
-            </div>
-            </div>
-            {/* <div className="about-image">
-              <img src={"/assets/me6.png"} alt="me" style={{ marginBottom: "20px" }}/>
-            </div> */}
+          <div className="grid">
+              <div className="about-container">
+                  {[one]}
+                  {[two]}
+                  <div className="about-content">
+                    {[three]}
+                    {[four]}
+                  </div>
+              </div>
+              <div className="about-container">
+                  {[five]}
+                  <div className="about-content">
+                    {[six]}
+                  </div>
+              </div>
           </div>
+
         </FadeIn>
         {/* <TechStack/> */}
       </div>

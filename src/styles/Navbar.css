@@ -15,8 +15,8 @@
   font-family: Karla;
   font-size: 18px;
 
-  /* background-color: white; */
   transition: background-color 0.3s;
+  backdrop-filter: blur(0.6rem) !important;
 
   .hide {
     display: none;
@@ -26,10 +26,9 @@
   background-color: transparent;
 }
 .nav-container.white {
-  /* background-color: hsla(0, 0%, 100%, 1); */
-  background-color: #F8F8F7;
+  transition: background-color 0.3s;
+  background: linear-gradient(267deg, #FFF 1.53%, #F2F1EE 108.66%);
   /* backdrop-filter: blur(0.2rem) !important; */
-  /* border-bottom: 1px solid rgb(222, 222, 222); */
 }
 
 
@@ -42,7 +41,6 @@
   justify-content: space-evenly;
   align-items: center;
   border-radius: 18px;
-  /* transition: background-color 0.3s; */
   font-size: 30px;
   font-weight: 700;
   height: 38px;
@@ -52,7 +50,7 @@
 }
 .home-nav.white {
   background-color: hsla(0, 0%, 98%, 0.8);
-  backdrop-filter: blur(0.6rem) !important;
+  /* backdrop-filter: blur(0.6rem) !important; */
 }
 .home-nav.link {
   text-decoration: none;
@@ -122,7 +120,7 @@
   display: flex;
   justify-content: right;
   align-items: center;
-  transition: background-color 0.3s;
+  /* transition: background-color 0.3s; */
   font-weight: 400;
 }
 .right-nav a{
@@ -173,7 +171,7 @@
 .nav {
   width: 60vw;
   height: 38px;
-  transition: background-color 0.5s;
+  /* transition: background-color 0.5s; */
   background-color: transparent;
   display: flex;
   justify-content: space-evenly;
