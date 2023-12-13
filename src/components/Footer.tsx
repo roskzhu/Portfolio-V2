@@ -1,7 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import styled from '@emotion/styled';
-import { Link as ScrollLink } from 'react-scroll';
-import FadeIn from "./FadeIn";
+import React from 'react';
 import '../styles/Footer.css';
 
 const Footer: React.FC = () => {

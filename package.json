@@ -21,6 +21,7 @@
     "install": "^0.13.0",
     "nodemailer": "^6.9.7",
     "npm": "^10.2.1",
+    "postcss-nesting": "^12.0.1",
     "react": "^17.0.0",
     "react-bootstrap": "^2.9.1",
     "react-dom": "^17.0.0",
@@ -33,12 +34,14 @@
     "rsuite": "^5.43.0",
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.0",
+    "tailwindcss": "^3.3.6",
     "typescript": "^4.9.5",
     "typewriter-effect": "^2.21.0",
     "web-vitals": "^2.1.4",
     "zod": "^3.22.4"
   },
   "scripts": {
+    "build-css": "npx postcss src/index.css -o dist/index.css",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -64,6 +67,7 @@
   },
   "devDependencies": {
     "@types/react-scroll": "^1.8.9",
-    "@types/react-slick": "^0.23.11"
+    "@types/react-slick": "^0.23.11",
+    "postcss": "^8.4.32"
   }
 }
