@@ -78,11 +78,11 @@ const NavBar: React.FC = () => {
             </p>
             </ScrollLink>
           </li>
-          <li style={{width: '200px'}}>
+          <li style={{width: '170px'}}>
             <ScrollLink
               activeClass="active" to="contact"
               spy={true} smooth={true}>
-                <p style={{backgroundColor:'#1E1E1E', color:'white', borderRadius:'30px', width: '60%', fontWeight:'200'}}>
+                <p style={{backgroundColor:'#1E1E1E', color:'white', borderRadius:'30px', width: '120px', fontWeight:'200'}}>
                   Let's Talk
                 </p>
             </ScrollLink>
@@ -111,14 +111,13 @@ const ContainerIcon = styled.div`
 `;
 
 const ContainerLeft = styled.div`
-  width: 30vw;
+  width: 32vw;
   height: 40px;
 `;
 
 const ContainerRight = styled.div`
   width: 57vw;
   height: 40px;
-  margin-right: -50px;
 `;
 
 const Filter = styled.svg`

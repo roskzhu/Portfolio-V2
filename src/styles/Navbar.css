@@ -125,7 +125,7 @@
 }
 .right-nav a{
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
 }
 .right-nav.transparent {
@@ -174,26 +174,6 @@
 }
 
 
-
-.nav {
-  width: 60vw;
-  height: 38px;
-  /* transition: background-color 0.5s; */
-  background-color: transparent;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  border-radius: 8px;
-  /* border: 1px solid black; */
-  font-family: Karla;
-}
-.nav.transparent {
-  background-color: transparent;
-}
-.nav.white {
-  background-color: hsla(0, 0%, 100%, 0.593);
-  backdrop-filter: blur(0.6rem);
-}
 
 ul {
   list-style: none;
