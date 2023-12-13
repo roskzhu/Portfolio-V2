@@ -9,6 +9,7 @@
 </p>
 
 <img width="1306" alt="HomeScreen" src="https://github.com/roskzhu/Portfolio/assets/110139243/7fcc93cf-cd28-47c3-bf82-ccaf63178c69">
+![image](https://github.com/roskzhu/Portfolio/assets/110139243/80f6fdee-eab0-423c-80dc-5ba16a6aca70)
 
 
     
