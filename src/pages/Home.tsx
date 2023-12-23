@@ -3,6 +3,7 @@ import FadeIn from "../components/FadeIn";
 import styled from '@emotion/styled';
 import '../styles/Home.css';
 // import { Link as ScrollLink } from 'react-scroll';
+// import FractalTree from "../components/FractalTree";
 
 const Home: React.FC = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -37,9 +38,9 @@ const Home: React.FC = () => {
               <FadeIn delay={`1000ms`}>
             <h1 style={{marginLeft:'-10px' }}>          
                 ROSANNE {" "}
-                <span style={{WebkitTextStroke: '7px #1E1E1E', color: 'transparent' }}>
+                {/* <span style={{WebkitTextStroke: '7px #1E1E1E', color: 'transparent' }}> */}
                 ZHU
-                </span>
+                {/* </span> */}
             </h1>
             </FadeIn>
           </>
@@ -60,9 +61,10 @@ const Home: React.FC = () => {
         </span>
         </h2>
         </FadeIn>
-
         <div style={{height:'130px'}}></div>
         
+        {/* <FractalTree></FractalTree> */}
+
         <FadeIn delay={`2300ms`}>
           <div>
           <div className="desc-container">
